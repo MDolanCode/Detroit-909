@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .black
+        drumMachineButtonUI()
     }
 
     @IBAction func drumMachineButtonPressed(_ sender: UIButton) {
@@ -34,6 +35,7 @@ class ViewController: UIViewController {
     }
     
     func drumMachineButtonUI() {
+        // background colour for drum machine buttons
         bassDrumButton.backgroundColor = .white
         snareDrumButton.backgroundColor = .white
         lowTomButton.backgroundColor = .white
@@ -45,6 +47,19 @@ class ViewController: UIViewController {
         openHatButton.backgroundColor = .white
         crashButton.backgroundColor = .white
         rideButton.backgroundColor = .white
+        
+        // corner radius for buttons
+        bassDrumButton.layer.cornerRadius = 16
+        snareDrumButton.layer.cornerRadius = 16
+        lowTomButton.layer.cornerRadius = 16
+        midTomButton.layer.cornerRadius = 16
+        hiTomButton.layer.cornerRadius = 16
+        rimButton.layer.cornerRadius = 16
+        clapButton.layer.cornerRadius = 16
+        closedHatButton.layer.cornerRadius = 16
+        openHatButton.layer.cornerRadius = 16
+        crashButton.layer.cornerRadius = 16
+        rideButton.layer.cornerRadius = 16
     }
     
 }
