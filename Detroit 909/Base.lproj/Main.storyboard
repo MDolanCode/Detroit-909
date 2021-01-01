@@ -23,7 +23,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detroit 909" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgV-ja-IzS">
                                                 <rect key="frame" x="20" y="0.0" width="768" height="127.66666666666667"/>
-                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="30"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="35"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -49,7 +49,7 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ihI-DU-XUY"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="kXa-nh-2aw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am0-zx-8cA">

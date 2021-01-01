@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
-
+    
+    var player: AVAudioPlayer?
+    
     @IBOutlet weak var detroit909Label: UILabel!
     @IBOutlet weak var bassDrumButton: UIButton!
     @IBOutlet weak var snareDrumButton: UIButton!
@@ -22,16 +25,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var openHatButton: UIButton!
     @IBOutlet weak var crashButton: UIButton!
     @IBOutlet weak var rideButton: UIButton!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .black
         drumMachineButtonUI()
     }
-
+    
     @IBAction func drumMachineButtonPressed(_ sender: UIButton) {
-        //sender.backgroundColor = UIColor.red
+        playSound()
+        //sender.backgroundColor = .red
     }
     
     func drumMachineButtonUI() {
@@ -62,5 +66,27 @@ class ViewController: UIViewController {
         rideButton.layer.cornerRadius = 16
     }
     
+    // this is for playing the sounds
+    func playSound() {
+        guard let url = Bundle.main.url(forResource: "Bass Drum_1", withExtension: "wav") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            
+            /* iOS 10 and earlier require the following line:
+             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+            
+            guard let player = player else { return }
+            
+            player.play()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
 }
 
