@@ -27,21 +27,8 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6O-rL-TNx">
-                                                <rect key="frame" x="688" y="14" width="100" height="100"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="D9j-lA-FBe"/>
-                                                    <constraint firstAttribute="height" constant="100" id="H8f-uV-Qcb"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <segue destination="M7E-b0-n26" kind="show" id="K2C-yq-zJF"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="h6O-rL-TNx" secondAttribute="trailing" constant="20" id="3x0-3g-jfU"/>
-                                            <constraint firstItem="h6O-rL-TNx" firstAttribute="centerY" secondItem="8UQ-RY-dJj" secondAttribute="centerY" id="Vfv-2N-x2q"/>
                                             <constraint firstItem="RgV-ja-IzS" firstAttribute="top" secondItem="8UQ-RY-dJj" secondAttribute="top" id="eNU-KS-n9o"/>
                                             <constraint firstItem="RgV-ja-IzS" firstAttribute="leading" secondItem="8UQ-RY-dJj" secondAttribute="leading" constant="20" id="vWm-oN-oUT"/>
                                             <constraint firstAttribute="bottom" secondItem="RgV-ja-IzS" secondAttribute="bottom" id="zc9-IC-jOH"/>
@@ -246,35 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57.589285714285708" y="137.68115942028987"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="o8c-yr-aUJ">
-            <objects>
-                <tableViewController id="M7E-b0-n26" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ptv-IV-xlC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="IPD-yQ-ApJ">
-                                <rect key="frame" x="0.0" y="28" width="896" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IPD-yQ-ApJ" id="7L5-Dj-L3t">
-                                    <rect key="frame" x="44" y="0.0" width="808" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="M7E-b0-n26" id="L2t-vw-mG6"/>
-                            <outlet property="delegate" destination="M7E-b0-n26" id="Ot1-DN-fHb"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OWL-Hm-uO6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="648" y="138"/>
+            <point key="canvasLocation" x="-6" y="138"/>
         </scene>
     </scenes>
 </document>
