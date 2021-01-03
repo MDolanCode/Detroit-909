@@ -35,8 +35,21 @@ class ViewController: UIViewController {
     
     @IBAction func drumMachineButtonPressed(_ sender: UIButton) {
         playSound(drumSound: sender.currentTitle!)
-//        print(sender.currentTitle)
-        //sender.backgroundColor = .red
+        sender.backgroundColor = .gray
+        sender.alpha = 0.8
+        // Timer for colour change and opacity.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            print("End")
+            // Bring's sender's opacity back up to fully opaque.
+            sender.backgroundColor = .white
+            sender.alpha = 1.0
+        }
+    }
+    // This is for playing the sounds
+    func playSound(drumSound: String) {
+        let url = Bundle.main.url(forResource: drumSound, withExtension: "wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player!.play()
     }
     
     func drumMachineButtonUI() {
@@ -65,15 +78,6 @@ class ViewController: UIViewController {
         openHatButton.layer.cornerRadius = 16
         crashButton.layer.cornerRadius = 16
         rideButton.layer.cornerRadius = 16
-    }
-    
-    // this is for playing the sounds
-    func playSound(drumSound: String) {
-        let url = Bundle.main.url(forResource: drumSound, withExtension: "wav")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player!.play()
-
-
     }
 }
 
