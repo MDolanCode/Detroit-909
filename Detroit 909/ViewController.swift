@@ -11,7 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    var player: AVAudioPlayer?
+    var player: AVAudioPlayer!
     
     @IBOutlet weak var detroit909Label: UILabel!
     @IBOutlet weak var bassDrumButton: UIButton!
@@ -34,7 +34,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func drumMachineButtonPressed(_ sender: UIButton) {
-        playSound()
+        playSound(drumSound: sender.currentTitle!)
+//        print(sender.currentTitle)
         //sender.backgroundColor = .red
     }
     
@@ -67,26 +68,12 @@ class ViewController: UIViewController {
     }
     
     // this is for playing the sounds
-    func playSound() {
-        guard let url = Bundle.main.url(forResource: "Bass Drum_1", withExtension: "wav") else { return }
-        
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-            
-            /* iOS 10 and earlier require the following line:
-             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
-            
-            guard let player = player else { return }
-            
-            player.play()
-            
-        } catch let error {
-            print(error.localizedDescription)
-        }
+    func playSound(drumSound: String) {
+        let url = Bundle.main.url(forResource: drumSound, withExtension: "wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player!.play()
+
+
     }
 }
 
