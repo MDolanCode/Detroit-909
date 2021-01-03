@@ -63,7 +63,7 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rb1-sE-9hB"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Ztn-zC-xnU"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qr-zu-bbR">
@@ -77,7 +77,7 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="39T-jl-WCk"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="61T-Md-CaZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5Y-3i-AYf">
@@ -91,7 +91,7 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="10i-jP-HcV"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="iba-Ha-FBv"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xM6-vz-qDs">
@@ -105,7 +105,7 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Trf-cB-8ag"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Dw0-qI-lLz"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -124,7 +124,7 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QYr-0s-X4Z"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="DdO-ev-lEH"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47y-qL-ck6">
@@ -138,7 +138,7 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VdP-ea-NoW"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="tqe-Mz-jSE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOI-6k-sPs">
@@ -152,7 +152,7 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mJg-Ec-fNo"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="cql-oW-MIk"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctv-b4-hzI">
@@ -166,7 +166,7 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r84-Kk-mBD"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="bf8-bI-QNd"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wHy-8L-lmE" userLabel="Bottom Corner Stack View">
@@ -183,7 +183,7 @@
                                                             <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                         </variation>
                                                         <connections>
-                                                            <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGS-ZT-hyU"/>
+                                                            <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="WRv-Tn-sdH"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHe-Es-uJR">
@@ -197,7 +197,7 @@
                                                             <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                         </variation>
                                                         <connections>
-                                                            <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jbz-tx-fd1"/>
+                                                            <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="A7d-FQ-M8C"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
