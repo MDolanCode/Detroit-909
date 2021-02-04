@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .black
-        drumMachineButtonUI()
+        drumPadButtonUI()
     }
     
     @IBAction func drumMachineButtonPressed(_ sender: UIButton) {
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         player!.play()
     }
     
-    func drumMachineButtonUI() {
+    func drumPadButtonUI() {
         // background colour for drum machine buttons
         bassDrumButton.backgroundColor = .white
         snareDrumButton.backgroundColor = .white
