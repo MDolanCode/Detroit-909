@@ -125,9 +125,9 @@
 			children = (
 				C9516F5E259E765E0060C4B8 /* AppDelegate.swift */,
 				C9516F60259E765E0060C4B8 /* SceneDelegate.swift */,
-				C9516F62259E765E0060C4B8 /* ViewController.swift */,
-				C99A17FF25C11A8B0090B0E2 /* DrumPad.swift */,
-				C9516F64259E765E0060C4B8 /* Main.storyboard */,
+				C9E7931025CB756E00CA80A2 /* Model */,
+				C9E7930F25CB755C00CA80A2 /* View */,
+				C9E7931125CB757A00CA80A2 /* Controller */,
 				C9516F67259E766B0060C4B8 /* Assets.xcassets */,
 				C9516F69259E766B0060C4B8 /* LaunchScreen.storyboard */,
 				C9516F6C259E766B0060C4B8 /* Info.plist */,
@@ -152,6 +152,30 @@
 				C9516F82259E766C0060C4B8 /* Info.plist */,
 			);
 			path = "Detroit 909UITests";
+			sourceTree = "<group>";
+		};
+		C9E7930F25CB755C00CA80A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9516F64259E765E0060C4B8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9E7931025CB756E00CA80A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C99A17FF25C11A8B0090B0E2 /* DrumPad.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9E7931125CB757A00CA80A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9516F62259E765E0060C4B8 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		C9F4FE45259EAF1700ECBA12 /* Detroit 909 Sounds */ = {
