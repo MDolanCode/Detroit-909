@@ -15,6 +15,5 @@ class DrumPad: UIButton {
         
         self.layer.cornerRadius = 16
         self.backgroundColor = .white
-        
     }
 }
