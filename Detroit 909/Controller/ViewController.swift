@@ -14,23 +14,22 @@ class ViewController: UIViewController {
     var player: AVAudioPlayer!
     
     @IBOutlet weak var detroit909Label: UILabel!
-    @IBOutlet weak var bassDrumButton: UIButton!
-    @IBOutlet weak var snareDrumButton: UIButton!
-    @IBOutlet weak var lowTomButton: UIButton!
-    @IBOutlet weak var midTomButton: UIButton!
-    @IBOutlet weak var hiTomButton: UIButton!
-    @IBOutlet weak var rimButton: UIButton!
-    @IBOutlet weak var clapButton: UIButton!
-    @IBOutlet weak var closedHatButton: UIButton!
-    @IBOutlet weak var openHatButton: UIButton!
-    @IBOutlet weak var crashButton: UIButton!
-    @IBOutlet weak var rideButton: UIButton!
+    @IBOutlet weak var bassDrumButton: DrumPadButton!
+    @IBOutlet weak var snareDrumButton: DrumPadButton!
+    @IBOutlet weak var lowTomButton: DrumPadButton!
+    @IBOutlet weak var midTomButton: DrumPadButton!
+    @IBOutlet weak var hiTomButton: DrumPadButton!
+    @IBOutlet weak var rimButton: DrumPadButton!
+    @IBOutlet weak var clapButton: DrumPadButton!
+    @IBOutlet weak var closedHatButton: DrumPadButton!
+    @IBOutlet weak var openHatButton: DrumPadButton!
+    @IBOutlet weak var crashButton: DrumPadButton!
+    @IBOutlet weak var rideButton: DrumPadButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         view.backgroundColor = .black
-        drumPadButtonUI()
+        drumPadButtonTitle()
     }
     
     @IBAction func drumMachineButtonPressed(_ sender: UIButton) {
@@ -52,32 +51,18 @@ class ViewController: UIViewController {
         player!.play()
     }
     
-    func drumPadButtonUI() {
-        // background colour for drum machine buttons
-        bassDrumButton.backgroundColor = .white
-        snareDrumButton.backgroundColor = .white
-        lowTomButton.backgroundColor = .white
-        midTomButton.backgroundColor = .white
-        hiTomButton.backgroundColor = .white
-        rimButton.backgroundColor = .white
-        clapButton.backgroundColor = .white
-        closedHatButton.backgroundColor = .white
-        openHatButton.backgroundColor = .white
-        crashButton.backgroundColor = .white
-        rideButton.backgroundColor = .white
-        
-        // corner radius for buttons
-        bassDrumButton.layer.cornerRadius = 16
-        snareDrumButton.layer.cornerRadius = 16
-        lowTomButton.layer.cornerRadius = 16
-        midTomButton.layer.cornerRadius = 16
-        hiTomButton.layer.cornerRadius = 16
-        rimButton.layer.cornerRadius = 16
-        clapButton.layer.cornerRadius = 16
-        closedHatButton.layer.cornerRadius = 16
-        openHatButton.layer.cornerRadius = 16
-        crashButton.layer.cornerRadius = 16
-        rideButton.layer.cornerRadius = 16
+    func drumPadButtonTitle() {
+        bassDrumButton.setTitle("Bass Drum", for: .normal)
+        snareDrumButton.setTitle("Snare Drum", for: .normal)
+        lowTomButton.setTitle("Low Tom", for: .normal)
+        midTomButton.setTitle("Mid Tom", for: .normal)
+        hiTomButton.setTitle("Hi Tom", for: .normal)
+        rimButton.setTitle("Rim", for: .normal)
+        clapButton.setTitle("Clap", for: .normal)
+        closedHatButton.setTitle("Closed Hat", for: .normal)
+        openHatButton.setTitle("Open Hat", for: .normal)
+        crashButton.setTitle("Crash", for: .normal)
+        rideButton.setTitle("Ride", for: .normal)
     }
 }
 
