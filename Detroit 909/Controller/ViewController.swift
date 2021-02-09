@@ -7,12 +7,10 @@
 //
 
 import UIKit
-import AVFoundation
 
 class ViewController: UIViewController {
     
-    var player: AVAudioPlayer!
-    
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var detroit909Label: UILabel!
     @IBOutlet weak var bassDrumButton: DrumPadButton!
     @IBOutlet weak var snareDrumButton: DrumPadButton!
@@ -26,29 +24,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var crashButton: DrumPadButton!
     @IBOutlet weak var rideButton: DrumPadButton!
     
+    var drumPadSound = DrumPadSound()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
+        backgroundView.backgroundColor = .black
         drumPadButtonTitle()
     }
     
-    @IBAction func drumMachineButtonPressed(_ sender: UIButton) {
-        playSound(drumSound: sender.currentTitle!)
-        sender.backgroundColor = .gray
+    @IBAction func drumMachineButtonPressed(_ sender: DrumPadButton) {
+        drumPadSound.playSound(drumSound: sender.currentTitle!)
         sender.alpha = 0.8
+        sender.backgroundColor = .gray
         // Timer for colour change and opacity.
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-            print("End")
             // Bring's sender's opacity back up to fully opaque.
-            sender.backgroundColor = .white
             sender.alpha = 1.0
+            sender.backgroundColor = .white
         }
-    }
-    // This is for playing the sounds
-    func playSound(drumSound: String) {
-        let url = Bundle.main.url(forResource: drumSound, withExtension: "wav")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player!.play()
     }
     
     func drumPadButtonTitle() {

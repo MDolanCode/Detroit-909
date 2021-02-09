@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <device id="retina5_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,48 +12,48 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6od-xR-aDf" userLabel="Black Background">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6od-xR-aDf" userLabel="Background View">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="o7K-Sh-nVp">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eQw-He-PGv" userLabel="Label Controls Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="667" height="121.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="736" height="134.66666666666666"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PCg-jW-mjJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="667" height="121.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8UQ-RY-dJj">
+                                                <rect key="frame" x="0.0" y="0.0" width="736" height="134.66666666666666"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8UQ-RY-dJj" userLabel="Detroit 909">
-                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="121.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detroit 909" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgV-ja-IzS">
-                                                                <rect key="frame" x="20" y="0.0" width="627" height="121.5"/>
-                                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="35"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="RgV-ja-IzS" firstAttribute="top" secondItem="8UQ-RY-dJj" secondAttribute="top" id="eNU-KS-n9o"/>
-                                                            <constraint firstItem="RgV-ja-IzS" firstAttribute="leading" secondItem="8UQ-RY-dJj" secondAttribute="leading" constant="20" id="vWm-oN-oUT"/>
-                                                            <constraint firstAttribute="trailing" secondItem="RgV-ja-IzS" secondAttribute="trailing" constant="20" id="xXO-3H-NVV"/>
-                                                            <constraint firstAttribute="bottom" secondItem="RgV-ja-IzS" secondAttribute="bottom" id="zc9-IC-jOH"/>
-                                                        </constraints>
-                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detroit 909" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgV-ja-IzS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="297.33333333333331" height="134.66666666666666"/>
+                                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="45"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hue-Ex-wvc" userLabel="Settings Button">
+                                                        <rect key="frame" x="672" y="35.333333333333343" width="64" height="64"/>
+                                                        <state key="normal" image="icons8-settings-64-2"/>
+                                                    </button>
                                                 </subviews>
-                                            </stackView>
+                                                <constraints>
+                                                    <constraint firstItem="hue-Ex-wvc" firstAttribute="centerY" secondItem="8UQ-RY-dJj" secondAttribute="centerY" id="Au3-g1-2SH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hue-Ex-wvc" secondAttribute="trailing" id="cio-HX-TWx"/>
+                                                    <constraint firstItem="RgV-ja-IzS" firstAttribute="top" secondItem="8UQ-RY-dJj" secondAttribute="top" id="eNU-KS-n9o"/>
+                                                    <constraint firstItem="RgV-ja-IzS" firstAttribute="leading" secondItem="8UQ-RY-dJj" secondAttribute="leading" id="vWm-oN-oUT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="RgV-ja-IzS" secondAttribute="bottom" id="zc9-IC-jOH"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DuO-ON-LK8" userLabel="Top Drums Stack View">
-                                        <rect key="frame" x="0.0" y="126.5" width="667" height="122"/>
+                                        <rect key="frame" x="0.0" y="139.66666666666669" width="736" height="134.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFA-gg-89w" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="122"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="143.33333333333334" height="134.66666666666666"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                                                 <state key="normal">
@@ -63,11 +63,11 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="x06-1p-GPt"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="EIH-Vd-dJe"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am0-zx-8cA" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="134.5" y="0.0" width="129.5" height="122"/>
+                                                <rect key="frame" x="148.33333333333334" y="0.0" width="143.00000000000003" height="134.66666666666666"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                                                 <state key="normal">
@@ -77,11 +77,11 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="iao-vB-IO8"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="xeG-L5-N8f"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qr-zu-bbR" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="269" y="0.0" width="129" height="122"/>
+                                                <rect key="frame" x="296.33333333333331" y="0.0" width="143.33333333333331" height="134.66666666666666"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                                                 <state key="normal">
@@ -91,11 +91,11 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="RpG-LH-jsh"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="qs2-9r-EwU"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5Y-3i-AYf" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="403" y="0.0" width="129.5" height="122"/>
+                                                <rect key="frame" x="444.66666666666674" y="0.0" width="143" height="134.66666666666666"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                                                 <state key="normal">
@@ -105,11 +105,11 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="J3j-HQ-ykl"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="8Eg-3U-Hri"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xM6-vz-qDs" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="537.5" y="0.0" width="129.5" height="122"/>
+                                                <rect key="frame" x="592.66666666666663" y="0.0" width="143.33333333333337" height="134.66666666666666"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                                                 <state key="normal">
@@ -119,16 +119,16 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="rUN-kX-XZt"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="U7i-jr-wqJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="opp-tZ-XcU" userLabel="Bottom Drums Stack View">
-                                        <rect key="frame" x="0.0" y="253.5" width="667" height="121.5"/>
+                                        <rect key="frame" x="0.0" y="279.33333333333331" width="736" height="134.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eni-L9-piI" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="121.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="143.33333333333334" height="134.66666666666666"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                                                 <state key="normal">
@@ -138,11 +138,11 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="we8-VD-DYp"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="T95-Qg-oQa"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47y-qL-ck6" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="134.5" y="0.0" width="129.5" height="121.5"/>
+                                                <rect key="frame" x="148.33333333333334" y="0.0" width="143.00000000000003" height="134.66666666666666"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                                                 <state key="normal">
@@ -152,11 +152,11 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Ml2-0I-zR2"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="DZK-13-1FN"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOI-6k-sPs" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="269" y="0.0" width="129" height="121.5"/>
+                                                <rect key="frame" x="296.33333333333331" y="0.0" width="143.33333333333331" height="134.66666666666666"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                                                 <state key="normal">
@@ -166,11 +166,11 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="yQw-bF-c1J"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="ohL-A8-WyO"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctv-b4-hzI" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="403" y="0.0" width="129.5" height="121.5"/>
+                                                <rect key="frame" x="444.66666666666674" y="0.0" width="143" height="134.66666666666666"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                                                 <state key="normal">
@@ -180,14 +180,14 @@
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Kct-A5-R86"/>
+                                                    <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="NpO-SH-Qkc"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wHy-8L-lmE" userLabel="Bottom Corner Stack View">
-                                                <rect key="frame" x="537.5" y="0.0" width="129.5" height="121.5"/>
+                                                <rect key="frame" x="592.66666666666663" y="0.0" width="143.33333333333337" height="134.66666666666666"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daQ-7W-vfx" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="62.5" height="121.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="69.333333333333329" height="134.66666666666666"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                                                         <state key="normal">
@@ -197,11 +197,11 @@
                                                             <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                         </variation>
                                                         <connections>
-                                                            <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="ae0-dL-ud4"/>
+                                                            <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="h6B-7N-H0r"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHe-Es-uJR" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                        <rect key="frame" x="67.5" y="0.0" width="62" height="121.5"/>
+                                                        <rect key="frame" x="74.333333333333371" y="0.0" width="69" height="134.66666666666666"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                                                         <state key="normal">
@@ -211,7 +211,7 @@
                                                             <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
                                                         </variation>
                                                         <connections>
-                                                            <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="D0r-5t-uLi"/>
+                                                            <action selector="drumMachineButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="LBU-md-moT"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -235,6 +235,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bcX-KR-vTH"/>
                     <connections>
+                        <outlet property="backgroundView" destination="6od-xR-aDf" id="Whr-lh-Pf3"/>
                         <outlet property="bassDrumButton" destination="oFA-gg-89w" id="iaC-0j-sdR"/>
                         <outlet property="clapButton" destination="47y-qL-ck6" id="CRW-pd-cGZ"/>
                         <outlet property="closedHatButton" destination="dOI-6k-sPs" id="3iU-TA-VHG"/>
@@ -251,7 +252,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-186" y="28"/>
+            <point key="canvasLocation" x="-1088.0059970014993" y="372"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-settings-64-2" width="64" height="64"/>
+    </resources>
 </document>
