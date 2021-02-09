@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91BDFCD25D095A000BB9F4C /* DrumPadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91BDFCC25D095A000BB9F4C /* DrumPadButton.swift */; };
 		C9516F5F259E765E0060C4B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9516F5E259E765E0060C4B8 /* AppDelegate.swift */; };
 		C9516F61259E765E0060C4B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9516F60259E765E0060C4B8 /* SceneDelegate.swift */; };
 		C9516F63259E765E0060C4B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9516F62259E765E0060C4B8 /* ViewController.swift */; };
@@ -15,7 +16,6 @@
 		C9516F6B259E766B0060C4B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9516F69259E766B0060C4B8 /* LaunchScreen.storyboard */; };
 		C9516F76259E766B0060C4B8 /* Detroit_909Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9516F75259E766B0060C4B8 /* Detroit_909Tests.swift */; };
 		C9516F81259E766B0060C4B8 /* Detroit_909UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9516F80259E766B0060C4B8 /* Detroit_909UITests.swift */; };
-		C99A180025C11A8B0090B0E2 /* DrumPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A17FF25C11A8B0090B0E2 /* DrumPad.swift */; };
 		C9F4FE51259EAF4900ECBA12 /* Open Hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE46259EAF4700ECBA12 /* Open Hat.wav */; };
 		C9F4FE52259EAF4900ECBA12 /* Low Tom.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE47259EAF4800ECBA12 /* Low Tom.wav */; };
 		C9F4FE53259EAF4900ECBA12 /* Ride.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE48259EAF4800ECBA12 /* Ride.wav */; };
@@ -47,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C91BDFCC25D095A000BB9F4C /* DrumPadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumPadButton.swift; sourceTree = "<group>"; };
 		C9516F5B259E765E0060C4B8 /* Detroit 909.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Detroit 909.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9516F5E259E765E0060C4B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9516F60259E765E0060C4B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		C9516F7C259E766B0060C4B8 /* Detroit 909UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Detroit 909UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9516F80259E766B0060C4B8 /* Detroit_909UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detroit_909UITests.swift; sourceTree = "<group>"; };
 		C9516F82259E766C0060C4B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C99A17FF25C11A8B0090B0E2 /* DrumPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumPad.swift; sourceTree = "<group>"; };
 		C9F4FE46259EAF4700ECBA12 /* Open Hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Open Hat.wav"; sourceTree = "<group>"; };
 		C9F4FE47259EAF4800ECBA12 /* Low Tom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Low Tom.wav"; sourceTree = "<group>"; };
 		C9F4FE48259EAF4800ECBA12 /* Ride.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ride.wav; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		C9E7931025CB756E00CA80A2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C99A17FF25C11A8B0090B0E2 /* DrumPad.swift */,
+				C91BDFCC25D095A000BB9F4C /* DrumPadButton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -341,7 +341,7 @@
 				C9516F63259E765E0060C4B8 /* ViewController.swift in Sources */,
 				C9516F5F259E765E0060C4B8 /* AppDelegate.swift in Sources */,
 				C9516F61259E765E0060C4B8 /* SceneDelegate.swift in Sources */,
-				C99A180025C11A8B0090B0E2 /* DrumPad.swift in Sources */,
+				C91BDFCD25D095A000BB9F4C /* DrumPadButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
