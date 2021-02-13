@@ -57,5 +57,16 @@ class ViewController: UIViewController {
         crashButton.setTitle("Crash", for: .normal)
         rideButton.setTitle("Ride", for: .normal)
     }
-}
+    
+    @IBAction func settingsButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToSettings", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToSettings" {
+            _ = segue.destination as! SettingsViewController
+        }
 
+    }
+    
+}
