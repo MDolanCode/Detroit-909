@@ -11,16 +11,16 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet weak var backButton: UIBarButtonItem!
-    @IBOutlet weak var settingsTableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
-    var settingsList = ["FAQ", "Contact Us", "Rate in App Store", "Acknowledgements"]
+    var cellList = ["FAQ", "Contact Us", "Rate in App Store", "Acknowledgements"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        backButton.tintColor = .black
-        
-        settingsTableView.delegate = self
-        settingsTableView.dataSource = self
+        tableView.backgroundColor = .black
+        tableView.delegate = self
+        tableView.dataSource = self
+        // Set navigation font -> courier
     }
 
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
@@ -30,19 +30,31 @@ class SettingsViewController: UIViewController {
 
 extension SettingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         print("You tapped me!")
     }
 }
 
 extension SettingsViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return settingsList.count
+        return cellList.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "settingsTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = settingsList[indexPath.row]
+        cell.textLabel?.text = cellList[indexPath.row]
+        cell.backgroundColor = .black
+        cell.textLabel?.textColor = .white
+
         return cell
     }
 }
