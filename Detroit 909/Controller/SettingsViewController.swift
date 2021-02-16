@@ -13,14 +13,18 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
-    var cellList = ["FAQ", "Contact Us", "Rate in App Store", "Acknowledgements"]
+    var settingsData = SettingsData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = .black
+        
+        let nib = UINib(nibName: "SettingsTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "SettingsTableViewCell")
+        
         tableView.delegate = self
         tableView.dataSource = self
-        // Set navigation font -> courier
+        
+        tableView.backgroundColor = .black
     }
 
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
@@ -40,21 +44,23 @@ extension SettingsViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cellList.count
+        return settingsData.dataArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        return 80
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath) as! SettingsTableViewCell
         
-        cell.textLabel?.text = cellList[indexPath.row]
+        // Set Cell UI
+        cell.cellLabel.text = settingsData.dataArray[indexPath.row]
+        cell.cellLabel.textColor = .white
+        cell.cellButton.tintColor = .white
         cell.backgroundColor = .black
-        cell.textLabel?.textColor = .white
-
         return cell
     }
 }
