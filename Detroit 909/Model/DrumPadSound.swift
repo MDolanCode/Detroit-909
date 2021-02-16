@@ -11,7 +11,7 @@ import AVFoundation
 
 struct DrumPadSound {
     
-     var player: AVAudioPlayer!
+    var player: AVAudioPlayer!
     
         // This is for playing the sounds
     mutating func playSound(drumSound: String) {
