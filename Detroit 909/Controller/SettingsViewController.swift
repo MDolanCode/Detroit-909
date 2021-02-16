@@ -11,9 +11,10 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet weak var backButton: UIBarButtonItem!
+    @IBOutlet weak var navigationTitle: UINavigationItem!
     @IBOutlet weak var tableView: UITableView!
     
-    var settingsData = SettingsData()
+    let settingsData = SettingsData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,19 @@ class SettingsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.backgroundColor = .black
+        tableView.backgroundColor = .darkGray
+        
+        let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
+        footer.backgroundColor = .darkGray
+        
+        tableView.tableFooterView = footer
+        
+        let label = UILabel(frame: footer.bounds)
+        label.text = "v0.1"
+        label.textColor = .white
+        label.textAlignment = .center
+        footer.addSubview(label)
+        
     }
 
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
