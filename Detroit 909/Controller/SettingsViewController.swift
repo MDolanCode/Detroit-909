@@ -14,7 +14,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var navigationTitle: UINavigationItem!
     @IBOutlet weak var tableView: UITableView!
     
-    let settingsData = SettingsData()
+    let settingsBrain = SettingsBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +59,7 @@ extension SettingsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return settingsData.dataArray.count
+        return settingsBrain.dataArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -70,7 +70,7 @@ extension SettingsViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath) as! SettingsTableViewCell
         
         // Set Cell UI
-        cell.cellLabel.text = settingsData.dataArray[indexPath.row]
+        cell.cellLabel.text = settingsBrain.dataArray[indexPath.row]
         cell.cellLabel.textColor = .white
         cell.cellButton.tintColor = .white
         cell.backgroundColor = .black
