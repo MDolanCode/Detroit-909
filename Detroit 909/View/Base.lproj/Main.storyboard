@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detroit909 View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Detroit909ViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,11 +305,56 @@
                         <outlet property="backButton" destination="d7f-b0-uDQ" id="1ca-LY-xlX"/>
                         <outlet property="navigationTitle" destination="ofA-tv-Mhy" id="w9Z-El-I4M"/>
                         <outlet property="tableView" destination="Vcc-wA-VyI" id="YTC-CM-LUq"/>
+                        <segue destination="MhG-7M-A8I" kind="presentation" identifier="goToFAQ" id="UzK-2c-tVS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qo2-Jy-fy6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-352.23214285714283" y="371.01449275362324"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1gM-YO-Waj">
+            <objects>
+                <viewController id="MhG-7M-A8I" customClass="FAQViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zjN-3o-uiF">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EA7-Dc-ah7">
+                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3c-Df-3EV">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                                <items>
+                                    <navigationItem title="FAQ" id="cTt-fS-3wf">
+                                        <leftBarButtonItems>
+                                            <barButtonItem title="Item" image="chevron.left" catalog="system" id="IXT-mm-qcH"/>
+                                            <barButtonItem title="Settings" id="DpI-cB-dX3"/>
+                                        </leftBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="M3c-Df-3EV" firstAttribute="top" secondItem="oUL-PS-lHA" secondAttribute="top" id="1TM-4C-zYS"/>
+                            <constraint firstAttribute="trailing" secondItem="EA7-Dc-ah7" secondAttribute="trailing" id="9E7-Ul-jfc"/>
+                            <constraint firstAttribute="bottom" secondItem="EA7-Dc-ah7" secondAttribute="bottom" id="Mir-VD-UPk"/>
+                            <constraint firstAttribute="trailing" secondItem="M3c-Df-3EV" secondAttribute="trailing" id="epf-nO-UpM"/>
+                            <constraint firstItem="EA7-Dc-ah7" firstAttribute="leading" secondItem="zjN-3o-uiF" secondAttribute="leading" id="fOL-Zl-kT9"/>
+                            <constraint firstItem="EA7-Dc-ah7" firstAttribute="top" secondItem="M3c-Df-3EV" secondAttribute="bottom" id="m4l-co-qYm"/>
+                            <constraint firstItem="M3c-Df-3EV" firstAttribute="leading" secondItem="zjN-3o-uiF" secondAttribute="leading" id="xUL-Z4-k7b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oUL-PS-lHA"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="EA7-Dc-ah7" id="Xz8-II-c2N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QYB-bJ-JQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571.875" y="1.4492753623188408"/>
         </scene>
     </scenes>
     <resources>
