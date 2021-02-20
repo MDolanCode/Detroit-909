@@ -27,7 +27,9 @@ class SettingsViewController: UIViewController {
         
         tableView.backgroundColor = .darkGray
         
-        let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
+//MARK:- TableView Footer
+        
+        let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 30))
         footer.backgroundColor = .darkGray
         
         tableView.tableFooterView = footer
@@ -45,12 +47,18 @@ class SettingsViewController: UIViewController {
     }
 }
 
+//MARK:- UITableViewDelegate
+
 extension SettingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "goToFAQ", sender: self)
+        
         print("You tapped me!")
     }
 }
+
+//MARK:- UITableViewDataSource
 
 extension SettingsViewController: UITableViewDataSource {
     
