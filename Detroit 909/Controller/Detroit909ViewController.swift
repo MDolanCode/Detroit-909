@@ -45,17 +45,17 @@ class Detroit909ViewController: UIViewController {
     }
     
     func drumPadButtonTitle() {
-        bassDrumButton.setTitle("Bass Drum", for: .normal)
-        snareDrumButton.setTitle("Snare Drum", for: .normal)
-        lowTomButton.setTitle("Low Tom", for: .normal)
-        midTomButton.setTitle("Mid Tom", for: .normal)
-        hiTomButton.setTitle("Hi Tom", for: .normal)
-        rimButton.setTitle("Rim", for: .normal)
-        clapButton.setTitle("Clap", for: .normal)
-        closedHatButton.setTitle("Closed Hat", for: .normal)
-        openHatButton.setTitle("Open Hat", for: .normal)
-        crashButton.setTitle("Crash", for: .normal)
-        rideButton.setTitle("Ride", for: .normal)
+        bassDrumButton.setTitle("BASS DRUM", for: .normal)
+        snareDrumButton.setTitle("SNARE DRUM", for: .normal)
+        lowTomButton.setTitle("LOW TOM", for: .normal)
+        midTomButton.setTitle("MID TOM", for: .normal)
+        hiTomButton.setTitle("HI TOM", for: .normal)
+        rimButton.setTitle("RIM", for: .normal)
+        clapButton.setTitle("CLAP", for: .normal)
+        closedHatButton.setTitle("CLOSED HAT", for: .normal)
+        openHatButton.setTitle("OPEN HAT", for: .normal)
+        crashButton.setTitle("CRASH", for: .normal)
+        rideButton.setTitle("RIDE", for: .normal)
     }
     
     @IBAction func settingsButtonPressed(_ sender: UIButton) {
