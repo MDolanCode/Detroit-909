@@ -275,7 +275,6 @@
                                 <items>
                                     <navigationItem title="Settings" id="ofA-tv-Mhy">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="d7f-b0-uDQ">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
                                                 <action selector="backButtonPressed:" destination="ifY-2Q-uJ1" id="dEV-7q-AoI"/>
                                             </connections>
@@ -302,8 +301,7 @@
                         <viewLayoutGuide key="safeArea" id="yeb-YQ-Baw"/>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="d7f-b0-uDQ" id="1ca-LY-xlX"/>
-                        <outlet property="navigationTitle" destination="ofA-tv-Mhy" id="w9Z-El-I4M"/>
+                        <outlet property="backBarButtonItem" destination="d7f-b0-uDQ" id="1ca-LY-xlX"/>
                         <outlet property="tableView" destination="Vcc-wA-VyI" id="YTC-CM-LUq"/>
                         <segue destination="MhG-7M-A8I" kind="presentation" identifier="goToFAQ" id="UzK-2c-tVS"/>
                     </connections>
@@ -324,12 +322,19 @@
                                 <rect key="frame" x="0.0" y="44" width="896" height="370"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3c-Df-3EV">
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="M3c-Df-3EV">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="25"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="FAQ" id="cTt-fS-3wf">
                                         <leftBarButtonItems>
-                                            <barButtonItem title="Item" image="chevron.left" catalog="system" id="IXT-mm-qcH"/>
+                                            <barButtonItem title="Item" image="chevron.left" catalog="system" id="IXT-mm-qcH">
+                                                <connections>
+                                                    <action selector="backButtonPressed:" destination="MhG-7M-A8I" id="sQ1-K1-bFI"/>
+                                                </connections>
+                                            </barButtonItem>
                                             <barButtonItem title="Settings" id="DpI-cB-dX3"/>
                                         </leftBarButtonItems>
                                     </navigationItem>
@@ -349,6 +354,8 @@
                         <viewLayoutGuide key="safeArea" id="oUL-PS-lHA"/>
                     </view>
                     <connections>
+                        <outlet property="backBarButtonItem" destination="IXT-mm-qcH" id="eRa-BS-Udm"/>
+                        <outlet property="settingsBarButtonItem" destination="DpI-cB-dX3" id="Aow-qO-J7A"/>
                         <outlet property="tableView" destination="EA7-Dc-ah7" id="Xz8-II-c2N"/>
                     </connections>
                 </viewController>
