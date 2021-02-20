@@ -27,17 +27,6 @@
 		C98243C925E05C81009F12F6 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98243C825E05C81009F12F6 /* FAQViewController.swift */; };
 		C98243CC25E15E1B009F12F6 /* pbio-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C98243CB25E15E1B009F12F6 /* pbio-bold.ttf */; };
 		C987FA6E25D707BF004B70DF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C987FA6D25D707BF004B70DF /* SettingsViewController.swift */; };
-		C9F4FE51259EAF4900ECBA12 /* Open Hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE46259EAF4700ECBA12 /* Open Hat.wav */; };
-		C9F4FE52259EAF4900ECBA12 /* Low Tom.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE47259EAF4800ECBA12 /* Low Tom.wav */; };
-		C9F4FE53259EAF4900ECBA12 /* Ride.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE48259EAF4800ECBA12 /* Ride.wav */; };
-		C9F4FE54259EAF4900ECBA12 /* Rim.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE49259EAF4800ECBA12 /* Rim.wav */; };
-		C9F4FE55259EAF4900ECBA12 /* Snare Drum.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE4A259EAF4800ECBA12 /* Snare Drum.wav */; };
-		C9F4FE56259EAF4900ECBA12 /* Crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE4B259EAF4800ECBA12 /* Crash.wav */; };
-		C9F4FE57259EAF4900ECBA12 /* Bass Drum.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE4C259EAF4800ECBA12 /* Bass Drum.wav */; };
-		C9F4FE58259EAF4900ECBA12 /* Closed Hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE4D259EAF4800ECBA12 /* Closed Hat.wav */; };
-		C9F4FE59259EAF4900ECBA12 /* Hi Tom.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE4E259EAF4900ECBA12 /* Hi Tom.wav */; };
-		C9F4FE5A259EAF4900ECBA12 /* Clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE4F259EAF4900ECBA12 /* Clap.wav */; };
-		C9F4FE5B259EAF4900ECBA12 /* Mid Tom.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9F4FE50259EAF4900ECBA12 /* Mid Tom.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,17 +73,6 @@
 		C98243C825E05C81009F12F6 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		C98243CB25E15E1B009F12F6 /* pbio-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pbio-bold.ttf"; sourceTree = "<group>"; };
 		C987FA6D25D707BF004B70DF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		C9F4FE46259EAF4700ECBA12 /* Open Hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Open Hat.wav"; sourceTree = "<group>"; };
-		C9F4FE47259EAF4800ECBA12 /* Low Tom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Low Tom.wav"; sourceTree = "<group>"; };
-		C9F4FE48259EAF4800ECBA12 /* Ride.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ride.wav; sourceTree = "<group>"; };
-		C9F4FE49259EAF4800ECBA12 /* Rim.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Rim.wav; sourceTree = "<group>"; };
-		C9F4FE4A259EAF4800ECBA12 /* Snare Drum.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Snare Drum.wav"; sourceTree = "<group>"; };
-		C9F4FE4B259EAF4800ECBA12 /* Crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Crash.wav; sourceTree = "<group>"; };
-		C9F4FE4C259EAF4800ECBA12 /* Bass Drum.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bass Drum.wav"; sourceTree = "<group>"; };
-		C9F4FE4D259EAF4800ECBA12 /* Closed Hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Closed Hat.wav"; sourceTree = "<group>"; };
-		C9F4FE4E259EAF4900ECBA12 /* Hi Tom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Hi Tom.wav"; sourceTree = "<group>"; };
-		C9F4FE4F259EAF4900ECBA12 /* Clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Clap.wav; sourceTree = "<group>"; };
-		C9F4FE50259EAF4900ECBA12 /* Mid Tom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Mid Tom.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +131,6 @@
 				C9516F67259E766B0060C4B8 /* Assets.xcassets */,
 				C9516F69259E766B0060C4B8 /* LaunchScreen.storyboard */,
 				C9516F6C259E766B0060C4B8 /* Info.plist */,
-				C9F4FE45259EAF1700ECBA12 /* Detroit 909 Sounds */,
 				C98243CA25E15DAE009F12F6 /* Fonts */,
 			);
 			path = "Detroit 909";
@@ -241,24 +218,6 @@
 				C98243C825E05C81009F12F6 /* FAQViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		C9F4FE45259EAF1700ECBA12 /* Detroit 909 Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				C9F4FE4C259EAF4800ECBA12 /* Bass Drum.wav */,
-				C9F4FE4F259EAF4900ECBA12 /* Clap.wav */,
-				C9F4FE4D259EAF4800ECBA12 /* Closed Hat.wav */,
-				C9F4FE4B259EAF4800ECBA12 /* Crash.wav */,
-				C9F4FE4E259EAF4900ECBA12 /* Hi Tom.wav */,
-				C9F4FE47259EAF4800ECBA12 /* Low Tom.wav */,
-				C9F4FE50259EAF4900ECBA12 /* Mid Tom.wav */,
-				C9F4FE46259EAF4700ECBA12 /* Open Hat.wav */,
-				C9F4FE48259EAF4800ECBA12 /* Ride.wav */,
-				C9F4FE49259EAF4800ECBA12 /* Rim.wav */,
-				C9F4FE4A259EAF4800ECBA12 /* Snare Drum.wav */,
-			);
-			path = "Detroit 909 Sounds";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,22 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C98243C125E02B60009F12F6 /* FAQTableViewCell.xib in Resources */,
-				C9F4FE58259EAF4900ECBA12 /* Closed Hat.wav in Resources */,
-				C9F4FE59259EAF4900ECBA12 /* Hi Tom.wav in Resources */,
-				C9F4FE54259EAF4900ECBA12 /* Rim.wav in Resources */,
 				C956FF6325DB3D9D001E273A /* SettingsTableViewCell.xib in Resources */,
-				C9F4FE52259EAF4900ECBA12 /* Low Tom.wav in Resources */,
 				C9516F6B259E766B0060C4B8 /* LaunchScreen.storyboard in Resources */,
-				C9F4FE53259EAF4900ECBA12 /* Ride.wav in Resources */,
 				C98243CC25E15E1B009F12F6 /* pbio-bold.ttf in Resources */,
-				C9F4FE56259EAF4900ECBA12 /* Crash.wav in Resources */,
-				C9F4FE5B259EAF4900ECBA12 /* Mid Tom.wav in Resources */,
-				C9F4FE51259EAF4900ECBA12 /* Open Hat.wav in Resources */,
-				C9F4FE55259EAF4900ECBA12 /* Snare Drum.wav in Resources */,
 				C9516F68259E766B0060C4B8 /* Assets.xcassets in Resources */,
-				C9F4FE57259EAF4900ECBA12 /* Bass Drum.wav in Resources */,
 				C9516F66259E765E0060C4B8 /* Main.storyboard in Resources */,
-				C9F4FE5A259EAF4900ECBA12 /* Clap.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
