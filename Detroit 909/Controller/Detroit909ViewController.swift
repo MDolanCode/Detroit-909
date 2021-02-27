@@ -61,12 +61,4 @@ class Detroit909ViewController: UIViewController {
     @IBAction func settingsButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "goToSettings", sender: self)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToSettings" {
-            _ = segue.destination as! SettingsViewController
-        }
-
-    }
-    
 }
