@@ -11,7 +11,6 @@ import UIKit
 class FAQViewController: UIViewController {
     
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
-    @IBOutlet weak var settingsBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
     let faqBrain = FAQBrain()
@@ -20,8 +19,6 @@ class FAQViewController: UIViewController {
         super.viewDidLoad()
     
         backBarButtonItem.tintColor = .white
-        settingsBarButtonItem.tintColor = .white
-        settingsBarButtonItem.setTitleTextAttributes([ NSAttributedString.Key.font: UIFont(name: "Courier", size: 20)!], for: UIControl.State.normal)
         
         let nib = UINib(nibName: "FAQTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "FAQTableViewCell")
