@@ -34,7 +34,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="808" height="127.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detroit 909" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgV-ja-IzS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="404.5" height="127.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="222" height="127.5"/>
                                                         <fontDescription key="fontDescription" name="PBIO-Bold" family="PBIO" pointSize="45"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -275,7 +275,7 @@
                             <navigationBar contentMode="scaleToFill" barStyle="black" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="It8-0h-Xrk">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="25"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Settings" id="ofA-tv-Mhy">
