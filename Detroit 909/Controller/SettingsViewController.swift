@@ -40,7 +40,6 @@ class SettingsViewController: UIViewController {
         label.textColor = .white
         label.textAlignment = .center
         footer.addSubview(label)
-        
     }
 
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
