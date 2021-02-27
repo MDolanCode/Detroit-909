@@ -11,13 +11,15 @@ import UIKit
 class FAQViewController: UIViewController {
     
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var navigationLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     let faqBrain = FAQBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        navigationLabel.text = "Settings"
+        navigationLabel.textColor = .white
         backBarButtonItem.tintColor = .white
         
         let nib = UINib(nibName: "FAQTableViewCell", bundle: nil)
@@ -28,7 +30,7 @@ class FAQViewController: UIViewController {
         
         tableView.backgroundColor = .darkGray
         
-//MARK:- TableView Footer
+//MARK: - TableView Footer
         
         let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 30))
         footer.backgroundColor = .darkGray
@@ -42,7 +44,7 @@ class FAQViewController: UIViewController {
     
 }
 
-//MARK:- UITableViewDelegate
+//MARK: - UITableViewDelegate
 
 extension FAQViewController: UITableViewDelegate {
     
@@ -54,21 +56,10 @@ extension FAQViewController: UITableViewDelegate {
     }
 }
 
-//MARK:- UITableViewDataSource
+//MARK: - UITableViewDataSource
 
 extension FAQViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView()
-        view.backgroundColor = .darkGray
-        
-        return view
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10
-    }
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return faqBrain.faq.count
     }
