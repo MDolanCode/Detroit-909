@@ -330,21 +330,25 @@
                             <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="M3c-Df-3EV">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="25"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="FAQ" id="cTt-fS-3wf">
-                                        <leftBarButtonItems>
-                                            <barButtonItem title="Item" image="chevron.left" catalog="system" id="IXT-mm-qcH">
-                                                <connections>
-                                                    <action selector="backButtonPressed:" destination="MhG-7M-A8I" id="sQ1-K1-bFI"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem title="Settings" id="DpI-cB-dX3"/>
-                                        </leftBarButtonItems>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="IXT-mm-qcH">
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="MhG-7M-A8I" id="sQ1-K1-bFI"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixt-3m-OpA">
+                                <rect key="frame" x="107" y="12" width="41" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -360,7 +364,6 @@
                     </view>
                     <connections>
                         <outlet property="backBarButtonItem" destination="IXT-mm-qcH" id="eRa-BS-Udm"/>
-                        <outlet property="settingsBarButtonItem" destination="DpI-cB-dX3" id="Aow-qO-J7A"/>
                         <outlet property="tableView" destination="EA7-Dc-ah7" id="Xz8-II-c2N"/>
                     </connections>
                 </viewController>
