@@ -192,6 +192,15 @@
 			path = Acknowledgements;
 			sourceTree = "<group>";
 		};
+		C95BBAA625EC154C00F2665D /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				C98243C225E051DC009F12F6 /* FAQ.swift */,
+				C98243C425E052CA009F12F6 /* FAQBrain.swift */,
+			);
+			path = FAQ;
+			sourceTree = "<group>";
+		};
 		C97C832125E17080006D1AAF /* Detroit 909 Sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,8 +270,7 @@
 			children = (
 				C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */,
 				C93CA1AA25DB658C00EF2B07 /* SettingsBrain.swift */,
-				C98243C225E051DC009F12F6 /* FAQ.swift */,
-				C98243C425E052CA009F12F6 /* FAQBrain.swift */,
+				C95BBAA625EC154C00F2665D /* FAQ */,
 			);
 			path = Model;
 			sourceTree = "<group>";
