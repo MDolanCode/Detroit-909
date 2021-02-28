@@ -431,6 +431,7 @@
                     <connections>
                         <outlet property="backBarButtonItem" destination="xLL-bQ-t5U" id="Edn-6l-f12"/>
                         <outlet property="navigationLabel" destination="hd1-7N-e3f" id="ER5-nZ-Wfs"/>
+                        <outlet property="tableView" destination="iOU-UA-mtQ" id="43g-l9-INS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfr-1M-ltA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

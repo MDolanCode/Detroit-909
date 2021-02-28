@@ -12,8 +12,12 @@ class AcknowledgementsViewController: UIViewController {
 
     @IBOutlet weak var navigationLabel: UILabel!
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nib = UINib(nibName: "AcknowledgementsTableViewCell", bundle: nil)
+               tableView.register(nib, forCellReuseIdentifier: "AcknowledgementsTableViewCell")
 
         // Do any additional setup after loading the view.
     }
