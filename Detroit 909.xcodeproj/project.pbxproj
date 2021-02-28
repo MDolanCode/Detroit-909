@@ -20,6 +20,8 @@
 		C956FF6225DB3D9D001E273A /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956FF6025DB3D9D001E273A /* SettingsTableViewCell.swift */; };
 		C956FF6325DB3D9D001E273A /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C956FF6125DB3D9D001E273A /* SettingsTableViewCell.xib */; };
 		C95BBA9F25EBED3300F2665D /* AcknowledgementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBA9E25EBED3300F2665D /* AcknowledgementsViewController.swift */; };
+		C95BBAA325EBF49000F2665D /* AcknowledgementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA125EBF49000F2665D /* AcknowledgementsTableViewCell.swift */; };
+		C95BBAA425EBF49000F2665D /* AcknowledgementsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95BBAA225EBF49000F2665D /* AcknowledgementsTableViewCell.xib */; };
 		C96571BF25D2FB5700C1B0A3 /* DrumPadSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */; };
 		C97C832D25E17081006D1AAF /* LOW TOM.wav in Resources */ = {isa = PBXBuildFile; fileRef = C97C832225E17080006D1AAF /* LOW TOM.wav */; };
 		C97C832E25E17081006D1AAF /* RIM.wav in Resources */ = {isa = PBXBuildFile; fileRef = C97C832325E17080006D1AAF /* RIM.wav */; };
@@ -78,6 +80,8 @@
 		C956FF6025DB3D9D001E273A /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		C956FF6125DB3D9D001E273A /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
 		C95BBA9E25EBED3300F2665D /* AcknowledgementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsViewController.swift; sourceTree = "<group>"; };
+		C95BBAA125EBF49000F2665D /* AcknowledgementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsTableViewCell.swift; sourceTree = "<group>"; };
+		C95BBAA225EBF49000F2665D /* AcknowledgementsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcknowledgementsTableViewCell.xib; sourceTree = "<group>"; };
 		C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumPadSound.swift; sourceTree = "<group>"; };
 		C97C832225E17080006D1AAF /* LOW TOM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "LOW TOM.wav"; sourceTree = "<group>"; };
 		C97C832325E17080006D1AAF /* RIM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = RIM.wav; sourceTree = "<group>"; };
@@ -179,6 +183,15 @@
 			path = "Detroit 909UITests";
 			sourceTree = "<group>";
 		};
+		C95BBAA025EBF3A900F2665D /* Acknowledgements */ = {
+			isa = PBXGroup;
+			children = (
+				C95BBAA125EBF49000F2665D /* AcknowledgementsTableViewCell.swift */,
+				C95BBAA225EBF49000F2665D /* AcknowledgementsTableViewCell.xib */,
+			);
+			path = Acknowledgements;
+			sourceTree = "<group>";
+		};
 		C97C832125E17080006D1AAF /* Detroit 909 Sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,8 +249,9 @@
 			children = (
 				C9516F64259E765E0060C4B8 /* Main.storyboard */,
 				C98243BD25E02B0A009F12F6 /* Buttons */,
-				C98243BB25E028E3009F12F6 /* FAQ */,
 				C98243BC25E02AF2009F12F6 /* Settings */,
+				C98243BB25E028E3009F12F6 /* FAQ */,
+				C95BBAA025EBF3A900F2665D /* Acknowledgements */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -374,6 +388,7 @@
 				C97C832E25E17081006D1AAF /* RIM.wav in Resources */,
 				C9516F6B259E766B0060C4B8 /* LaunchScreen.storyboard in Resources */,
 				C97C833725E17081006D1AAF /* HI TOM.wav in Resources */,
+				C95BBAA425EBF49000F2665D /* AcknowledgementsTableViewCell.xib in Resources */,
 				C98243CC25E15E1B009F12F6 /* pbio-bold.ttf in Resources */,
 				C97C833625E17081006D1AAF /* CRASH.wav in Resources */,
 				C97C833125E17081006D1AAF /* OPEN HAT.wav in Resources */,
@@ -409,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95BBAA325EBF49000F2665D /* AcknowledgementsTableViewCell.swift in Sources */,
 				C93CA1AB25DB658C00EF2B07 /* SettingsBrain.swift in Sources */,
 				C9516F63259E765E0060C4B8 /* Detroit909ViewController.swift in Sources */,
 				C98243C025E02B60009F12F6 /* FAQTableViewCell.swift in Sources */,
