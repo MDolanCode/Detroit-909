@@ -10,10 +10,15 @@ import UIKit
 
 class AcknowledgementsViewController: UIViewController {
 
+    @IBOutlet weak var navigationLabel: UILabel!
+    @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func backBarButton(_ sender: UIBarButtonItem) {
     }
     
 

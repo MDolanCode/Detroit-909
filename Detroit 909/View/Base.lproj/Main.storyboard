@@ -395,7 +395,7 @@
                                     <navigationItem title="Acknowledgements" id="YTa-AO-tok">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="xLL-bQ-t5U">
                                             <connections>
-                                                <action selector="backButtonPressed:" destination="MhG-7M-A8I" id="Vvd-iB-mDN"/>
+                                                <action selector="backBarButton:" destination="3nQ-3l-4yt" id="hnY-Ee-UHz"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -428,6 +428,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mvJ-Xs-czD"/>
                     </view>
+                    <connections>
+                        <outlet property="backBarButtonItem" destination="xLL-bQ-t5U" id="Edn-6l-f12"/>
+                        <outlet property="navigationLabel" destination="hd1-7N-e3f" id="ER5-nZ-Wfs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfr-1M-ltA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
