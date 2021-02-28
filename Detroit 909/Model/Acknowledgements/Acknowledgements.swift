@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 
 struct Acknowledgements {
-    let whoIsAcknowledged: String
+    let whatIsAcknowledged: String
     let acknowledgement: String
     let asset: UIImageView
     
-    init(whoIsAcknowledged: String, acknowledgement: String, asset: UIImageView) {
-        self.whoIsAcknowledged = whoIsAcknowledged
+    init(whatIsAcknowledged: String, acknowledgement: String, asset: UIImageView) {
+        self.whatIsAcknowledged = whatIsAcknowledged
         self.acknowledgement = acknowledgement
         self.asset = asset
     }
