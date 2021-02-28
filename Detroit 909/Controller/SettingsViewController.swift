@@ -38,7 +38,7 @@ class SettingsViewController: UIViewController {
         let label = UILabel(frame: footer.bounds)
         label.text = "v0.1"
         label.textColor = .white
-        label.textAlignment = .center
+        label.textAlignment = .left
         footer.addSubview(label)
     }
 
