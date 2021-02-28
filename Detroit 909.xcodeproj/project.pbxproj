@@ -22,6 +22,8 @@
 		C95BBA9F25EBED3300F2665D /* AcknowledgementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBA9E25EBED3300F2665D /* AcknowledgementsViewController.swift */; };
 		C95BBAA325EBF49000F2665D /* AcknowledgementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA125EBF49000F2665D /* AcknowledgementsTableViewCell.swift */; };
 		C95BBAA425EBF49000F2665D /* AcknowledgementsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95BBAA225EBF49000F2665D /* AcknowledgementsTableViewCell.xib */; };
+		C95BBAA925EC1B1A00F2665D /* AcknowledgementsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA825EC1B1A00F2665D /* AcknowledgementsBrain.swift */; };
+		C95BBAAB25EC1B3600F2665D /* Acknowledgements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAAA25EC1B3600F2665D /* Acknowledgements.swift */; };
 		C96571BF25D2FB5700C1B0A3 /* DrumPadSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */; };
 		C97C832D25E17081006D1AAF /* LOW TOM.wav in Resources */ = {isa = PBXBuildFile; fileRef = C97C832225E17080006D1AAF /* LOW TOM.wav */; };
 		C97C832E25E17081006D1AAF /* RIM.wav in Resources */ = {isa = PBXBuildFile; fileRef = C97C832325E17080006D1AAF /* RIM.wav */; };
@@ -82,6 +84,8 @@
 		C95BBA9E25EBED3300F2665D /* AcknowledgementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsViewController.swift; sourceTree = "<group>"; };
 		C95BBAA125EBF49000F2665D /* AcknowledgementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsTableViewCell.swift; sourceTree = "<group>"; };
 		C95BBAA225EBF49000F2665D /* AcknowledgementsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcknowledgementsTableViewCell.xib; sourceTree = "<group>"; };
+		C95BBAA825EC1B1A00F2665D /* AcknowledgementsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsBrain.swift; sourceTree = "<group>"; };
+		C95BBAAA25EC1B3600F2665D /* Acknowledgements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acknowledgements.swift; sourceTree = "<group>"; };
 		C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumPadSound.swift; sourceTree = "<group>"; };
 		C97C832225E17080006D1AAF /* LOW TOM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "LOW TOM.wav"; sourceTree = "<group>"; };
 		C97C832325E17080006D1AAF /* RIM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = RIM.wav; sourceTree = "<group>"; };
@@ -201,6 +205,15 @@
 			path = FAQ;
 			sourceTree = "<group>";
 		};
+		C95BBAA725EC1ACC00F2665D /* Acknowledgements */ = {
+			isa = PBXGroup;
+			children = (
+				C95BBAAA25EC1B3600F2665D /* Acknowledgements.swift */,
+				C95BBAA825EC1B1A00F2665D /* AcknowledgementsBrain.swift */,
+			);
+			path = Acknowledgements;
+			sourceTree = "<group>";
+		};
 		C97C832125E17080006D1AAF /* Detroit 909 Sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +284,7 @@
 				C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */,
 				C93CA1AA25DB658C00EF2B07 /* SettingsBrain.swift */,
 				C95BBAA625EC154C00F2665D /* FAQ */,
+				C95BBAA725EC1ACC00F2665D /* Acknowledgements */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -444,8 +458,10 @@
 				C91BDFCD25D095A000BB9F4C /* DrumPadButton.swift in Sources */,
 				C98243C925E05C81009F12F6 /* FAQViewController.swift in Sources */,
 				C98243C325E051DC009F12F6 /* FAQ.swift in Sources */,
+				C95BBAAB25EC1B3600F2665D /* Acknowledgements.swift in Sources */,
 				C95BBA9F25EBED3300F2665D /* AcknowledgementsViewController.swift in Sources */,
 				C987FA6E25D707BF004B70DF /* SettingsViewController.swift in Sources */,
+				C95BBAA925EC1B1A00F2665D /* AcknowledgementsBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
