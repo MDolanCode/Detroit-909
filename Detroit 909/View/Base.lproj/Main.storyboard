@@ -34,7 +34,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="808" height="127.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detroit 909" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgV-ja-IzS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="222" height="127.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="404.5" height="127.5"/>
                                                         <fontDescription key="fontDescription" name="PBIO-Bold" family="PBIO" pointSize="45"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -308,7 +308,8 @@
                     <connections>
                         <outlet property="backBarButtonItem" destination="d7f-b0-uDQ" id="1ca-LY-xlX"/>
                         <outlet property="tableView" destination="Vcc-wA-VyI" id="YTC-CM-LUq"/>
-                        <segue destination="MhG-7M-A8I" kind="presentation" identifier="goToFAQ" id="UzK-2c-tVS"/>
+                        <segue destination="MhG-7M-A8I" kind="showDetail" identifier="goToFAQ" id="UzK-2c-tVS"/>
+                        <segue destination="3nQ-3l-4yt" kind="showDetail" identifier="goToAcknowledgements" id="QKz-CH-72r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qo2-Jy-fy6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -366,6 +367,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oUL-PS-lHA"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hZc-h0-Yn6"/>
                     <connections>
                         <outlet property="backBarButtonItem" destination="IXT-mm-qcH" id="eRa-BS-Udm"/>
                         <outlet property="navigationLabel" destination="Ixt-3m-OpA" id="jVT-K8-gcu"/>
@@ -375,6 +377,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYB-bJ-JQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="571.875" y="1.4492753623188408"/>
+        </scene>
+        <!--Acknowledgements View Controller-->
+        <scene sceneID="QhE-GS-oKM">
+            <objects>
+                <viewController id="3nQ-3l-4yt" customClass="AcknowledgementsViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kX5-m2-Ewj">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="1A0-oA-9xu">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Acknowledgements" id="YTa-AO-tok">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="xLL-bQ-t5U">
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="MhG-7M-A8I" id="Vvd-iB-mDN"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd1-7N-e3f">
+                                <rect key="frame" x="107" y="11" width="41" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mvJ-Xs-czD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nfr-1M-ltA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="502" y="1125"/>
         </scene>
     </scenes>
     <resources>

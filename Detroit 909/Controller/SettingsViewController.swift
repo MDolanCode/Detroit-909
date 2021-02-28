@@ -52,8 +52,19 @@ class SettingsViewController: UIViewController {
 extension SettingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: "goToFAQ", sender: self)
+//        performSegue(withIdentifier: "goToFAQ", sender: self)
         
+        var segueIdentifier = settingsBrain.dataArray[indexPath.row]
+        
+        switch segueIdentifier {
+        case "FAQ":
+            segueIdentifier = "goToFAQ"
+        case "Acknowledgements":
+            segueIdentifier = "goToAcknowledgements"
+        default:
+            print("No segue")
+        }
+        performSegue(withIdentifier: segueIdentifier, sender: self)
         print("You tapped me!")
     }
 }
