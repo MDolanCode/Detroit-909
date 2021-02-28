@@ -10,6 +10,10 @@ import UIKit
 
 class AcknowledgementsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var whatIsAcknowledgedLabel: UILabel!
+    @IBOutlet weak var acknowledgementLabel: UILabel!
+    @IBOutlet weak var assetImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

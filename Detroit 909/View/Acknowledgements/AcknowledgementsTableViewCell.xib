@@ -27,6 +27,12 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7R-xT-MUg">
+                        <rect key="frame" x="20" y="55" width="46" height="25"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ryy-4s-J4u">
                         <rect key="frame" x="303" y="10" width="58" height="58"/>
                         <constraints>
@@ -34,12 +40,6 @@
                             <constraint firstAttribute="height" constant="58" id="IgY-9Q-GUR"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7R-xT-MUg">
-                        <rect key="frame" x="20" y="55" width="46" height="25"/>
-                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Sv1-oF-8cP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="4R9-Ex-0v0"/>
@@ -53,7 +53,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="65.94202898550725" y="67.96875"/>
+            <connections>
+                <outlet property="acknowledgementLabel" destination="B7R-xT-MUg" id="Pi4-At-gNc"/>
+                <outlet property="assetImageView" destination="Ryy-4s-J4u" id="Aup-Fx-DnQ"/>
+                <outlet property="whatIsAcknowledgedLabel" destination="Sv1-oF-8cP" id="gek-CE-WIr"/>
+            </connections>
+            <point key="canvasLocation" x="-346" y="63"/>
         </tableViewCell>
     </objects>
 </document>
