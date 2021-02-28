@@ -18,22 +18,39 @@ class AcknowledgementsViewController: UIViewController {
         
         let nib = UINib(nibName: "AcknowledgementsTableViewCell", bundle: nil)
                tableView.register(nib, forCellReuseIdentifier: "AcknowledgementsTableViewCell")
-
-        // Do any additional setup after loading the view.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     @IBAction func backBarButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+//MARK: - UITableViewDelegate
+
+extension AcknowledgementsViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+}
+
+//MARK: - UITableViewDataSource
+
+extension AcknowledgementsViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AcknowledgementsTableViewCell", for: indexPath) as! AcknowledgementsTableViewCell
+        
+        cell.backgroundColor = .black
+        
+        return cell
     }
-    */
-
+    
+    
 }
