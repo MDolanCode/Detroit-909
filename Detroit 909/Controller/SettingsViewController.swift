@@ -52,7 +52,6 @@ class SettingsViewController: UIViewController {
 extension SettingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-//        performSegue(withIdentifier: "goToFAQ", sender: self)
         
         var segueIdentifier = settingsBrain.dataArray[indexPath.row]
         
