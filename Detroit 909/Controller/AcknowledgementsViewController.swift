@@ -13,6 +13,9 @@ class AcknowledgementsViewController: UIViewController {
     @IBOutlet weak var navigationLabel: UILabel!
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
+    
+    let acknowledgementsBrain = AcknowledgementsBrain()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,12 +44,26 @@ extension AcknowledgementsViewController: UITableViewDelegate {
 
 extension AcknowledgementsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return acknowledgementsBrain.acknowledgementsArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AcknowledgementsTableViewCell", for: indexPath) as! AcknowledgementsTableViewCell
         
+        cell.whatIsAcknowledgedLabel.text = acknowledgementsBrain.acknowledgementsArray[indexPath.row].whatIsAcknowledged
+        cell.acknowledgementLabel.text = acknowledgementsBrain.acknowledgementsArray[indexPath.row].acknowledgement
+        cell.assetImageView.self = acknowledgementsBrain.acknowledgementsArray[indexPath.row].asset
+        
+        cell.whatIsAcknowledgedLabel.textColor = .white
+        cell.acknowledgementLabel.textColor = .white
         cell.backgroundColor = .black
         
         return cell
