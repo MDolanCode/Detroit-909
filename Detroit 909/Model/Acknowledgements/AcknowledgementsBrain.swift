@@ -1,0 +1,14 @@
+//
+//  AcknowledgementsBrain.swift
+//  Detroit 909
+//
+//  Created by Matt Dolan External macOS on 2021-02-28.
+//  Copyright © 2021 Matt Dolan External macOS. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+struct AcknowledgementsBrain {
+    let acknowledgementsArray = [Acknowledgements(whatIsAcknowledged: "Icon 8", acknowledgement: "\(URL(string: "https://mdolan.com")!)", asset: UIImageView(image: #imageLiteral(resourceName: "icons8-settings-64-2")))]
+}
