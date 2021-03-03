@@ -12,12 +12,14 @@ class SettingsViewController: UIViewController {
 
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var navigationLabel: UILabel!
     
     let settingsBrain = SettingsBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationLabel.text = "Detroit 909"
+        navigationLabel.textColor = .white
         backBarButtonItem.tintColor = .white
         
         let nib = UINib(nibName: "SettingsTableViewCell", bundle: nil)
@@ -26,20 +28,20 @@ class SettingsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.backgroundColor = .darkGray
+        tableView.backgroundColor = .black
         
 //MARK:- TableView Footer
         
-        let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 30))
-        footer.backgroundColor = .darkGray
-        
-        tableView.tableFooterView = footer
-        
-        let label = UILabel(frame: footer.bounds)
-        label.text = "v0.1"
-        label.textColor = .white
-        label.textAlignment = .left
-        footer.addSubview(label)
+//        let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 30))
+//        footer.backgroundColor = .darkGray
+//        
+//        tableView.tableFooterView = footer
+//        
+//        let label = UILabel(frame: footer.bounds)
+//        label.text = "v0.1"
+//        label.textColor = .white
+//        label.textAlignment = .left
+//        footer.addSubview(label)
     }
 
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
