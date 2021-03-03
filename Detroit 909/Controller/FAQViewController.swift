@@ -28,14 +28,14 @@ class FAQViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.backgroundColor = .darkGray
+        tableView.backgroundColor = .black
         
 //MARK: - TableView Footer
         
-        let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 30))
-        footer.backgroundColor = .darkGray
-        
-        tableView.tableFooterView = footer
+//        let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 30))
+//        footer.backgroundColor = .darkGray
+//
+//        tableView.tableFooterView = footer
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
