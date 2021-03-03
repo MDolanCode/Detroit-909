@@ -18,12 +18,18 @@ class AcknowledgementsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationLabel.text = "Settings"
+        navigationLabel.textColor = .white
+        backBarButtonItem.tintColor = .white
+
         
         let nib = UINib(nibName: "AcknowledgementsTableViewCell", bundle: nil)
                tableView.register(nib, forCellReuseIdentifier: "AcknowledgementsTableViewCell")
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.backgroundColor = .black
     }
     
     @IBAction func backBarButton(_ sender: UIBarButtonItem) {
