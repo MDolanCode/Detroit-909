@@ -33,9 +33,12 @@ class Detroit909ViewController: UIViewController {
     }
     
     @IBAction func drumMachineButtonPressed(_ sender: DrumPadButton) {
+        
         drumPadSound.playSound(drumSound: sender.currentTitle!)
+        
         sender.alpha = 0.8
         sender.backgroundColor = .gray
+        
         // Timer for colour change and opacity.
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             // Bring's sender's opacity back up to fully opaque.
