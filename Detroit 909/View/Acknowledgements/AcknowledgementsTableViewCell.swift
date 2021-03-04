@@ -13,6 +13,7 @@ class AcknowledgementsTableViewCell: UITableViewCell {
     @IBOutlet weak var whatIsAcknowledgedLabel: UILabel!
     @IBOutlet weak var acknowledgementLabel: UILabel!
     @IBOutlet weak var assetImageView: UIImageView!
+    @IBOutlet weak var linkButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,4 +26,7 @@ class AcknowledgementsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func linkButtonPressed(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string: "https://mdolancode.com")!, options: [:], completionHandler: nil)
+    }
 }
