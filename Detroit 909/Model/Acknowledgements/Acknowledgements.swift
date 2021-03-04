@@ -12,11 +12,13 @@ import UIKit
 struct Acknowledgements {
     let whatIsAcknowledged: String
     let acknowledgement: String
-    let asset: UIImageView
+    let urlString: String
+    let image: UIImage
     
-    init(whatIsAcknowledged: String, acknowledgement: String, asset: UIImageView) {
+    init(whatIsAcknowledged: String, acknowledgement: String, urlString: String, image: UIImage) {
         self.whatIsAcknowledged = whatIsAcknowledged
         self.acknowledgement = acknowledgement
-        self.asset = asset
+        self.urlString = urlString
+        self.image = image
     }
 }
