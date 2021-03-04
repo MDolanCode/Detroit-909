@@ -66,8 +66,8 @@ extension AcknowledgementsViewController: UITableViewDataSource {
         
         cell.whatIsAcknowledgedLabel.text = acknowledgementsBrain.acknowledgementsArray[indexPath.row].whatIsAcknowledged
         cell.acknowledgementLabel.text = acknowledgementsBrain.acknowledgementsArray[indexPath.row].acknowledgement
-        cell.assetImageView.self = acknowledgementsBrain.acknowledgementsArray[indexPath.row].asset
-        
+        cell.assetImageView.image = acknowledgementsBrain.acknowledgementsArray[indexPath.row].image
+//        cell.linkButton.text = acknowledgementsBrain.acknowledgementsArray[indexPath.row]
         cell.whatIsAcknowledgedLabel.textColor = .white
         cell.acknowledgementLabel.textColor = .white
         cell.backgroundColor = .black
