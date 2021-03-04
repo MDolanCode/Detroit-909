@@ -10,5 +10,5 @@ import Foundation
 import UIKit
 
 struct AcknowledgementsBrain {
-    let acknowledgementsArray = [Acknowledgements(whatIsAcknowledged: "Icon 8", acknowledgement: "\(URL(string: "https://mdolan.com")!)", asset: UIImageView(image: #imageLiteral(resourceName: "icons8-settings-64-2")))]
+    let acknowledgementsArray = [Acknowledgements(whatIsAcknowledged: "Icon 8", acknowledgement: "", urlString: "http://mdolancode.com", image: #imageLiteral(resourceName: "icons8-settings-64-2"))]
 }
