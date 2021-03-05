@@ -60,6 +60,8 @@ extension SettingsViewController: UITableViewDelegate {
         switch segueIdentifier {
         case "FAQ":
             segueIdentifier = "goToFAQ"
+        case "Contact Us":
+            segueIdentifier = "goToContact"
         case "Acknowledgements":
             segueIdentifier = "goToAcknowledgements"
         default:
