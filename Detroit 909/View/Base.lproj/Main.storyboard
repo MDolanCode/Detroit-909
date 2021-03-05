@@ -421,7 +421,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkZ-9w-enm" userLabel="Contact Text Label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkZ-9w-enm" userLabel="Contact Label">
                                 <rect key="frame" x="64" y="44" width="768" height="221"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="221" id="VUU-RC-u8v"/>
@@ -438,6 +438,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="PBIO-Bold" family="PBIO" pointSize="18"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="contactButtonPressed:" destination="u35-gV-FvB" eventType="touchUpInside" id="wLi-HZ-xhY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fun-N4-omK"/>
@@ -456,6 +459,10 @@
                             <constraint firstItem="MZN-wl-U56" firstAttribute="centerX" secondItem="I6o-RS-fFu" secondAttribute="centerX" id="fPv-be-4TC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contactButton" destination="MZN-wl-U56" id="U1r-i8-3px"/>
+                        <outlet property="contactLabel" destination="AkZ-9w-enm" id="gvo-Nh-zUO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9z-Pn-lE1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
