@@ -11,6 +11,7 @@ import MessageUI
 
 class ContactViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var navigationLabel: UILabel!
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var contactLabel: UILabel!
@@ -21,7 +22,7 @@ class ContactViewController: UIViewController, MFMailComposeViewControllerDelega
         navigationLabel.textColor = .white
         backBarButtonItem.tintColor = .white
         
-        view.backgroundColor = .black
+        backgroundView.backgroundColor = .black
     }
     
     @IBAction func backBarButton(_ sender: UIBarButtonItem) {

@@ -415,6 +415,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4W-yS-exG" userLabel="Background View">
+                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fle-c2-1SJ">
                                 <rect key="frame" x="107" y="11" width="41" height="22"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
@@ -455,12 +459,17 @@
                             <constraint firstItem="fun-N4-omK" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fle-c2-1SJ" secondAttribute="trailing" symbolic="YES" id="N5e-4s-XVS"/>
                             <constraint firstItem="AkZ-9w-enm" firstAttribute="top" secondItem="fle-c2-1SJ" secondAttribute="bottom" constant="11" id="PgU-c9-y2O"/>
                             <constraint firstItem="fle-c2-1SJ" firstAttribute="leading" secondItem="fun-N4-omK" secondAttribute="leading" constant="63" id="Qni-JP-0c8"/>
+                            <constraint firstAttribute="bottom" secondItem="D4W-yS-exG" secondAttribute="bottom" id="Z8X-Tf-UFR"/>
                             <constraint firstItem="I6o-RS-fFu" firstAttribute="top" secondItem="fun-N4-omK" secondAttribute="top" id="bly-aZ-peV"/>
+                            <constraint firstAttribute="trailing" secondItem="D4W-yS-exG" secondAttribute="trailing" id="bua-L4-V2f"/>
+                            <constraint firstItem="D4W-yS-exG" firstAttribute="leading" secondItem="8Yl-IF-m7n" secondAttribute="leading" id="fA6-Gg-aOx"/>
                             <constraint firstItem="MZN-wl-U56" firstAttribute="centerX" secondItem="I6o-RS-fFu" secondAttribute="centerX" id="fPv-be-4TC"/>
+                            <constraint firstItem="D4W-yS-exG" firstAttribute="top" secondItem="I6o-RS-fFu" secondAttribute="bottom" id="va3-di-tTj"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backBarButtonItem" destination="hIc-4X-NLg" id="f13-0F-cob"/>
+                        <outlet property="backgroundView" destination="D4W-yS-exG" id="Dve-ll-9WA"/>
                         <outlet property="contactButton" destination="MZN-wl-U56" id="U1r-i8-3px"/>
                         <outlet property="contactLabel" destination="AkZ-9w-enm" id="gvo-Nh-zUO"/>
                         <outlet property="navigationLabel" destination="fle-c2-1SJ" id="DaE-wO-lja"/>
