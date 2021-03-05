@@ -12,22 +12,18 @@ class SettingsViewController: UIViewController {
 
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var navigationLabel: UILabel!
     
     let settingsBrain = SettingsBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationLabel.text = "Detroit 909"
-        navigationLabel.textColor = .white
+        
         backBarButtonItem.tintColor = .white
         
         let nib = UINib(nibName: "SettingsTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "SettingsTableViewCell")
-        
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.backgroundColor = .black
         
 //MARK:- TableView Footer

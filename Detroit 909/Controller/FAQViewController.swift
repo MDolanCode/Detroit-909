@@ -11,23 +11,19 @@ import UIKit
 class FAQViewController: UIViewController {
     
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
-    @IBOutlet weak var navigationLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     let faqBrain = FAQBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationLabel.text = "Settings"
-        navigationLabel.textColor = .white
+        
         backBarButtonItem.tintColor = .white
         
         let nib = UINib(nibName: "FAQTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "FAQTableViewCell")
-        
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.backgroundColor = .black
         
 //MARK: - TableView Footer

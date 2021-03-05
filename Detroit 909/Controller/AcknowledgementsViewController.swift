@@ -9,8 +9,7 @@
 import UIKit
 
 class AcknowledgementsViewController: UIViewController {
-
-    @IBOutlet weak var navigationLabel: UILabel!
+    
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,17 +17,13 @@ class AcknowledgementsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationLabel.text = "Settings"
-        navigationLabel.textColor = .white
+        
         backBarButtonItem.tintColor = .white
-
         
         let nib = UINib(nibName: "AcknowledgementsTableViewCell", bundle: nil)
-               tableView.register(nib, forCellReuseIdentifier: "AcknowledgementsTableViewCell")
-        
+        tableView.register(nib, forCellReuseIdentifier: "AcknowledgementsTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.backgroundColor = .black
     }
     
@@ -67,7 +62,7 @@ extension AcknowledgementsViewController: UITableViewDataSource {
         cell.whatIsAcknowledgedLabel.text = acknowledgementsBrain.acknowledgementsArray[indexPath.row].whatIsAcknowledged
         cell.acknowledgementLabel.text = acknowledgementsBrain.acknowledgementsArray[indexPath.row].acknowledgement
         cell.assetImageView.image = acknowledgementsBrain.acknowledgementsArray[indexPath.row].image
-//        cell.linkButton.text = acknowledgementsBrain.acknowledgementsArray[indexPath.row]
+        //        cell.linkButton.text = acknowledgementsBrain.acknowledgementsArray[indexPath.row]
         cell.whatIsAcknowledgedLabel.textColor = .white
         cell.acknowledgementLabel.textColor = .white
         cell.backgroundColor = .black

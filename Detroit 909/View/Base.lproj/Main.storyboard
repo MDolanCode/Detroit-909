@@ -294,32 +294,21 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBR-V3-0Ei">
-                                <rect key="frame" x="107" y="11" width="41" height="22"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yeb-YQ-Baw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="It8-0h-Xrk" firstAttribute="trailing" secondItem="Vcc-wA-VyI" secondAttribute="trailing" id="2Ti-gx-6wC"/>
                             <constraint firstAttribute="trailing" secondItem="Vcc-wA-VyI" secondAttribute="trailing" id="7li-o5-D0Y"/>
-                            <constraint firstItem="yeb-YQ-Baw" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rBR-V3-0Ei" secondAttribute="trailing" symbolic="YES" id="FWh-cc-qaF"/>
                             <constraint firstItem="Vcc-wA-VyI" firstAttribute="bottom" secondItem="GY2-pQ-ZfK" secondAttribute="bottom" id="Igs-fu-m4s"/>
                             <constraint firstItem="Vcc-wA-VyI" firstAttribute="leading" secondItem="GY2-pQ-ZfK" secondAttribute="leading" id="XGD-yf-ti6"/>
                             <constraint firstItem="It8-0h-Xrk" firstAttribute="top" secondItem="yeb-YQ-Baw" secondAttribute="top" id="YYv-hI-bzv"/>
-                            <constraint firstItem="Vcc-wA-VyI" firstAttribute="top" secondItem="rBR-V3-0Ei" secondAttribute="bottom" constant="11" id="bYV-gk-VLF"/>
-                            <constraint firstItem="rBR-V3-0Ei" firstAttribute="leading" secondItem="yeb-YQ-Baw" secondAttribute="leading" constant="63" id="j5L-Zl-oXA"/>
-                            <constraint firstItem="rBR-V3-0Ei" firstAttribute="top" secondItem="yeb-YQ-Baw" secondAttribute="top" constant="11" id="o8U-N9-Lie"/>
                             <constraint firstItem="It8-0h-Xrk" firstAttribute="leading" secondItem="Vcc-wA-VyI" secondAttribute="leading" id="s8U-Uk-E4V"/>
                             <constraint firstItem="Vcc-wA-VyI" firstAttribute="top" secondItem="It8-0h-Xrk" secondAttribute="bottom" id="zf5-o9-KBr"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backBarButtonItem" destination="d7f-b0-uDQ" id="1ca-LY-xlX"/>
-                        <outlet property="navigationLabel" destination="rBR-V3-0Ei" id="ugc-KH-3Iv"/>
                         <outlet property="tableView" destination="Vcc-wA-VyI" id="YTC-CM-LUq"/>
                         <segue destination="MhG-7M-A8I" kind="showDetail" identifier="goToFAQ" id="UzK-2c-tVS"/>
                         <segue destination="3nQ-3l-4yt" kind="showDetail" identifier="goToAcknowledgements" id="QKz-CH-72r"/>
@@ -358,33 +347,22 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixt-3m-OpA">
-                                <rect key="frame" x="107" y="11" width="41" height="22"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oUL-PS-lHA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="M3c-Df-3EV" firstAttribute="top" secondItem="oUL-PS-lHA" secondAttribute="top" id="1TM-4C-zYS"/>
                             <constraint firstAttribute="trailing" secondItem="EA7-Dc-ah7" secondAttribute="trailing" id="9E7-Ul-jfc"/>
-                            <constraint firstItem="oUL-PS-lHA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ixt-3m-OpA" secondAttribute="trailing" symbolic="YES" id="Mbb-kp-1YV"/>
                             <constraint firstAttribute="bottom" secondItem="EA7-Dc-ah7" secondAttribute="bottom" id="Mir-VD-UPk"/>
-                            <constraint firstItem="EA7-Dc-ah7" firstAttribute="top" secondItem="Ixt-3m-OpA" secondAttribute="bottom" constant="11" id="Xb4-1L-MrV"/>
-                            <constraint firstItem="Ixt-3m-OpA" firstAttribute="leading" secondItem="oUL-PS-lHA" secondAttribute="leading" constant="63" id="a0n-5X-aL0"/>
                             <constraint firstAttribute="trailing" secondItem="M3c-Df-3EV" secondAttribute="trailing" id="epf-nO-UpM"/>
                             <constraint firstItem="EA7-Dc-ah7" firstAttribute="leading" secondItem="zjN-3o-uiF" secondAttribute="leading" id="fOL-Zl-kT9"/>
                             <constraint firstItem="EA7-Dc-ah7" firstAttribute="top" secondItem="M3c-Df-3EV" secondAttribute="bottom" id="m4l-co-qYm"/>
-                            <constraint firstItem="Ixt-3m-OpA" firstAttribute="top" secondItem="oUL-PS-lHA" secondAttribute="top" constant="11" id="uuN-4S-eRn"/>
                             <constraint firstItem="M3c-Df-3EV" firstAttribute="leading" secondItem="zjN-3o-uiF" secondAttribute="leading" id="xUL-Z4-k7b"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hZc-h0-Yn6"/>
                     <connections>
                         <outlet property="backBarButtonItem" destination="IXT-mm-qcH" id="eRa-BS-Udm"/>
-                        <outlet property="navigationLabel" destination="Ixt-3m-OpA" id="jVT-K8-gcu"/>
                         <outlet property="tableView" destination="EA7-Dc-ah7" id="Xz8-II-c2N"/>
                     </connections>
                 </viewController>
@@ -419,12 +397,6 @@
                                 <rect key="frame" x="0.0" y="44" width="896" height="370"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fle-c2-1SJ">
-                                <rect key="frame" x="107" y="11" width="41" height="22"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkZ-9w-enm" userLabel="Contact Label">
                                 <rect key="frame" x="64" y="44" width="768" height="221"/>
                                 <constraints>
@@ -456,9 +428,6 @@
                             <constraint firstItem="AkZ-9w-enm" firstAttribute="top" secondItem="I6o-RS-fFu" secondAttribute="bottom" id="H3E-EJ-WCR"/>
                             <constraint firstAttribute="trailing" secondItem="I6o-RS-fFu" secondAttribute="trailing" id="IYD-LW-RzC"/>
                             <constraint firstItem="AkZ-9w-enm" firstAttribute="trailing" secondItem="8Yl-IF-m7n" secondAttribute="trailingMargin" id="JQJ-ml-Ut1"/>
-                            <constraint firstItem="fun-N4-omK" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fle-c2-1SJ" secondAttribute="trailing" symbolic="YES" id="N5e-4s-XVS"/>
-                            <constraint firstItem="AkZ-9w-enm" firstAttribute="top" secondItem="fle-c2-1SJ" secondAttribute="bottom" constant="11" id="PgU-c9-y2O"/>
-                            <constraint firstItem="fle-c2-1SJ" firstAttribute="leading" secondItem="fun-N4-omK" secondAttribute="leading" constant="63" id="Qni-JP-0c8"/>
                             <constraint firstAttribute="bottom" secondItem="D4W-yS-exG" secondAttribute="bottom" id="Z8X-Tf-UFR"/>
                             <constraint firstItem="I6o-RS-fFu" firstAttribute="top" secondItem="fun-N4-omK" secondAttribute="top" id="bly-aZ-peV"/>
                             <constraint firstAttribute="trailing" secondItem="D4W-yS-exG" secondAttribute="trailing" id="bua-L4-V2f"/>
@@ -472,7 +441,6 @@
                         <outlet property="backgroundView" destination="D4W-yS-exG" id="Dve-ll-9WA"/>
                         <outlet property="contactButton" destination="MZN-wl-U56" id="U1r-i8-3px"/>
                         <outlet property="contactLabel" destination="AkZ-9w-enm" id="gvo-Nh-zUO"/>
-                        <outlet property="navigationLabel" destination="fle-c2-1SJ" id="DaE-wO-lja"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9z-Pn-lE1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -502,12 +470,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd1-7N-e3f">
-                                <rect key="frame" x="107" y="11" width="41" height="22"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iOU-UA-mtQ">
                                 <rect key="frame" x="0.0" y="44" width="896" height="370"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -519,20 +481,15 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="1A0-oA-9xu" secondAttribute="trailing" id="0Wn-c6-xgx"/>
                             <constraint firstAttribute="trailing" secondItem="iOU-UA-mtQ" secondAttribute="trailing" id="8Qz-Q2-yxZ"/>
-                            <constraint firstItem="iOU-UA-mtQ" firstAttribute="top" secondItem="hd1-7N-e3f" secondAttribute="bottom" constant="11" id="92G-hT-0S7"/>
-                            <constraint firstItem="hd1-7N-e3f" firstAttribute="top" secondItem="mvJ-Xs-czD" secondAttribute="top" constant="11" id="Bih-j6-8ji"/>
                             <constraint firstAttribute="bottom" secondItem="iOU-UA-mtQ" secondAttribute="bottom" id="LZS-vC-yRR"/>
                             <constraint firstItem="1A0-oA-9xu" firstAttribute="leading" secondItem="kX5-m2-Ewj" secondAttribute="leading" id="PUO-Eh-umH"/>
                             <constraint firstItem="1A0-oA-9xu" firstAttribute="top" secondItem="mvJ-Xs-czD" secondAttribute="top" id="PUR-2B-1si"/>
                             <constraint firstItem="iOU-UA-mtQ" firstAttribute="leading" secondItem="kX5-m2-Ewj" secondAttribute="leading" id="gHJ-50-ned"/>
-                            <constraint firstItem="mvJ-Xs-czD" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hd1-7N-e3f" secondAttribute="trailing" symbolic="YES" id="h29-sO-hnO"/>
-                            <constraint firstItem="hd1-7N-e3f" firstAttribute="leading" secondItem="mvJ-Xs-czD" secondAttribute="leading" constant="63" id="jJS-gT-74E"/>
                             <constraint firstItem="iOU-UA-mtQ" firstAttribute="top" secondItem="1A0-oA-9xu" secondAttribute="bottom" id="ovc-7g-lMp"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backBarButtonItem" destination="xLL-bQ-t5U" id="Edn-6l-f12"/>
-                        <outlet property="navigationLabel" destination="hd1-7N-e3f" id="ER5-nZ-Wfs"/>
                         <outlet property="tableView" destination="iOU-UA-mtQ" id="43g-l9-INS"/>
                     </connections>
                 </viewController>

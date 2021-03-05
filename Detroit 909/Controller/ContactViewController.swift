@@ -12,16 +12,13 @@ import MessageUI
 class ContactViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     @IBOutlet weak var backgroundView: UIView!
-    @IBOutlet weak var navigationLabel: UILabel!
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var contactLabel: UILabel!
     @IBOutlet weak var contactButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationLabel.text = "Settings"
-        navigationLabel.textColor = .white
-        backBarButtonItem.tintColor = .white
         
+        backBarButtonItem.tintColor = .white
         backgroundView.backgroundColor = .black
     }
     
