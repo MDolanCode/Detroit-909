@@ -69,6 +69,4 @@ extension AcknowledgementsViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
 }
