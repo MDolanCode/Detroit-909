@@ -323,6 +323,7 @@
                         <outlet property="tableView" destination="Vcc-wA-VyI" id="YTC-CM-LUq"/>
                         <segue destination="MhG-7M-A8I" kind="showDetail" identifier="goToFAQ" id="UzK-2c-tVS"/>
                         <segue destination="3nQ-3l-4yt" kind="showDetail" identifier="goToAcknowledgements" id="QKz-CH-72r"/>
+                        <segue destination="u35-gV-FvB" kind="showDetail" identifier="goToContact" id="o6M-dw-Kd2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qo2-Jy-fy6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -391,6 +392,75 @@
             </objects>
             <point key="canvasLocation" x="571.875" y="1.4492753623188408"/>
         </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="uDE-ya-Wm9">
+            <objects>
+                <viewController id="u35-gV-FvB" customClass="ContactViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Yl-IF-m7n">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="I6o-RS-fFu">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Contact" id="3K3-5T-5L2">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="hIc-4X-NLg">
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="MhG-7M-A8I" id="5Cs-LJ-ZZW"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fle-c2-1SJ">
+                                <rect key="frame" x="107" y="11" width="41" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkZ-9w-enm" userLabel="Contact Text Label">
+                                <rect key="frame" x="64" y="44" width="768" height="221"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="221" id="VUU-RC-u8v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-wl-U56">
+                                <rect key="frame" x="348" y="282" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="LBD-Fl-sQq"/>
+                                    <constraint firstAttribute="height" constant="50" id="fVD-Mb-MVn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PBIO-Bold" family="PBIO" pointSize="18"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fun-N4-omK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MZN-wl-U56" firstAttribute="top" secondItem="AkZ-9w-enm" secondAttribute="bottom" constant="17" id="0uo-q0-EUe"/>
+                            <constraint firstItem="AkZ-9w-enm" firstAttribute="leading" secondItem="fun-N4-omK" secondAttribute="leading" constant="20" id="8KT-2A-9uV"/>
+                            <constraint firstItem="I6o-RS-fFu" firstAttribute="leading" secondItem="8Yl-IF-m7n" secondAttribute="leading" id="GMV-fx-rUB"/>
+                            <constraint firstItem="AkZ-9w-enm" firstAttribute="top" secondItem="I6o-RS-fFu" secondAttribute="bottom" id="H3E-EJ-WCR"/>
+                            <constraint firstAttribute="trailing" secondItem="I6o-RS-fFu" secondAttribute="trailing" id="IYD-LW-RzC"/>
+                            <constraint firstItem="AkZ-9w-enm" firstAttribute="trailing" secondItem="8Yl-IF-m7n" secondAttribute="trailingMargin" id="JQJ-ml-Ut1"/>
+                            <constraint firstItem="fun-N4-omK" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fle-c2-1SJ" secondAttribute="trailing" symbolic="YES" id="N5e-4s-XVS"/>
+                            <constraint firstItem="AkZ-9w-enm" firstAttribute="top" secondItem="fle-c2-1SJ" secondAttribute="bottom" constant="11" id="PgU-c9-y2O"/>
+                            <constraint firstItem="fle-c2-1SJ" firstAttribute="leading" secondItem="fun-N4-omK" secondAttribute="leading" constant="63" id="Qni-JP-0c8"/>
+                            <constraint firstItem="I6o-RS-fFu" firstAttribute="top" secondItem="fun-N4-omK" secondAttribute="top" id="bly-aZ-peV"/>
+                            <constraint firstItem="MZN-wl-U56" firstAttribute="centerX" secondItem="I6o-RS-fFu" secondAttribute="centerX" id="fPv-be-4TC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9z-Pn-lE1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564.50892857142856" y="769.56521739130437"/>
+        </scene>
         <!--Acknowledgements View Controller-->
         <scene sceneID="QhE-GS-oKM">
             <objects>
@@ -450,7 +520,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfr-1M-ltA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="511.60714285714283" y="1071.0144927536232"/>
+            <point key="canvasLocation" x="620" y="1742"/>
         </scene>
     </scenes>
     <resources>
