@@ -409,7 +409,7 @@
                                     <navigationItem title="Contact" id="3K3-5T-5L2">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="hIc-4X-NLg">
                                             <connections>
-                                                <action selector="backButtonPressed:" destination="MhG-7M-A8I" id="5Cs-LJ-ZZW"/>
+                                                <action selector="backBarButton:" destination="u35-gV-FvB" id="ZaU-0k-BeL"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -460,8 +460,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backBarButtonItem" destination="hIc-4X-NLg" id="f13-0F-cob"/>
                         <outlet property="contactButton" destination="MZN-wl-U56" id="U1r-i8-3px"/>
                         <outlet property="contactLabel" destination="AkZ-9w-enm" id="gvo-Nh-zUO"/>
+                        <outlet property="navigationLabel" destination="fle-c2-1SJ" id="DaE-wO-lja"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9z-Pn-lE1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -10,15 +10,23 @@ import UIKit
 import MessageUI
 
 class ContactViewController: UIViewController, MFMailComposeViewControllerDelegate {
-
+    
+    @IBOutlet weak var navigationLabel: UILabel!
+    @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var contactLabel: UILabel!
     @IBOutlet weak var contactButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        navigationLabel.text = "Settings"
+        navigationLabel.textColor = .white
+        backBarButtonItem.tintColor = .white
+        
+        view.backgroundColor = .black
     }
     
+    @IBAction func backBarButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func contactButtonPressed(_ sender: UIButton) {
         sendEmail()
@@ -40,6 +48,4 @@ class ContactViewController: UIViewController, MFMailComposeViewControllerDelega
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
     }
-    
-  
 }
