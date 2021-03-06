@@ -159,9 +159,12 @@
 			children = (
 				C9516F5E259E765E0060C4B8 /* AppDelegate.swift */,
 				C9516F60259E765E0060C4B8 /* SceneDelegate.swift */,
-				C9E7931025CB756E00CA80A2 /* Model */,
-				C9E7930F25CB755C00CA80A2 /* View */,
-				C9E7931125CB757A00CA80A2 /* Controller */,
+				C9E7930F25CB755C00CA80A2 /* Main View */,
+				C9FCA0A625F3E19000BC063B /* Detroit 909 */,
+				C9FCA0AA25F3E1D200BC063B /* Settings */,
+				C9FCA0AE25F3E1FF00BC063B /* FAQ */,
+				C9FCA0CE25F3E3C800BC063B /* Contact */,
+				C9FCA0B925F3E24A00BC063B /* Acknowledgements */,
 				C9516F67259E766B0060C4B8 /* Assets.xcassets */,
 				C9516F69259E766B0060C4B8 /* LaunchScreen.storyboard */,
 				C9516F6C259E766B0060C4B8 /* Info.plist */,
@@ -189,31 +192,31 @@
 			path = "Detroit 909UITests";
 			sourceTree = "<group>";
 		};
-		C95BBAA025EBF3A900F2665D /* Acknowledgements */ = {
+		C95BBAA025EBF3A900F2665D /* View */ = {
 			isa = PBXGroup;
 			children = (
 				C95BBAA125EBF49000F2665D /* AcknowledgementsTableViewCell.swift */,
 				C95BBAA225EBF49000F2665D /* AcknowledgementsTableViewCell.xib */,
 			);
-			path = Acknowledgements;
+			path = View;
 			sourceTree = "<group>";
 		};
-		C95BBAA625EC154C00F2665D /* FAQ */ = {
+		C95BBAA625EC154C00F2665D /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				C98243C225E051DC009F12F6 /* FAQ.swift */,
 				C98243C425E052CA009F12F6 /* FAQBrain.swift */,
 			);
-			path = FAQ;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		C95BBAA725EC1ACC00F2665D /* Acknowledgements */ = {
+		C95BBAA725EC1ACC00F2665D /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				C95BBAAA25EC1B3600F2665D /* Acknowledgements.swift */,
 				C95BBAA825EC1B1A00F2665D /* AcknowledgementsBrain.swift */,
 			);
-			path = Acknowledgements;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C97C832125E17080006D1AAF /* Detroit 909 Sounds */ = {
@@ -234,22 +237,22 @@
 			path = "Detroit 909 Sounds";
 			sourceTree = "<group>";
 		};
-		C98243BB25E028E3009F12F6 /* FAQ */ = {
+		C98243BB25E028E3009F12F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				C98243BE25E02B60009F12F6 /* FAQTableViewCell.swift */,
 				C98243BF25E02B60009F12F6 /* FAQTableViewCell.xib */,
 			);
-			path = FAQ;
+			path = View;
 			sourceTree = "<group>";
 		};
-		C98243BC25E02AF2009F12F6 /* Settings */ = {
+		C98243BC25E02AF2009F12F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				C956FF6025DB3D9D001E273A /* SettingsTableViewCell.swift */,
 				C956FF6125DB3D9D001E273A /* SettingsTableViewCell.xib */,
 			);
-			path = Settings;
+			path = View;
 			sourceTree = "<group>";
 		};
 		C98243BD25E02B0A009F12F6 /* Buttons */ = {
@@ -268,39 +271,116 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		C9E7930F25CB755C00CA80A2 /* View */ = {
+		C9E7930F25CB755C00CA80A2 /* Main View */ = {
 			isa = PBXGroup;
 			children = (
 				C9516F64259E765E0060C4B8 /* Main.storyboard */,
 				C98243BD25E02B0A009F12F6 /* Buttons */,
-				C98243BC25E02AF2009F12F6 /* Settings */,
-				C98243BB25E028E3009F12F6 /* FAQ */,
-				C95BBAA025EBF3A900F2665D /* Acknowledgements */,
 			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C9E7931025CB756E00CA80A2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */,
-				C93CA1AA25DB658C00EF2B07 /* SettingsBrain.swift */,
-				C95BBAA625EC154C00F2665D /* FAQ */,
-				C95BBAA725EC1ACC00F2665D /* Acknowledgements */,
-			);
-			path = Model;
+			path = "Main View";
 			sourceTree = "<group>";
 		};
 		C9E7931125CB757A00CA80A2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C9516F62259E765E0060C4B8 /* Detroit909ViewController.swift */,
-				C987FA6D25D707BF004B70DF /* SettingsViewController.swift */,
-				C98243C825E05C81009F12F6 /* FAQViewController.swift */,
-				C95BBA9E25EBED3300F2665D /* AcknowledgementsViewController.swift */,
 				C957E8F725F1ABD1009288A8 /* ContactViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9FCA0A625F3E19000BC063B /* Detroit 909 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FCA0C725F3E31100BC063B /* View */,
+				C9FCA0C325F3E2F100BC063B /* Model */,
+			);
+			path = "Detroit 909";
+			sourceTree = "<group>";
+		};
+		C9FCA0AA25F3E1D200BC063B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C9FCA0B525F3E22D00BC063B /* Model */,
+				C98243BC25E02AF2009F12F6 /* View */,
+				C9FCA0C825F3E34800BC063B /* Controller */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C9FCA0AE25F3E1FF00BC063B /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				C95BBAA625EC154C00F2665D /* Model */,
+				C98243BB25E028E3009F12F6 /* View */,
+				C9FCA0CD25F3E3A500BC063B /* Controller */,
+			);
+			path = FAQ;
+			sourceTree = "<group>";
+		};
+		C9FCA0B525F3E22D00BC063B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C93CA1AA25DB658C00EF2B07 /* SettingsBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9FCA0B925F3E24A00BC063B /* Acknowledgements */ = {
+			isa = PBXGroup;
+			children = (
+				C95BBAA725EC1ACC00F2665D /* Model */,
+				C95BBAA025EBF3A900F2665D /* View */,
+				C9FCA0C925F3E37C00BC063B /* Controller */,
+			);
+			path = Acknowledgements;
+			sourceTree = "<group>";
+		};
+		C9FCA0C325F3E2F100BC063B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9FCA0C725F3E31100BC063B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9516F62259E765E0060C4B8 /* Detroit909ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9FCA0C825F3E34800BC063B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C987FA6D25D707BF004B70DF /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9FCA0C925F3E37C00BC063B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C95BBA9E25EBED3300F2665D /* AcknowledgementsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9FCA0CD25F3E3A500BC063B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C98243C825E05C81009F12F6 /* FAQViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9FCA0CE25F3E3C800BC063B /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				C9E7931125CB757A00CA80A2 /* Controller */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
