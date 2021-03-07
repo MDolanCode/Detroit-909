@@ -61,6 +61,9 @@ class Detroit909ViewController: UIViewController {
         rideButton.setTitle("RIDE", for: .normal)
     }
     
+    @IBAction func sequencerButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToSequencer", sender: self)
+    }
     @IBAction func settingsButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "goToSettings", sender: self)
     }
