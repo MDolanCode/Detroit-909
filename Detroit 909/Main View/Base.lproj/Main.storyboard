@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -14,6 +15,148 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Sequencer View Controller-->
+        <scene sceneID="EUr-bg-pdp">
+            <objects>
+                <viewController id="wkz-Ua-DRR" customClass="SequencerViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2oy-dm-Tre">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzr-qa-oh6">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sequencer" id="ehm-Se-aCG">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="lu2-Ou-S2C">
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="ifY-2Q-uJ1" id="d9u-a6-9Og"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Uat-Nj-GUJ">
+                                <rect key="frame" x="64" y="64" width="768" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <connections>
+                                    <action selector="drumSegmentedControllSelected:" destination="wkz-Ua-DRR" eventType="valueChanged" id="9Wc-ey-u2a"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pxn-UA-pgS">
+                                <rect key="frame" x="62" y="343" width="772" height="31"/>
+                                <connections>
+                                    <action selector="bpmSliderValue:" destination="wkz-Ua-DRR" eventType="valueChanged" id="Rmk-so-EeI"/>
+                                </connections>
+                            </slider>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sOc-ow-DJy">
+                                <rect key="frame" x="64" y="115" width="768" height="178"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B7j-N6-Qxg">
+                                    <size key="itemSize" width="74" height="65"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Zay-KE-7Zz">
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uJy-8C-aA0">
+                                            <rect key="frame" x="0.0" y="0.0" width="74" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="74" height="65"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="3PD-ei-y9D">
+                                <rect key="frame" x="604" y="302" width="228" height="29"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PxO-4Y-sCa">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="29"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="startButtonPressed:" destination="wkz-Ua-DRR" eventType="touchUpInside" id="ToU-4z-7b0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaJ-am-VUD">
+                                        <rect key="frame" x="91" y="0.0" width="46" height="29"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="stopButtonPressed:" destination="wkz-Ua-DRR" eventType="touchUpInside" id="Knc-Ll-zDi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guV-x7-JuW">
+                                        <rect key="frame" x="182" y="0.0" width="46" height="29"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="resetButtonPressed:" destination="wkz-Ua-DRR" eventType="touchUpInside" id="rYx-i7-IMK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1r3-UB-Mxo">
+                                <rect key="frame" x="64" y="306" width="41.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="99m-YZ-3ve"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pxn-UA-pgS" firstAttribute="top" secondItem="1r3-UB-Mxo" secondAttribute="bottom" constant="16" id="0IU-hS-mav"/>
+                            <constraint firstItem="1r3-UB-Mxo" firstAttribute="leading" secondItem="99m-YZ-3ve" secondAttribute="leading" constant="20" id="3tB-u3-IND"/>
+                            <constraint firstItem="Uat-Nj-GUJ" firstAttribute="top" secondItem="dzr-qa-oh6" secondAttribute="bottom" constant="20" id="45U-bJ-gER"/>
+                            <constraint firstItem="sOc-ow-DJy" firstAttribute="top" secondItem="Uat-Nj-GUJ" secondAttribute="bottom" constant="20" id="CFl-8g-Q8c"/>
+                            <constraint firstItem="99m-YZ-3ve" firstAttribute="trailing" secondItem="3PD-ei-y9D" secondAttribute="trailing" constant="20" id="Coq-6W-hgp"/>
+                            <constraint firstItem="3PD-ei-y9D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1r3-UB-Mxo" secondAttribute="trailing" constant="8" symbolic="YES" id="Fll-4j-rP4"/>
+                            <constraint firstItem="pxn-UA-pgS" firstAttribute="leading" secondItem="99m-YZ-3ve" secondAttribute="leading" constant="20" id="J1u-ML-Ahz"/>
+                            <constraint firstItem="sOc-ow-DJy" firstAttribute="leading" secondItem="99m-YZ-3ve" secondAttribute="leading" constant="20" id="JQj-Rl-U71"/>
+                            <constraint firstItem="99m-YZ-3ve" firstAttribute="trailing" secondItem="Uat-Nj-GUJ" secondAttribute="trailing" constant="20" id="Ozp-Wk-DU2"/>
+                            <constraint firstItem="pxn-UA-pgS" firstAttribute="top" secondItem="3PD-ei-y9D" secondAttribute="bottom" constant="12" id="S3y-NN-7Qr"/>
+                            <constraint firstItem="dzr-qa-oh6" firstAttribute="leading" secondItem="2oy-dm-Tre" secondAttribute="leading" id="YLl-nN-dbI"/>
+                            <constraint firstItem="pxn-UA-pgS" firstAttribute="top" secondItem="sOc-ow-DJy" secondAttribute="bottom" constant="50" id="anC-nY-ICo"/>
+                            <constraint firstItem="99m-YZ-3ve" firstAttribute="bottom" secondItem="pxn-UA-pgS" secondAttribute="bottom" constant="20" id="eLn-Sx-Bvr"/>
+                            <constraint firstItem="1r3-UB-Mxo" firstAttribute="top" secondItem="sOc-ow-DJy" secondAttribute="bottom" constant="13" id="euE-u3-RY4"/>
+                            <constraint firstItem="99m-YZ-3ve" firstAttribute="trailing" secondItem="pxn-UA-pgS" secondAttribute="trailing" constant="20" id="fOf-i4-tmI"/>
+                            <constraint firstAttribute="trailing" secondItem="dzr-qa-oh6" secondAttribute="trailing" id="fV1-c1-zz9"/>
+                            <constraint firstItem="dzr-qa-oh6" firstAttribute="top" secondItem="99m-YZ-3ve" secondAttribute="top" id="fh7-eW-upo"/>
+                            <constraint firstItem="99m-YZ-3ve" firstAttribute="trailing" secondItem="sOc-ow-DJy" secondAttribute="trailing" constant="20" id="j2q-Ry-1KB"/>
+                            <constraint firstItem="Uat-Nj-GUJ" firstAttribute="leading" secondItem="99m-YZ-3ve" secondAttribute="leading" constant="20" id="kY3-te-H3h"/>
+                            <constraint firstItem="1r3-UB-Mxo" firstAttribute="centerY" secondItem="3PD-ei-y9D" secondAttribute="centerY" id="x95-cl-Mhs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButtonBarItem" destination="lu2-Ou-S2C" id="CJC-hr-YD2"/>
+                        <outlet property="bpmLabel" destination="1r3-UB-Mxo" id="v6s-MA-Q9D"/>
+                        <outlet property="bpmSlider" destination="pxn-UA-pgS" id="9Lr-P6-G16"/>
+                        <outlet property="drumCollectionView" destination="sOc-ow-DJy" id="iT6-L7-e42"/>
+                        <outlet property="drumSegmentedControl" destination="Uat-Nj-GUJ" id="j78-gh-q8u"/>
+                        <outlet property="resetButton" destination="guV-x7-JuW" id="w1D-EI-A4l"/>
+                        <outlet property="startButton" destination="PxO-4Y-sCa" id="7iC-Qa-Bka"/>
+                        <outlet property="stopButton" destination="FaJ-am-VUD" id="O3P-cj-Bkq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ciM-xK-pkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1066" y="-630"/>
+        </scene>
         <!--Detroit909 View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -41,6 +184,13 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ah1-JS-tUZ" userLabel="Sequencer Button">
+                                                        <rect key="frame" x="678" y="49" width="46" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="sequencerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RC4-1A-0Rf"/>
+                                                        </connections>
+                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hue-Ex-wvc" userLabel="Settings Button">
                                                         <rect key="frame" x="744" y="32" width="64" height="64"/>
                                                         <state key="normal" image="icons8-settings-64-2"/>
@@ -51,9 +201,11 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="hue-Ex-wvc" firstAttribute="centerY" secondItem="8UQ-RY-dJj" secondAttribute="centerY" id="Au3-g1-2SH"/>
+                                                    <constraint firstItem="hue-Ex-wvc" firstAttribute="leading" secondItem="ah1-JS-tUZ" secondAttribute="trailing" constant="20" id="FVN-l1-kHQ"/>
                                                     <constraint firstItem="hue-Ex-wvc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RgV-ja-IzS" secondAttribute="trailing" constant="8" symbolic="YES" id="FaS-Jd-ksZ"/>
                                                     <constraint firstAttribute="trailing" secondItem="hue-Ex-wvc" secondAttribute="trailing" id="cio-HX-TWx"/>
                                                     <constraint firstItem="RgV-ja-IzS" firstAttribute="top" secondItem="8UQ-RY-dJj" secondAttribute="top" id="eNU-KS-n9o"/>
+                                                    <constraint firstItem="ah1-JS-tUZ" firstAttribute="centerY" secondItem="8UQ-RY-dJj" secondAttribute="centerY" id="js9-4L-BKK"/>
                                                     <constraint firstItem="RgV-ja-IzS" firstAttribute="leading" secondItem="8UQ-RY-dJj" secondAttribute="leading" id="vWm-oN-oUT"/>
                                                     <constraint firstAttribute="bottom" secondItem="RgV-ja-IzS" secondAttribute="bottom" id="zc9-IC-jOH"/>
                                                 </constraints>
@@ -260,6 +412,7 @@
                         <outlet property="rimButton" destination="eni-L9-piI" id="3V7-4m-gqH"/>
                         <outlet property="snareDrumButton" destination="am0-zx-8cA" id="E9P-9X-fmj"/>
                         <segue destination="ifY-2Q-uJ1" kind="presentation" identifier="goToSettings" id="1kJ-Xy-AQj"/>
+                        <segue destination="wkz-Ua-DRR" kind="presentation" identifier="goToSequencer" id="8Ej-iy-bcI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
