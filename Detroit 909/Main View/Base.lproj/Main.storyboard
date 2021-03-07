@@ -146,9 +146,9 @@
                         <outlet property="backButtonBarItem" destination="lu2-Ou-S2C" id="CJC-hr-YD2"/>
                         <outlet property="bpmLabel" destination="1r3-UB-Mxo" id="v6s-MA-Q9D"/>
                         <outlet property="bpmSlider" destination="pxn-UA-pgS" id="9Lr-P6-G16"/>
-                        <outlet property="drumCollectionView" destination="sOc-ow-DJy" id="iT6-L7-e42"/>
                         <outlet property="drumSegmentedControl" destination="Uat-Nj-GUJ" id="j78-gh-q8u"/>
                         <outlet property="resetButton" destination="guV-x7-JuW" id="w1D-EI-A4l"/>
+                        <outlet property="sequencerCollectionView" destination="sOc-ow-DJy" id="iT6-L7-e42"/>
                         <outlet property="startButton" destination="PxO-4Y-sCa" id="7iC-Qa-Bka"/>
                         <outlet property="stopButton" destination="FaJ-am-VUD" id="O3P-cj-Bkq"/>
                     </connections>
