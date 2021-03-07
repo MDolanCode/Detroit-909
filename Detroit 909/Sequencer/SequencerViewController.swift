@@ -26,7 +26,18 @@ class SequencerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        drumSegmentedControl.setTitle("Kick", forSegmentAt: 0)
+        drumSegmentedControl.setTitle("Snare", forSegmentAt: 1)
+        drumSegmentedControl.setTitle("LTom", forSegmentAt: 2)
+        drumSegmentedControl.setTitle("MTom", forSegmentAt: 3)
+        drumSegmentedControl.setTitle("HTom", forSegmentAt: 4)
+        drumSegmentedControl.setTitle("Rim", forSegmentAt: 5)
+        drumSegmentedControl.setTitle("Clap", forSegmentAt: 6)
+        drumSegmentedControl.setTitle("CHH", forSegmentAt: 7)
+        drumSegmentedControl.setTitle("OHH", forSegmentAt: 8)
+        drumSegmentedControl.setTitle("Crash", forSegmentAt: 9)
+        drumSegmentedControl.setTitle("Ride", forSegmentAt: 10)
         // Do any additional setup after loading the view.
     }
     
