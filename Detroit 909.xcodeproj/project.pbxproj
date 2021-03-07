@@ -44,6 +44,7 @@
 		C98243C925E05C81009F12F6 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98243C825E05C81009F12F6 /* FAQViewController.swift */; };
 		C98243CC25E15E1B009F12F6 /* pbio-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C98243CB25E15E1B009F12F6 /* pbio-bold.ttf */; };
 		C987FA6E25D707BF004B70DF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C987FA6D25D707BF004B70DF /* SettingsViewController.swift */; };
+		C9B47BFB25F5380000A2EAD9 /* SequencerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B47BFA25F5380000A2EAD9 /* SequencerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		C98243C825E05C81009F12F6 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		C98243CB25E15E1B009F12F6 /* pbio-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pbio-bold.ttf"; sourceTree = "<group>"; };
 		C987FA6D25D707BF004B70DF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C9B47BFA25F5380000A2EAD9 /* SequencerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				C9516F60259E765E0060C4B8 /* SceneDelegate.swift */,
 				C9E7930F25CB755C00CA80A2 /* Main View */,
 				C9FCA0A625F3E19000BC063B /* Detroit 909 */,
+				C95B876725F53135009F2010 /* Sequencer */,
 				C9FCA0AA25F3E1D200BC063B /* Settings */,
 				C9FCA0AE25F3E1FF00BC063B /* FAQ */,
 				C9FCA0CE25F3E3C800BC063B /* Contact */,
@@ -190,6 +193,14 @@
 				C9516F82259E766C0060C4B8 /* Info.plist */,
 			);
 			path = "Detroit 909UITests";
+			sourceTree = "<group>";
+		};
+		C95B876725F53135009F2010 /* Sequencer */ = {
+			isa = PBXGroup;
+			children = (
+				C9B47BFA25F5380000A2EAD9 /* SequencerViewController.swift */,
+			);
+			path = Sequencer;
 			sourceTree = "<group>";
 		};
 		C95BBAA025EBF3A900F2665D /* View */ = {
@@ -543,6 +554,7 @@
 				C98243C925E05C81009F12F6 /* FAQViewController.swift in Sources */,
 				C98243C325E051DC009F12F6 /* FAQ.swift in Sources */,
 				C95BBAAB25EC1B3600F2665D /* Acknowledgements.swift in Sources */,
+				C9B47BFB25F5380000A2EAD9 /* SequencerViewController.swift in Sources */,
 				C95BBA9F25EBED3300F2665D /* AcknowledgementsViewController.swift in Sources */,
 				C987FA6E25D707BF004B70DF /* SettingsViewController.swift in Sources */,
 				C95BBAA925EC1B1A00F2665D /* AcknowledgementsBrain.swift in Sources */,
