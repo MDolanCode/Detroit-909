@@ -20,6 +20,8 @@ class ContactViewController: UIViewController, MFMailComposeViewControllerDelega
         
         backBarButtonItem.tintColor = .white
         backgroundView.backgroundColor = .black
+        
+        contactLabel.text = "Please feel free to contact me with any issues you may be experiencing with the app, any suggestions or features you would like to see, or positive or negative feedback. Also, reaching out to say hi, is even ok too! I will get back to you as soon as I can! Thank you so much!"
     }
     
     @IBAction func backBarButton(_ sender: UIBarButtonItem) {
