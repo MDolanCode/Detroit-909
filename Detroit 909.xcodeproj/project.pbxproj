@@ -44,6 +44,9 @@
 		C98243C925E05C81009F12F6 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98243C825E05C81009F12F6 /* FAQViewController.swift */; };
 		C98243CC25E15E1B009F12F6 /* pbio-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C98243CB25E15E1B009F12F6 /* pbio-bold.ttf */; };
 		C987FA6E25D707BF004B70DF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C987FA6D25D707BF004B70DF /* SettingsViewController.swift */; };
+		C9EDD53B26018AF400AAD44A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EDD53A26018AF400AAD44A /* Coordinator.swift */; };
+		C9EDD54026018BD700AAD44A /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EDD53F26018BD700AAD44A /* Storyboarded.swift */; };
+		C9EDD54826018E5900AAD44A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EDD54726018E5900AAD44A /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,9 @@
 		C98243C825E05C81009F12F6 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		C98243CB25E15E1B009F12F6 /* pbio-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pbio-bold.ttf"; sourceTree = "<group>"; };
 		C987FA6D25D707BF004B70DF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C9EDD53A26018AF400AAD44A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C9EDD53F26018BD700AAD44A /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		C9EDD54726018E5900AAD44A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,8 @@
 		C9516F5D259E765E0060C4B8 /* Detroit 909 */ = {
 			isa = PBXGroup;
 			children = (
+				C9EDD53926018AC700AAD44A /* Coordinators */,
+				C9EDD53F26018BD700AAD44A /* Storyboarded.swift */,
 				C9516F5E259E765E0060C4B8 /* AppDelegate.swift */,
 				C9516F60259E765E0060C4B8 /* SceneDelegate.swift */,
 				C9E7930F25CB755C00CA80A2 /* Main View */,
@@ -288,11 +296,20 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		C9EDD53926018AC700AAD44A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C9EDD53A26018AF400AAD44A /* Coordinator.swift */,
+				C9EDD54726018E5900AAD44A /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		C9FCA0A625F3E19000BC063B /* Detroit 909 */ = {
 			isa = PBXGroup;
 			children = (
-				C9FCA0C725F3E31100BC063B /* View */,
 				C9FCA0C325F3E2F100BC063B /* Model */,
+				C9FCA0C725F3E31100BC063B /* View */,
 			);
 			path = "Detroit 909";
 			sourceTree = "<group>";
@@ -537,14 +554,17 @@
 				C9516F5F259E765E0060C4B8 /* AppDelegate.swift in Sources */,
 				C9516F61259E765E0060C4B8 /* SceneDelegate.swift in Sources */,
 				C98243C525E052CA009F12F6 /* FAQBrain.swift in Sources */,
+				C9EDD53B26018AF400AAD44A /* Coordinator.swift in Sources */,
 				C96571BF25D2FB5700C1B0A3 /* DrumPadSound.swift in Sources */,
 				C956FF6225DB3D9D001E273A /* SettingsTableViewCell.swift in Sources */,
 				C91BDFCD25D095A000BB9F4C /* DrumPadButton.swift in Sources */,
 				C98243C925E05C81009F12F6 /* FAQViewController.swift in Sources */,
+				C9EDD54826018E5900AAD44A /* MainCoordinator.swift in Sources */,
 				C98243C325E051DC009F12F6 /* FAQ.swift in Sources */,
 				C95BBAAB25EC1B3600F2665D /* Acknowledgements.swift in Sources */,
 				C95BBA9F25EBED3300F2665D /* AcknowledgementsViewController.swift in Sources */,
 				C987FA6E25D707BF004B70DF /* SettingsViewController.swift in Sources */,
+				C9EDD54026018BD700AAD44A /* Storyboarded.swift in Sources */,
 				C95BBAA925EC1B1A00F2665D /* AcknowledgementsBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
