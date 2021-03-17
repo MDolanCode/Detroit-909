@@ -29,7 +29,7 @@ class SettingsViewController: UIViewController, Storyboarded {
     }
 
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+        coordinator?.start()
     }
 }
 
