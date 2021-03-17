@@ -63,5 +63,6 @@ class Detroit909ViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func settingsButtonPressed(_ sender: UIButton) {
+        coordinator?.settings()
     }
 }
