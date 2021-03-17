@@ -8,7 +8,8 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, Storyboarded {
+    weak var coordinator: MainCoordinator? 
 
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
@@ -25,19 +26,6 @@ class SettingsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
-        
-//MARK:- TableView Footer
-        
-//        let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 30))
-//        footer.backgroundColor = .darkGray
-//        
-//        tableView.tableFooterView = footer
-//        
-//        let label = UILabel(frame: footer.bounds)
-//        label.text = "v0.1"
-//        label.textColor = .white
-//        label.textAlignment = .left
-//        footer.addSubview(label)
     }
 
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
