@@ -8,7 +8,8 @@
 
 import UIKit
 
-class FAQViewController: UIViewController {
+class FAQViewController: UIViewController, Storyboarded {
+    weak var coordinator: MainCoordinator?
     
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
@@ -35,7 +36,7 @@ class FAQViewController: UIViewController {
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        coordinator?.goBack()
     }
     
 }
