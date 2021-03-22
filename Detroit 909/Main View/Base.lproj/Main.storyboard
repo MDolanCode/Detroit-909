@@ -17,7 +17,7 @@
         <!--Detroit909 View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="Detroit909ViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Detroit909ViewController" id="BYZ-38-t0r" customClass="Detroit909ViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,17 +259,16 @@
                         <outlet property="rideButton" destination="JHe-Es-uJR" id="wmu-69-VjZ"/>
                         <outlet property="rimButton" destination="eni-L9-piI" id="3V7-4m-gqH"/>
                         <outlet property="snareDrumButton" destination="am0-zx-8cA" id="E9P-9X-fmj"/>
-                        <segue destination="ifY-2Q-uJ1" kind="presentation" identifier="goToSettings" id="1kJ-Xy-AQj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1088.0059970014993" y="372"/>
+            <point key="canvasLocation" x="-1122" y="178"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="GJF-jo-B90">
             <objects>
-                <viewController id="ifY-2Q-uJ1" customClass="SettingsViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" id="ifY-2Q-uJ1" customClass="SettingsViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GY2-pQ-ZfK">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -310,19 +309,16 @@
                     <connections>
                         <outlet property="backBarButtonItem" destination="d7f-b0-uDQ" id="1ca-LY-xlX"/>
                         <outlet property="tableView" destination="Vcc-wA-VyI" id="YTC-CM-LUq"/>
-                        <segue destination="MhG-7M-A8I" kind="showDetail" identifier="goToFAQ" id="UzK-2c-tVS"/>
-                        <segue destination="3nQ-3l-4yt" kind="showDetail" identifier="goToAcknowledgements" id="QKz-CH-72r"/>
-                        <segue destination="u35-gV-FvB" kind="showDetail" identifier="goToContact" id="o6M-dw-Kd2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qo2-Jy-fy6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-352.23214285714283" y="371.01449275362324"/>
+            <point key="canvasLocation" x="-321" y="216"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1gM-YO-Waj">
             <objects>
-                <viewController id="MhG-7M-A8I" customClass="FAQViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FAQViewController" id="MhG-7M-A8I" customClass="FAQViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zjN-3o-uiF">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -373,7 +369,7 @@
         <!--Contact View Controller-->
         <scene sceneID="uDE-ya-Wm9">
             <objects>
-                <viewController id="u35-gV-FvB" customClass="ContactViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactViewController" id="u35-gV-FvB" customClass="ContactViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Yl-IF-m7n">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -398,7 +394,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkZ-9w-enm" userLabel="Contact Label">
-                                <rect key="frame" x="64" y="44" width="768" height="221"/>
+                                <rect key="frame" x="64" y="44" width="772" height="221"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="221" id="VUU-RC-u8v"/>
                                 </constraints>
@@ -450,7 +446,7 @@
         <!--Acknowledgements View Controller-->
         <scene sceneID="QhE-GS-oKM">
             <objects>
-                <viewController id="3nQ-3l-4yt" customClass="AcknowledgementsViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AcknowledgementsViewController" id="3nQ-3l-4yt" customClass="AcknowledgementsViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kX5-m2-Ewj">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

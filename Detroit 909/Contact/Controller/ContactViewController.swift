@@ -9,7 +9,8 @@
 import UIKit
 import MessageUI
 
-class ContactViewController: UIViewController, MFMailComposeViewControllerDelegate {
+class ContactViewController: UIViewController, MFMailComposeViewControllerDelegate, Storyboarded {
+    weak var coordinator: MainCoordinator?
     
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
@@ -34,7 +35,7 @@ class ContactViewController: UIViewController, MFMailComposeViewControllerDelega
     }
     
     @IBAction func backBarButton(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+        coordinator?.goBack()
     }
     
     @IBAction func contactButtonPressed(_ sender: UIButton) {

@@ -8,7 +8,8 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, Storyboarded {
+    weak var coordinator: MainCoordinator?
 
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
@@ -25,23 +26,10 @@ class SettingsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
-        
-//MARK:- TableView Footer
-        
-//        let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 30))
-//        footer.backgroundColor = .darkGray
-//        
-//        tableView.tableFooterView = footer
-//        
-//        let label = UILabel(frame: footer.bounds)
-//        label.text = "v0.1"
-//        label.textColor = .white
-//        label.textAlignment = .left
-//        footer.addSubview(label)
     }
 
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+        coordinator?.goBack()
     }
 }
 
@@ -49,22 +37,16 @@ class SettingsViewController: UIViewController {
 
 extension SettingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let tableViewChoice = settingsBrain.dataArray[indexPath.row]
         tableView.deselectRow(at: indexPath, animated: true)
         
-        var segueIdentifier = settingsBrain.dataArray[indexPath.row]
-        
-        switch segueIdentifier {
-        case "FAQ":
-            segueIdentifier = "goToFAQ"
-        case "Contact Us":
-            segueIdentifier = "goToContact"
-        case "Acknowledgements":
-            segueIdentifier = "goToAcknowledgements"
-        default:
-            print("No segue")
+        if tableViewChoice == "FAQ" {
+            coordinator?.faq()
+        } else if tableViewChoice == "Contact Us" {
+            coordinator?.contact()
+        } else {
+            coordinator?.acknowledgement()
         }
-        performSegue(withIdentifier: segueIdentifier, sender: self)
-        print("You tapped me!")
     }
 }
 

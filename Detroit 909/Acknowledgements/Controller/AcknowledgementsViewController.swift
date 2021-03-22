@@ -8,7 +8,8 @@
 
 import UIKit
 
-class AcknowledgementsViewController: UIViewController {
+class AcknowledgementsViewController: UIViewController, Storyboarded {
+    weak var coordinator: MainCoordinator?
     
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
@@ -28,7 +29,7 @@ class AcknowledgementsViewController: UIViewController {
     }
     
     @IBAction func backBarButton(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+        coordinator?.goBack()
     }
 }
 
