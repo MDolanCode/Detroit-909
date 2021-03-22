@@ -24,6 +24,7 @@
 		C95BBAA425EBF49000F2665D /* AcknowledgementsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95BBAA225EBF49000F2665D /* AcknowledgementsTableViewCell.xib */; };
 		C95BBAA925EC1B1A00F2665D /* AcknowledgementsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA825EC1B1A00F2665D /* AcknowledgementsBrain.swift */; };
 		C95BBAAB25EC1B3600F2665D /* Acknowledgements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAAA25EC1B3600F2665D /* Acknowledgements.swift */; };
+		C95E50CA26054A6500DF037A /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E50C926054A6500DF037A /* SettingsCoordinator.swift */; };
 		C96571BF25D2FB5700C1B0A3 /* DrumPadSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */; };
 		C97C832D25E17081006D1AAF /* LOW TOM.wav in Resources */ = {isa = PBXBuildFile; fileRef = C97C832225E17080006D1AAF /* LOW TOM.wav */; };
 		C97C832E25E17081006D1AAF /* RIM.wav in Resources */ = {isa = PBXBuildFile; fileRef = C97C832325E17080006D1AAF /* RIM.wav */; };
@@ -89,6 +90,7 @@
 		C95BBAA225EBF49000F2665D /* AcknowledgementsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcknowledgementsTableViewCell.xib; sourceTree = "<group>"; };
 		C95BBAA825EC1B1A00F2665D /* AcknowledgementsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsBrain.swift; sourceTree = "<group>"; };
 		C95BBAAA25EC1B3600F2665D /* Acknowledgements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acknowledgements.swift; sourceTree = "<group>"; };
+		C95E50C926054A6500DF037A /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumPadSound.swift; sourceTree = "<group>"; };
 		C97C832225E17080006D1AAF /* LOW TOM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "LOW TOM.wav"; sourceTree = "<group>"; };
 		C97C832325E17080006D1AAF /* RIM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = RIM.wav; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 			children = (
 				C9EDD53A26018AF400AAD44A /* Coordinator.swift */,
 				C9EDD54726018E5900AAD44A /* MainCoordinator.swift */,
+				C95E50C926054A6500DF037A /* SettingsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -548,6 +551,7 @@
 				C9516F63259E765E0060C4B8 /* Detroit909ViewController.swift in Sources */,
 				C957E8F825F1ABD1009288A8 /* ContactViewController.swift in Sources */,
 				C98243C025E02B60009F12F6 /* FAQTableViewCell.swift in Sources */,
+				C95E50CA26054A6500DF037A /* SettingsCoordinator.swift in Sources */,
 				C9516F5F259E765E0060C4B8 /* AppDelegate.swift in Sources */,
 				C98243C525E052CA009F12F6 /* FAQBrain.swift in Sources */,
 				C9EDD53B26018AF400AAD44A /* Coordinator.swift in Sources */,
