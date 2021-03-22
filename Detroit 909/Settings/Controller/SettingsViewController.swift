@@ -9,7 +9,7 @@
 import UIKit
 
 class SettingsViewController: UIViewController, Storyboarded {
-    weak var coordinator: MainCoordinator? 
+    weak var coordinator: MainCoordinator?
 
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
@@ -29,7 +29,7 @@ class SettingsViewController: UIViewController, Storyboarded {
     }
 
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
-        coordinator?.start()
+        coordinator?.goBack()
     }
 }
 
@@ -37,22 +37,16 @@ class SettingsViewController: UIViewController, Storyboarded {
 
 extension SettingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let tableViewChoice = settingsBrain.dataArray[indexPath.row]
         tableView.deselectRow(at: indexPath, animated: true)
         
-        var segueIdentifier = settingsBrain.dataArray[indexPath.row]
-        
-        switch segueIdentifier {
-        case "FAQ":
-            segueIdentifier = "goToFAQ"
-        case "Contact Us":
-            segueIdentifier = "goToContact"
-        case "Acknowledgements":
-            segueIdentifier = "goToAcknowledgements"
-        default:
-            print("No segue")
+        if tableViewChoice == "FAQ" {
+            coordinator?.faq()
+        } else if tableViewChoice == "Contact Us" {
+            coordinator?.contact()
+        } else {
+            coordinator?.acknowledgement()
         }
-        performSegue(withIdentifier: segueIdentifier, sender: self)
-        print("You tapped me!")
     }
 }
 
