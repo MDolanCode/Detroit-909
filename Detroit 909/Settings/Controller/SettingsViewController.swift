@@ -30,13 +30,13 @@ class SettingsViewController: UIViewController, Storyboarded {
     func navigationUI() {
         // Set Title UI
         navigationItem.title = "Settings"
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "AvenirNext-DemiBold", size: 14)!]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "AvenirNext-DemiBold", size: 16)!]
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigationController?.navigationBar.barTintColor = UIColor.gray
         
         // Set BarButtonItem UI
         navigationController?.navigationBar.topItem?.title = "Detroit 909"
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AvenirNext-Medium", size: 15)!], for: .normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AvenirNext-Medium", size: 16)!], for: .normal)
         navigationController?.navigationBar.tintColor = UIColor.white
     }
 
