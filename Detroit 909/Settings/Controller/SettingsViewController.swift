@@ -18,11 +18,26 @@ class SettingsViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationUI()
+        
         let nib = UINib(nibName: "SettingsTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "SettingsTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
+    }
+    
+    func navigationUI() {
+        // Set Title UI
+        navigationItem.title = "Settings"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "AvenirNext-DemiBold", size: 14)!]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.barTintColor = UIColor.gray
+        
+        // Set BarButtonItem UI
+        navigationController?.navigationBar.topItem?.title = "Detroit 909"
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AvenirNext-Medium", size: 15)!], for: .normal)
+        navigationController?.navigationBar.tintColor = UIColor.white
     }
 
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
