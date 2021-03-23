@@ -21,7 +21,6 @@ class MainCoordinator: Coordinator {
         let vc = Detroit909ViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
-        navigationController.isNavigationBarHidden = true
     }
     
     func settings() {
