@@ -29,13 +29,6 @@ class ContactViewController: UIViewController, MFMailComposeViewControllerDelega
     func navigationUI() {
         // Set Title UI
         navigationItem.title = "Contact Us"
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "AvenirNext-DemiBold", size: 14)!]
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        navigationController?.navigationBar.barTintColor = UIColor.gray
-        
-        // Set BarButtonItem UI
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AvenirNext-Medium", size: 15)!], for: .normal)
-        navigationController?.navigationBar.tintColor = UIColor.white
     }
     
     func buttonUI() {
