@@ -11,15 +11,12 @@ import UIKit
 class AcknowledgementsViewController: UIViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
     
-    @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
     let acknowledgementsBrain = AcknowledgementsBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        backBarButtonItem.tintColor = .white
         
         let nib = UINib(nibName: "AcknowledgementsTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "AcknowledgementsTableViewCell")

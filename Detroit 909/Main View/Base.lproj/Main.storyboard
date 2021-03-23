@@ -273,23 +273,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="black" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="It8-0h-Xrk">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Settings" id="ofA-tv-Mhy">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="d7f-b0-uDQ">
-                                            <connections>
-                                                <action selector="backButtonPressed:" destination="ifY-2Q-uJ1" id="dEV-7q-AoI"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vcc-wA-VyI">
-                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -297,17 +282,13 @@
                         <viewLayoutGuide key="safeArea" id="yeb-YQ-Baw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="It8-0h-Xrk" firstAttribute="trailing" secondItem="Vcc-wA-VyI" secondAttribute="trailing" id="2Ti-gx-6wC"/>
                             <constraint firstAttribute="trailing" secondItem="Vcc-wA-VyI" secondAttribute="trailing" id="7li-o5-D0Y"/>
                             <constraint firstItem="Vcc-wA-VyI" firstAttribute="bottom" secondItem="GY2-pQ-ZfK" secondAttribute="bottom" id="Igs-fu-m4s"/>
                             <constraint firstItem="Vcc-wA-VyI" firstAttribute="leading" secondItem="GY2-pQ-ZfK" secondAttribute="leading" id="XGD-yf-ti6"/>
-                            <constraint firstItem="It8-0h-Xrk" firstAttribute="top" secondItem="yeb-YQ-Baw" secondAttribute="top" id="YYv-hI-bzv"/>
-                            <constraint firstItem="It8-0h-Xrk" firstAttribute="leading" secondItem="Vcc-wA-VyI" secondAttribute="leading" id="s8U-Uk-E4V"/>
-                            <constraint firstItem="Vcc-wA-VyI" firstAttribute="top" secondItem="It8-0h-Xrk" secondAttribute="bottom" id="zf5-o9-KBr"/>
+                            <constraint firstItem="Vcc-wA-VyI" firstAttribute="top" secondItem="yeb-YQ-Baw" secondAttribute="top" id="vpZ-Rw-Vio"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backBarButtonItem" destination="d7f-b0-uDQ" id="1ca-LY-xlX"/>
                         <outlet property="tableView" destination="Vcc-wA-VyI" id="YTC-CM-LUq"/>
                     </connections>
                 </viewController>
@@ -324,41 +305,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EA7-Dc-ah7">
-                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="M3c-Df-3EV">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="FAQ" id="cTt-fS-3wf">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="IXT-mm-qcH">
-                                            <connections>
-                                                <action selector="backButtonPressed:" destination="MhG-7M-A8I" id="sQ1-K1-bFI"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oUL-PS-lHA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="M3c-Df-3EV" firstAttribute="top" secondItem="oUL-PS-lHA" secondAttribute="top" id="1TM-4C-zYS"/>
                             <constraint firstAttribute="trailing" secondItem="EA7-Dc-ah7" secondAttribute="trailing" id="9E7-Ul-jfc"/>
                             <constraint firstAttribute="bottom" secondItem="EA7-Dc-ah7" secondAttribute="bottom" id="Mir-VD-UPk"/>
-                            <constraint firstAttribute="trailing" secondItem="M3c-Df-3EV" secondAttribute="trailing" id="epf-nO-UpM"/>
                             <constraint firstItem="EA7-Dc-ah7" firstAttribute="leading" secondItem="zjN-3o-uiF" secondAttribute="leading" id="fOL-Zl-kT9"/>
-                            <constraint firstItem="EA7-Dc-ah7" firstAttribute="top" secondItem="M3c-Df-3EV" secondAttribute="bottom" id="m4l-co-qYm"/>
-                            <constraint firstItem="M3c-Df-3EV" firstAttribute="leading" secondItem="zjN-3o-uiF" secondAttribute="leading" id="xUL-Z4-k7b"/>
+                            <constraint firstItem="EA7-Dc-ah7" firstAttribute="top" secondItem="oUL-PS-lHA" secondAttribute="top" id="mmD-jI-4nk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hZc-h0-Yn6"/>
                     <connections>
-                        <outlet property="backBarButtonItem" destination="IXT-mm-qcH" id="eRa-BS-Udm"/>
                         <outlet property="tableView" destination="EA7-Dc-ah7" id="Xz8-II-c2N"/>
                     </connections>
                 </viewController>
@@ -374,27 +335,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="I6o-RS-fFu">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Contact" id="3K3-5T-5L2">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="hIc-4X-NLg">
-                                            <connections>
-                                                <action selector="backBarButton:" destination="u35-gV-FvB" id="ZaU-0k-BeL"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4W-yS-exG" userLabel="Background View">
                                 <rect key="frame" x="0.0" y="44" width="896" height="370"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkZ-9w-enm" userLabel="Contact Label">
-                                <rect key="frame" x="64" y="44" width="772" height="221"/>
+                                <rect key="frame" x="64" y="0.0" width="772" height="221"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="221" id="VUU-RC-u8v"/>
                                 </constraints>
@@ -403,7 +349,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-wl-U56">
-                                <rect key="frame" x="348" y="282" width="200" height="50"/>
+                                <rect key="frame" x="348" y="238" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="LBD-Fl-sQq"/>
                                     <constraint firstAttribute="height" constant="50" id="fVD-Mb-MVn"/>
@@ -420,20 +366,16 @@
                         <constraints>
                             <constraint firstItem="MZN-wl-U56" firstAttribute="top" secondItem="AkZ-9w-enm" secondAttribute="bottom" constant="17" id="0uo-q0-EUe"/>
                             <constraint firstItem="AkZ-9w-enm" firstAttribute="leading" secondItem="fun-N4-omK" secondAttribute="leading" constant="20" id="8KT-2A-9uV"/>
-                            <constraint firstItem="I6o-RS-fFu" firstAttribute="leading" secondItem="8Yl-IF-m7n" secondAttribute="leading" id="GMV-fx-rUB"/>
-                            <constraint firstItem="AkZ-9w-enm" firstAttribute="top" secondItem="I6o-RS-fFu" secondAttribute="bottom" id="H3E-EJ-WCR"/>
-                            <constraint firstAttribute="trailing" secondItem="I6o-RS-fFu" secondAttribute="trailing" id="IYD-LW-RzC"/>
+                            <constraint firstItem="D4W-yS-exG" firstAttribute="centerX" secondItem="MZN-wl-U56" secondAttribute="centerX" id="BRp-WD-NHm"/>
                             <constraint firstItem="AkZ-9w-enm" firstAttribute="trailing" secondItem="8Yl-IF-m7n" secondAttribute="trailingMargin" id="JQJ-ml-Ut1"/>
+                            <constraint firstItem="D4W-yS-exG" firstAttribute="top" secondItem="fun-N4-omK" secondAttribute="top" constant="44" id="Vkx-a1-NBE"/>
                             <constraint firstAttribute="bottom" secondItem="D4W-yS-exG" secondAttribute="bottom" id="Z8X-Tf-UFR"/>
-                            <constraint firstItem="I6o-RS-fFu" firstAttribute="top" secondItem="fun-N4-omK" secondAttribute="top" id="bly-aZ-peV"/>
                             <constraint firstAttribute="trailing" secondItem="D4W-yS-exG" secondAttribute="trailing" id="bua-L4-V2f"/>
                             <constraint firstItem="D4W-yS-exG" firstAttribute="leading" secondItem="8Yl-IF-m7n" secondAttribute="leading" id="fA6-Gg-aOx"/>
-                            <constraint firstItem="MZN-wl-U56" firstAttribute="centerX" secondItem="I6o-RS-fFu" secondAttribute="centerX" id="fPv-be-4TC"/>
-                            <constraint firstItem="D4W-yS-exG" firstAttribute="top" secondItem="I6o-RS-fFu" secondAttribute="bottom" id="va3-di-tTj"/>
+                            <constraint firstItem="AkZ-9w-enm" firstAttribute="top" secondItem="fun-N4-omK" secondAttribute="top" id="t3Y-0S-8PR"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backBarButtonItem" destination="hIc-4X-NLg" id="f13-0F-cob"/>
                         <outlet property="backgroundView" destination="D4W-yS-exG" id="Dve-ll-9WA"/>
                         <outlet property="contactButton" destination="MZN-wl-U56" id="U1r-i8-3px"/>
                         <outlet property="contactLabel" destination="AkZ-9w-enm" id="gvo-Nh-zUO"/>
@@ -451,23 +393,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="1A0-oA-9xu">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Acknowledgements" id="YTa-AO-tok">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="xLL-bQ-t5U">
-                                            <connections>
-                                                <action selector="backBarButton:" destination="3nQ-3l-4yt" id="hnY-Ee-UHz"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iOU-UA-mtQ">
-                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -475,17 +402,13 @@
                         <viewLayoutGuide key="safeArea" id="mvJ-Xs-czD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="1A0-oA-9xu" secondAttribute="trailing" id="0Wn-c6-xgx"/>
                             <constraint firstAttribute="trailing" secondItem="iOU-UA-mtQ" secondAttribute="trailing" id="8Qz-Q2-yxZ"/>
                             <constraint firstAttribute="bottom" secondItem="iOU-UA-mtQ" secondAttribute="bottom" id="LZS-vC-yRR"/>
-                            <constraint firstItem="1A0-oA-9xu" firstAttribute="leading" secondItem="kX5-m2-Ewj" secondAttribute="leading" id="PUO-Eh-umH"/>
-                            <constraint firstItem="1A0-oA-9xu" firstAttribute="top" secondItem="mvJ-Xs-czD" secondAttribute="top" id="PUR-2B-1si"/>
                             <constraint firstItem="iOU-UA-mtQ" firstAttribute="leading" secondItem="kX5-m2-Ewj" secondAttribute="leading" id="gHJ-50-ned"/>
-                            <constraint firstItem="iOU-UA-mtQ" firstAttribute="top" secondItem="1A0-oA-9xu" secondAttribute="bottom" id="ovc-7g-lMp"/>
+                            <constraint firstItem="iOU-UA-mtQ" firstAttribute="top" secondItem="mvJ-Xs-czD" secondAttribute="top" id="yDU-NE-Sli"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backBarButtonItem" destination="xLL-bQ-t5U" id="Edn-6l-f12"/>
                         <outlet property="tableView" destination="iOU-UA-mtQ" id="43g-l9-INS"/>
                     </connections>
                 </viewController>
@@ -495,7 +418,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="icons8-settings-64-2" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
