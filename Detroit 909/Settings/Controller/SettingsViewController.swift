@@ -11,15 +11,12 @@ import UIKit
 class SettingsViewController: UIViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
 
-    @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
     let settingsBrain = SettingsBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        backBarButtonItem.tintColor = .white
         
         let nib = UINib(nibName: "SettingsTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "SettingsTableViewCell")
