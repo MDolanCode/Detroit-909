@@ -13,17 +13,13 @@ class ContactViewController: UIViewController, MFMailComposeViewControllerDelega
     weak var coordinator: MainCoordinator?
     
     @IBOutlet weak var backgroundView: UIView!
-    @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var contactLabel: UILabel!
     @IBOutlet weak var contactButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        backBarButtonItem.tintColor = .white
         backgroundView.backgroundColor = .black
-        
         buttonUI()
-        
         contactLabel.text = "Please feel free to contact me with any issues you may be experiencing with the app, any suggestions or features you would like to see, or positive or negative feedback. Also, reaching out to say hi, is even ok too! I will get back to you as soon as I can! Thank you so much!"
     }
     
