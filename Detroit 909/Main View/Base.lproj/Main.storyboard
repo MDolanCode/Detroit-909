@@ -27,22 +27,26 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="o7K-Sh-nVp">
-                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <rect key="frame" x="64" y="0.0" width="768" height="373"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eQw-He-PGv" userLabel="Label Controls Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="808" height="127.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="121"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8UQ-RY-dJj">
-                                                <rect key="frame" x="0.0" y="0.0" width="808" height="127.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="768" height="121"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detroit 909" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgV-ja-IzS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="404.5" height="127.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="404.5" height="121"/>
                                                         <fontDescription key="fontDescription" name="PBIO-Bold" family="PBIO" pointSize="45"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hue-Ex-wvc" userLabel="Settings Button">
-                                                        <rect key="frame" x="744" y="32" width="64" height="64"/>
+                                                        <rect key="frame" x="724" y="38.5" width="44" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="4fw-DG-BIS"/>
+                                                            <constraint firstAttribute="width" constant="44" id="MHB-e8-zuf"/>
+                                                        </constraints>
                                                         <state key="normal" image="icons8-settings-64-2"/>
                                                         <connections>
                                                             <action selector="settingsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TTS-kP-Kuo"/>
@@ -61,10 +65,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DuO-ON-LK8" userLabel="Top Drums Stack View">
-                                        <rect key="frame" x="0.0" y="132.5" width="808" height="128"/>
+                                        <rect key="frame" x="0.0" y="126" width="768" height="121"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFA-gg-89w" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="128"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149.5" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal">
@@ -78,7 +82,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am0-zx-8cA" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="162.5" y="0.0" width="157.5" height="128"/>
+                                                <rect key="frame" x="154.5" y="0.0" width="149.5" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal">
@@ -92,7 +96,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qr-zu-bbR" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="325" y="0.0" width="158" height="128"/>
+                                                <rect key="frame" x="309" y="0.0" width="150" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal">
@@ -106,7 +110,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5Y-3i-AYf" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="488" y="0.0" width="157.5" height="128"/>
+                                                <rect key="frame" x="464" y="0.0" width="149.5" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal">
@@ -120,7 +124,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xM6-vz-qDs" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="650.5" y="0.0" width="157.5" height="128"/>
+                                                <rect key="frame" x="618.5" y="0.0" width="149.5" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal">
@@ -136,10 +140,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="opp-tZ-XcU" userLabel="Bottom Drums Stack View">
-                                        <rect key="frame" x="0.0" y="265.5" width="808" height="127.5"/>
+                                        <rect key="frame" x="0.0" y="252" width="768" height="121"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eni-L9-piI" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="127.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149.5" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal">
@@ -153,7 +157,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47y-qL-ck6" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="162.5" y="0.0" width="157.5" height="127.5"/>
+                                                <rect key="frame" x="154.5" y="0.0" width="149.5" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal">
@@ -167,7 +171,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOI-6k-sPs" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="325" y="0.0" width="158" height="127.5"/>
+                                                <rect key="frame" x="309" y="0.0" width="150" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal">
@@ -181,7 +185,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctv-b4-hzI" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                <rect key="frame" x="488" y="0.0" width="157.5" height="127.5"/>
+                                                <rect key="frame" x="464" y="0.0" width="149.5" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal">
@@ -195,10 +199,10 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wHy-8L-lmE" userLabel="Bottom Corner Stack View">
-                                                <rect key="frame" x="650.5" y="0.0" width="157.5" height="127.5"/>
+                                                <rect key="frame" x="618.5" y="0.0" width="149.5" height="121"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daQ-7W-vfx" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="76" height="127.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="121"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal">
@@ -212,7 +216,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHe-Es-uJR" customClass="DrumPadButton" customModule="Detroit_909" customModuleProvider="target">
-                                                        <rect key="frame" x="81" y="0.0" width="76.5" height="127.5"/>
+                                                        <rect key="frame" x="77" y="0.0" width="72.5" height="121"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal">
@@ -237,11 +241,11 @@
                             <constraint firstItem="6od-xR-aDf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3tf-DM-6i6"/>
                             <constraint firstAttribute="trailing" secondItem="6od-xR-aDf" secondAttribute="trailing" id="X7L-kf-Nso"/>
                             <constraint firstAttribute="bottom" secondItem="6od-xR-aDf" secondAttribute="bottom" id="brm-sA-DMG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o7K-Sh-nVp" secondAttribute="trailing" id="dsK-qo-0FU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o7K-Sh-nVp" secondAttribute="trailing" constant="20" id="dsK-qo-0FU"/>
                             <constraint firstItem="o7K-Sh-nVp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="g9S-L4-fXp"/>
-                            <constraint firstItem="o7K-Sh-nVp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hBx-DU-yCj"/>
+                            <constraint firstItem="o7K-Sh-nVp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hBx-DU-yCj"/>
                             <constraint firstItem="6od-xR-aDf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vwL-Av-dQY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o7K-Sh-nVp" secondAttribute="bottom" id="zYk-aq-fdP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o7K-Sh-nVp" secondAttribute="bottom" constant="20" id="zYk-aq-fdP"/>
                         </constraints>
                     </view>
                     <connections>
