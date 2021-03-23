@@ -23,8 +23,8 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVB-mv-NGG">
-                        <rect key="frame" x="20" y="70.5" width="45" height="24.5"/>
-                        <fontDescription key="fontDescription" name="PBIO-Bold" family="PBIO" pointSize="20"/>
+                        <rect key="frame" x="20" y="72.5" width="45" height="20"/>
+                        <fontDescription key="fontDescription" name="PBIO-Bold" family="PBIO" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
