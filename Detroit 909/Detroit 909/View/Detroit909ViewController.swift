@@ -33,6 +33,16 @@ class Detroit909ViewController: UIViewController, Storyboarded {
         drumPadButtonTitle()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     @IBAction func drumMachineButtonPressed(_ sender: DrumPadButton) {
         
         drumPadSound.playSound(drumSound: sender.currentTitle!)
