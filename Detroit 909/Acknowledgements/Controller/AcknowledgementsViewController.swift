@@ -18,11 +18,18 @@ class AcknowledgementsViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationUI()
+        
         let nib = UINib(nibName: "AcknowledgementsTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "AcknowledgementsTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
+    }
+    
+    func navigationUI() {
+        // Set Title UI
+        navigationItem.title = "Acknowledgements"
     }
     
     @IBAction func backBarButton(_ sender: UIBarButtonItem) {
