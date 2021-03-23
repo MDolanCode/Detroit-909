@@ -18,6 +18,8 @@ class FAQViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationUI()
+        
         let nib = UINib(nibName: "FAQTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "FAQTableViewCell")
         tableView.delegate = self
@@ -30,6 +32,18 @@ class FAQViewController: UIViewController, Storyboarded {
 //        footer.backgroundColor = .darkGray
 //
 //        tableView.tableFooterView = footer
+    }
+    
+    func navigationUI() {
+        // Set Title UI
+        navigationItem.title = "FAQ"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "AvenirNext-DemiBold", size: 14)!]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.barTintColor = UIColor.gray
+        
+        // Set BarButtonItem UI
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AvenirNext-Medium", size: 15)!], for: .normal)
+        navigationController?.navigationBar.tintColor = UIColor.white
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
