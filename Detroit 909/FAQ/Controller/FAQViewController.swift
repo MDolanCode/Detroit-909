@@ -11,15 +11,12 @@ import UIKit
 class FAQViewController: UIViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
     
-    @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
     let faqBrain = FAQBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        backBarButtonItem.tintColor = .white
         
         let nib = UINib(nibName: "FAQTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "FAQTableViewCell")
