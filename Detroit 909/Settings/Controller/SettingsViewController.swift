@@ -25,6 +25,7 @@ class SettingsViewController: UIViewController, Storyboarded {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
+        tableView.tableFooterView = UIView()
     }
     
     func navigationUI() {
