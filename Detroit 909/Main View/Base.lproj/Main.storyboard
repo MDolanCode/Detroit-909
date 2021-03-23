@@ -244,7 +244,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o7K-Sh-nVp" secondAttribute="bottom" id="zYk-aq-fdP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bcX-KR-vTH"/>
                     <connections>
                         <outlet property="backgroundView" destination="6od-xR-aDf" id="Whr-lh-Pf3"/>
                         <outlet property="bassDrumButton" destination="oFA-gg-89w" id="iaC-0j-sdR"/>
