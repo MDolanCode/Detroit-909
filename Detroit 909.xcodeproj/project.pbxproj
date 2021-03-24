@@ -18,7 +18,6 @@
 		C9516F81259E766B0060C4B8 /* Detroit_909UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9516F80259E766B0060C4B8 /* Detroit_909UITests.swift */; };
 		C956FF6225DB3D9D001E273A /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956FF6025DB3D9D001E273A /* SettingsTableViewCell.swift */; };
 		C956FF6325DB3D9D001E273A /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C956FF6125DB3D9D001E273A /* SettingsTableViewCell.xib */; };
-		C957E8F825F1ABD1009288A8 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C957E8F725F1ABD1009288A8 /* ContactViewController.swift */; };
 		C95BBA9F25EBED3300F2665D /* AcknowledgementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBA9E25EBED3300F2665D /* AcknowledgementsViewController.swift */; };
 		C95BBAA325EBF49000F2665D /* AcknowledgementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA125EBF49000F2665D /* AcknowledgementsTableViewCell.swift */; };
 		C95BBAA425EBF49000F2665D /* AcknowledgementsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95BBAA225EBF49000F2665D /* AcknowledgementsTableViewCell.xib */; };
@@ -85,7 +84,6 @@
 		C9516F82259E766C0060C4B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C956FF6025DB3D9D001E273A /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		C956FF6125DB3D9D001E273A /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
-		C957E8F725F1ABD1009288A8 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		C95BBA9E25EBED3300F2665D /* AcknowledgementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsViewController.swift; sourceTree = "<group>"; };
 		C95BBAA125EBF49000F2665D /* AcknowledgementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsTableViewCell.swift; sourceTree = "<group>"; };
 		C95BBAA225EBF49000F2665D /* AcknowledgementsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcknowledgementsTableViewCell.xib; sourceTree = "<group>"; };
@@ -298,14 +296,6 @@
 			path = "Main View";
 			sourceTree = "<group>";
 		};
-		C9E7931125CB757A00CA80A2 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C957E8F725F1ABD1009288A8 /* ContactViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		C9EDD53926018AC700AAD44A /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,7 +396,6 @@
 			isa = PBXGroup;
 			children = (
 				C97796B5260AC4BE00C665A9 /* View */,
-				C9E7931125CB757A00CA80A2 /* Controller */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -561,7 +550,6 @@
 				C95BBAA325EBF49000F2665D /* AcknowledgementsTableViewCell.swift in Sources */,
 				C93CA1AB25DB658C00EF2B07 /* SettingsBrain.swift in Sources */,
 				C9516F63259E765E0060C4B8 /* Detroit909ViewController.swift in Sources */,
-				C957E8F825F1ABD1009288A8 /* ContactViewController.swift in Sources */,
 				C98243C025E02B60009F12F6 /* FAQTableViewCell.swift in Sources */,
 				C9516F5F259E765E0060C4B8 /* AppDelegate.swift in Sources */,
 				C98243C525E052CA009F12F6 /* FAQBrain.swift in Sources */,
