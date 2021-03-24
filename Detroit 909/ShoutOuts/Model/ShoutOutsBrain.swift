@@ -10,9 +10,13 @@ import Foundation
 import UIKit
 
 struct ShoutOutsBrain {
-    let shoutOutsArray = [ShoutOuts(who: "Icons8", what: "The settings icon is from Icons8.com, so special thanks to them for having this free icon available for use.", urlString: "www.icons8.com", image: #imageLiteral(resourceName: "icons8-settings-64-2")),
-                          ShoutOuts(who: "PBIO Font", what: "The font is from dafont.com", urlString: "https://www.dafont.com/pbio.font" , image: #imageLiteral(resourceName: "Screen Shot 2021-03-10 at 2.11.06 PM"))
+    let shoutOutsArray = [
+        ShoutOuts(who: "Icons8", what: "The settings icon is from Icons8.com, so special thanks to them for having this free icon available for use.", image: #imageLiteral(resourceName: "icons8-settings-64-2")),
+        ShoutOuts(who: "PBIO Font", what: "The font is from dafont.com", image: #imageLiteral(resourceName: "fontImage"))
     ]
+    
+//    let shoutOutsArray = [ShoutOuts(who: "Icon 8", what: "", image: #imageLiteral(resourceName: "icons8-settings-64-2"))]
+
 }
 
 

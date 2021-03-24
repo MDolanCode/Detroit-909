@@ -12,13 +12,11 @@ import UIKit
 struct ShoutOuts {
     let who: String
     let what: String
-    let urlString: String
     let image: UIImage
     
-    init(who: String, what: String, urlString: String, image: UIImage) {
+    init(who: String, what: String, image: UIImage) {
         self.who = who
         self.what = what
-        self.urlString = urlString
         self.image = image
     }
 }
