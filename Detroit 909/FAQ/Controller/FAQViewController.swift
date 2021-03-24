@@ -36,10 +36,7 @@ class FAQViewController: UIViewController, Storyboarded {
 //MARK: - UITableViewDelegate
 
 extension FAQViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-        // Make it so row cannot be selected.
-    }
+
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
     }
