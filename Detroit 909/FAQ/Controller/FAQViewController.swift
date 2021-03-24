@@ -25,13 +25,6 @@ class FAQViewController: UIViewController, Storyboarded {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
-        
-//MARK: - TableView Footer
-        
-//        let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 30))
-//        footer.backgroundColor = .darkGray
-//
-//        tableView.tableFooterView = footer
     }
     
     func navigationUI() {
