@@ -20,8 +20,8 @@ class ShoutOutsViewController: UIViewController, Storyboarded {
         
         navigationUI()
         
-        let nib = UINib(nibName: "ShoutOutsTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "ShoutOutsTableViewCell")
+        tableView.register(ShoutOutsTableViewCell.nib(), forCellReuseIdentifier: ShoutOutsTableViewCell.identifier)
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
@@ -58,7 +58,7 @@ extension ShoutOutsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ShoutOutsTableViewCell", for: indexPath) as! ShoutOutsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ShoutOutsTableViewCell.identifier, for: indexPath) as! ShoutOutsTableViewCell
         
         cell.whoLabel.text = shoutOutsBrain.ShoutoutsArray[indexPath.row].who
         cell.whatLabel.text = shoutOutsBrain.ShoutoutsArray[indexPath.row].what
