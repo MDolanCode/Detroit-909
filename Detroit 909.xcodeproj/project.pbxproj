@@ -25,6 +25,8 @@
 		C95BBAA925EC1B1A00F2665D /* AcknowledgementsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA825EC1B1A00F2665D /* AcknowledgementsBrain.swift */; };
 		C95BBAAB25EC1B3600F2665D /* Acknowledgements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAAA25EC1B3600F2665D /* Acknowledgements.swift */; };
 		C96571BF25D2FB5700C1B0A3 /* DrumPadSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */; };
+		C97796B8260AC4E100C665A9 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97796B6260AC4E100C665A9 /* ContactTableViewCell.swift */; };
+		C97796B9260AC4E100C665A9 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C97796B7260AC4E100C665A9 /* ContactTableViewCell.xib */; };
 		C97C832D25E17081006D1AAF /* LOW TOM.wav in Resources */ = {isa = PBXBuildFile; fileRef = C97C832225E17080006D1AAF /* LOW TOM.wav */; };
 		C97C832E25E17081006D1AAF /* RIM.wav in Resources */ = {isa = PBXBuildFile; fileRef = C97C832325E17080006D1AAF /* RIM.wav */; };
 		C97C832F25E17081006D1AAF /* MID TOM.wav in Resources */ = {isa = PBXBuildFile; fileRef = C97C832425E17080006D1AAF /* MID TOM.wav */; };
@@ -90,6 +92,8 @@
 		C95BBAA825EC1B1A00F2665D /* AcknowledgementsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsBrain.swift; sourceTree = "<group>"; };
 		C95BBAAA25EC1B3600F2665D /* Acknowledgements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acknowledgements.swift; sourceTree = "<group>"; };
 		C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumPadSound.swift; sourceTree = "<group>"; };
+		C97796B6260AC4E100C665A9 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		C97796B7260AC4E100C665A9 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
 		C97C832225E17080006D1AAF /* LOW TOM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "LOW TOM.wav"; sourceTree = "<group>"; };
 		C97C832325E17080006D1AAF /* RIM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = RIM.wav; sourceTree = "<group>"; };
 		C97C832425E17080006D1AAF /* MID TOM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "MID TOM.wav"; sourceTree = "<group>"; };
@@ -222,6 +226,15 @@
 				C95BBAA825EC1B1A00F2665D /* AcknowledgementsBrain.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C97796B5260AC4BE00C665A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C97796B6260AC4E100C665A9 /* ContactTableViewCell.swift */,
+				C97796B7260AC4E100C665A9 /* ContactTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C97C832125E17080006D1AAF /* Detroit 909 Sounds */ = {
@@ -392,6 +405,7 @@
 		C9FCA0CE25F3E3C800BC063B /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				C97796B5260AC4BE00C665A9 /* View */,
 				C9E7931125CB757A00CA80A2 /* Controller */,
 			);
 			path = Contact;
@@ -515,6 +529,7 @@
 				C97C833525E17081006D1AAF /* BASS DRUM.wav in Resources */,
 				C9516F68259E766B0060C4B8 /* Assets.xcassets in Resources */,
 				C9516F66259E765E0060C4B8 /* Main.storyboard in Resources */,
+				C97796B9260AC4E100C665A9 /* ContactTableViewCell.xib in Resources */,
 				C97C833325E17081006D1AAF /* CLAP.wav in Resources */,
 				C97C833425E17081006D1AAF /* CLOSED HAT.wav in Resources */,
 				C97C832F25E17081006D1AAF /* MID TOM.wav in Resources */,
@@ -559,6 +574,7 @@
 				C98243C325E051DC009F12F6 /* FAQ.swift in Sources */,
 				C95BBAAB25EC1B3600F2665D /* Acknowledgements.swift in Sources */,
 				C95BBA9F25EBED3300F2665D /* AcknowledgementsViewController.swift in Sources */,
+				C97796B8260AC4E100C665A9 /* ContactTableViewCell.swift in Sources */,
 				C987FA6E25D707BF004B70DF /* SettingsViewController.swift in Sources */,
 				C9EDD54026018BD700AAD44A /* Storyboarded.swift in Sources */,
 				C95BBAA925EC1B1A00F2665D /* AcknowledgementsBrain.swift in Sources */,
