@@ -20,18 +20,11 @@ class FAQViewController: UIViewController, Storyboarded {
         
         navigationUI()
         
-        let nib = UINib(nibName: "FAQTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "FAQTableViewCell")
+        tableView.register(FAQTableViewCell.nib(), forCellReuseIdentifier: FAQTableViewCell.identifier)
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
-        
-//MARK: - TableView Footer
-        
-//        let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 30))
-//        footer.backgroundColor = .darkGray
-//
-//        tableView.tableFooterView = footer
     }
     
     func navigationUI() {
@@ -44,9 +37,6 @@ class FAQViewController: UIViewController, Storyboarded {
 
 extension FAQViewController: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-        // Make it so row cannot be selected.
-    }
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
     }
@@ -55,7 +45,7 @@ extension FAQViewController: UITableViewDelegate {
 //MARK: - UITableViewDataSource
 
 extension FAQViewController: UITableViewDataSource {
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return faqBrain.faq.count
     }
@@ -73,7 +63,7 @@ extension FAQViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FAQTableViewCell", for: indexPath) as! FAQTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: FAQTableViewCell.identifier, for: indexPath) as! FAQTableViewCell
         
         cell.questionLabel.text = faqBrain.faq[indexPath.section].question
         cell.answerLabel.text = faqBrain.faq[indexPath.section].answer
@@ -82,6 +72,4 @@ extension FAQViewController: UITableViewDataSource {
         cell.backgroundColor = .black
         return cell
     }
-    
-    
 }

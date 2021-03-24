@@ -13,6 +13,12 @@ class FAQTableViewCell: UITableViewCell {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
     
+    static let identifier = "FAQTableViewCell"
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "FAQTableViewCell", bundle: nil)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
