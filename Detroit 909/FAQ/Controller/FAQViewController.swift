@@ -20,8 +20,8 @@ class FAQViewController: UIViewController, Storyboarded {
         
         navigationUI()
         
-        let nib = UINib(nibName: "FAQTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "FAQTableViewCell")
+        tableView.register(FAQTableViewCell.nib(), forCellReuseIdentifier: FAQTableViewCell.identifier)
+
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
@@ -63,7 +63,7 @@ extension FAQViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FAQTableViewCell", for: indexPath) as! FAQTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: FAQTableViewCell.identifier, for: indexPath) as! FAQTableViewCell
         
         cell.questionLabel.text = faqBrain.faq[indexPath.section].question
         cell.answerLabel.text = faqBrain.faq[indexPath.section].answer
