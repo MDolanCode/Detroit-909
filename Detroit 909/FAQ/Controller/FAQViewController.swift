@@ -21,7 +21,7 @@ class FAQViewController: UIViewController, Storyboarded {
         navigationUI()
         
         tableView.register(FAQTableViewCell.nib(), forCellReuseIdentifier: FAQTableViewCell.identifier)
-
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
@@ -36,7 +36,7 @@ class FAQViewController: UIViewController, Storyboarded {
 //MARK: - UITableViewDelegate
 
 extension FAQViewController: UITableViewDelegate {
-
+    
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
     }
@@ -45,7 +45,7 @@ extension FAQViewController: UITableViewDelegate {
 //MARK: - UITableViewDataSource
 
 extension FAQViewController: UITableViewDataSource {
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return faqBrain.faq.count
     }
@@ -72,6 +72,4 @@ extension FAQViewController: UITableViewDataSource {
         cell.backgroundColor = .black
         return cell
     }
-    
-    
 }
