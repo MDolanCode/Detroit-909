@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class ShoutOutsViewController: UIViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
@@ -39,6 +40,22 @@ extension ShoutOutsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+        
+        let url: URL?
+        
+        switch indexPath.row {
+        case 0:
+            url = URL(string: "https://www.icons8.com")
+        case 1:
+            url = URL(string: "https://www.dafont.com/pbio.font")
+        default:
+            return
+        }
+        
+        if url != nil {
+            
+            UIApplication.shared.open(url!)
+        }
     }
 }
 
@@ -51,7 +68,7 @@ extension ShoutOutsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return shoutOutsBrain.shoutOutsArray.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
