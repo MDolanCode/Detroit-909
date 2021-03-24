@@ -50,7 +50,7 @@
                 <outlet property="answerLabel" destination="JaD-YQ-gu1" id="L5L-dG-pa2"/>
                 <outlet property="questionLabel" destination="QtY-js-VPU" id="6t4-VT-I7T"/>
             </connections>
-            <point key="canvasLocation" x="-292.75362318840581" y="86.71875"/>
+            <point key="canvasLocation" x="-619" y="87"/>
         </tableViewCell>
     </objects>
 </document>
