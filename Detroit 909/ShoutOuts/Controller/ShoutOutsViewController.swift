@@ -68,7 +68,6 @@ extension ShoutOutsViewController: UITableViewDataSource {
         cell.whoLabel.text = shoutOutsBrain.shoutOutsArray[indexPath.row].who
         cell.whatLabel.text = shoutOutsBrain.shoutOutsArray[indexPath.row].what
         cell.assetImageView.image = shoutOutsBrain.shoutOutsArray[indexPath.row].image
-        //        cell.linkButton.text = shoutOutsBrain.ShoutoutsArray[indexPath.row]
         cell.whoLabel.textColor = .white
         cell.whatLabel.textColor = .white
         cell.backgroundColor = .black
