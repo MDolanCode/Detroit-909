@@ -22,7 +22,6 @@ class SettingsViewController: UIViewController, Storyboarded {
         navigationUI()
         
         tableView.register(SettingsTableViewCell.nib(), forCellReuseIdentifier: SettingsTableViewCell.identifier)
-        tableView.register(ContactTableViewCell.nib(), forCellReuseIdentifier: ContactTableViewCell.identifier)
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -41,10 +40,6 @@ class SettingsViewController: UIViewController, Storyboarded {
         navigationController?.navigationBar.topItem?.title = "Detroit 909"
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AvenirNext-Medium", size: 16)!], for: .normal)
         navigationController?.navigationBar.tintColor = UIColor.white
-    }
-
-    @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
-        coordinator?.goBack()
     }
 }
 
@@ -75,7 +70,7 @@ extension SettingsViewController: MFMailComposeViewControllerDelegate {
 
 extension SettingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let tableViewChoice = settingsBrain.dataArray[indexPath.section][indexPath.row]
+        let tableViewChoice = settingsBrain.dataArray[indexPath.row]
         tableView.deselectRow(at: indexPath, animated: true)
         
         if tableViewChoice == "FAQ" {
@@ -93,11 +88,11 @@ extension SettingsViewController: UITableViewDelegate {
 extension SettingsViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return settingsBrain.dataArray.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return settingsBrain.dataArray[section].count
+        return settingsBrain.dataArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -105,21 +100,12 @@ extension SettingsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row < 2 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: ContactTableViewCell.identifier, for: indexPath) as! ContactTableViewCell
-            cell.cellLabel.text = settingsBrain.dataArray[indexPath.section][indexPath.row]
+            let cell = tableView.dequeueReusableCell(withIdentifier: SettingsTableViewCell.identifier, for: indexPath) as! SettingsTableViewCell
+            // Set Cell UI
+            cell.cellLabel.text = settingsBrain.dataArray[indexPath.row]
             cell.cellLabel.textColor = .white
+            cell.cellButton.tintColor = .white
             cell.backgroundColor = .black
             return cell
-        }
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: SettingsTableViewCell.identifier, for: indexPath) as! SettingsTableViewCell
-        // Set Cell UI
-        cell.cellLabel.text = settingsBrain.dataArray[indexPath.section][indexPath.row]
-        cell.cellLabel.textColor = .white
-        cell.cellButton.tintColor = .white
-        cell.backgroundColor = .black
-        cell.accessoryType = .disclosureIndicator
-        return cell
     }
 }
