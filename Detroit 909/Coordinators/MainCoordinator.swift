@@ -40,8 +40,4 @@ class MainCoordinator: Coordinator {
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }
-    
-    func goBack() {
-        navigationController.popViewController(animated: false)
-    }
 }

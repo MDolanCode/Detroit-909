@@ -38,11 +38,6 @@ class FAQViewController: UIViewController, Storyboarded {
         // Set Title UI
         navigationItem.title = "FAQ"
     }
-    
-    @IBAction func backButtonPressed(_ sender: Any) {
-        coordinator?.goBack()
-    }
-    
 }
 
 //MARK: - UITableViewDelegate

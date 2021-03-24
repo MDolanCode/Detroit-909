@@ -31,10 +31,6 @@ class AcknowledgementsViewController: UIViewController, Storyboarded {
         // Set Title UI
         navigationItem.title = "Acknowledgements"
     }
-    
-    @IBAction func backBarButton(_ sender: UIBarButtonItem) {
-        coordinator?.goBack()
-    }
 }
 
 //MARK: - UITableViewDelegate
