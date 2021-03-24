@@ -35,12 +35,6 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
     
-    func contact() {
-        let vc = ContactViewController.instantiate()
-        vc.coordinator = self
-        navigationController.pushViewController(vc, animated: false)
-    }
-    
     func acknowledgement() {
         let vc = AcknowledgementsViewController.instantiate()
         vc.coordinator = self

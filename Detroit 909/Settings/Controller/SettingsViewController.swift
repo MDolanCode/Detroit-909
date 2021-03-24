@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class SettingsViewController: UIViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
@@ -20,8 +21,8 @@ class SettingsViewController: UIViewController, Storyboarded {
         
         navigationUI()
         
-        let nib = UINib(nibName: "SettingsTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "SettingsTableViewCell")
+        tableView.register(SettingsTableViewCell.nib(), forCellReuseIdentifier: SettingsTableViewCell.identifier)
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
@@ -40,10 +41,29 @@ class SettingsViewController: UIViewController, Storyboarded {
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AvenirNext-Medium", size: 16)!], for: .normal)
         navigationController?.navigationBar.tintColor = UIColor.white
     }
+}
 
-    @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
-        coordinator?.goBack()
+//MARK: - MFMailComposeViewControllerDelegate
+
+extension SettingsViewController: MFMailComposeViewControllerDelegate {
+    
+    func sendEmail() {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients(["matt@mdolancode.com"])
+            mail.setMessageBody("<p>You're soooo awesome!</p>", isHTML: true)
+            
+            present(mail, animated: true)
+        } else {
+            print("Email cannot send")
+        }
     }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 //MARK:- UITableViewDelegate
@@ -55,10 +75,10 @@ extension SettingsViewController: UITableViewDelegate {
         
         if tableViewChoice == "FAQ" {
             coordinator?.faq()
-        } else if tableViewChoice == "Contact Us" {
-            coordinator?.contact()
-        } else {
+        } else if tableViewChoice == "Acknowledgements" {
             coordinator?.acknowledgement()
+        } else if tableViewChoice == "Contact Us" {
+            sendEmail()
         }
     }
 }
@@ -80,13 +100,12 @@ extension SettingsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath) as! SettingsTableViewCell
-        
-        // Set Cell UI
-        cell.cellLabel.text = settingsBrain.dataArray[indexPath.row]
-        cell.cellLabel.textColor = .white
-        cell.cellButton.tintColor = .white
-        cell.backgroundColor = .black
-        return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: SettingsTableViewCell.identifier, for: indexPath) as! SettingsTableViewCell
+            // Set Cell UI
+            cell.cellLabel.text = settingsBrain.dataArray[indexPath.row]
+            cell.cellLabel.textColor = .white
+            cell.cellButton.tintColor = .white
+            cell.backgroundColor = .black
+            return cell
     }
 }

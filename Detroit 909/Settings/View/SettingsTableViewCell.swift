@@ -13,6 +13,12 @@ class SettingsTableViewCell: UITableViewCell {
     @IBOutlet weak var cellLabel: UILabel!
     @IBOutlet weak var cellButton: UIButton!
     
+    static let identifier = "SettingsTableViewCell"
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "SettingsTableViewCell", bundle: nil)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
