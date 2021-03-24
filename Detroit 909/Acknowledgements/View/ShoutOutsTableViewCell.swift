@@ -1,5 +1,5 @@
 //
-//  AcknowledgementsTableViewCell.swift
+//  ShoutOutsTableViewCell.swift
 //  Detroit 909
 //
 //  Created by Matt Dolan External macOS on 2021-02-28.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class AcknowledgementsTableViewCell: UITableViewCell {
+class ShoutOutsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var whatIsAcknowledgedLabel: UILabel!
-    @IBOutlet weak var acknowledgementLabel: UILabel!
+    @IBOutlet weak var whoLabel: UILabel!
+    @IBOutlet weak var whatLabel: UILabel!
     @IBOutlet weak var assetImageView: UIImageView!
     @IBOutlet weak var linkButton: UIButton!
     

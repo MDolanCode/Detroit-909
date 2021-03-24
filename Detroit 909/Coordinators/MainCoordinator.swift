@@ -35,8 +35,8 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
     
-    func acknowledgement() {
-        let vc = AcknowledgementsViewController.instantiate()
+    func shoutOuts() {
+        let vc = ShoutOutsViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }

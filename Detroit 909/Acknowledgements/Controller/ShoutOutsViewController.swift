@@ -1,5 +1,5 @@
 //
-//  AcknowledgementsViewController.swift
+//  ShoutOutsViewController.swift
 //  Detroit 909
 //
 //  Created by Matt Dolan External macOS on 2021-02-28.
@@ -8,20 +8,20 @@
 
 import UIKit
 
-class AcknowledgementsViewController: UIViewController, Storyboarded {
+class ShoutOutsViewController: UIViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
     
     @IBOutlet weak var tableView: UITableView!
     
-    let acknowledgementsBrain = AcknowledgementsBrain()
+    let shoutOutsBrain = ShoutOutsBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationUI()
         
-        let nib = UINib(nibName: "AcknowledgementsTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "AcknowledgementsTableViewCell")
+        let nib = UINib(nibName: "ShoutOutsTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "ShoutOutsTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
@@ -29,13 +29,13 @@ class AcknowledgementsViewController: UIViewController, Storyboarded {
     
     func navigationUI() {
         // Set Title UI
-        navigationItem.title = "Acknowledgements"
+        navigationItem.title = "ShoutOuts"
     }
 }
 
 //MARK: - UITableViewDelegate
 
-extension AcknowledgementsViewController: UITableViewDelegate {
+extension ShoutOutsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
@@ -44,9 +44,9 @@ extension AcknowledgementsViewController: UITableViewDelegate {
 
 //MARK: - UITableViewDataSource
 
-extension AcknowledgementsViewController: UITableViewDataSource {
+extension ShoutOutsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return acknowledgementsBrain.acknowledgementsArray.count
+        return shoutOutsBrain.ShoutoutsArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -58,14 +58,14 @@ extension AcknowledgementsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AcknowledgementsTableViewCell", for: indexPath) as! AcknowledgementsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ShoutOutsTableViewCell", for: indexPath) as! ShoutOutsTableViewCell
         
-        cell.whatIsAcknowledgedLabel.text = acknowledgementsBrain.acknowledgementsArray[indexPath.row].whatIsAcknowledged
-        cell.acknowledgementLabel.text = acknowledgementsBrain.acknowledgementsArray[indexPath.row].acknowledgement
-        cell.assetImageView.image = acknowledgementsBrain.acknowledgementsArray[indexPath.row].image
-        //        cell.linkButton.text = acknowledgementsBrain.acknowledgementsArray[indexPath.row]
-        cell.whatIsAcknowledgedLabel.textColor = .white
-        cell.acknowledgementLabel.textColor = .white
+        cell.whoLabel.text = shoutOutsBrain.ShoutoutsArray[indexPath.row].who
+        cell.whatLabel.text = shoutOutsBrain.ShoutoutsArray[indexPath.row].what
+        cell.assetImageView.image = shoutOutsBrain.ShoutoutsArray[indexPath.row].image
+        //        cell.linkButton.text = shoutOutsBrain.ShoutoutsArray[indexPath.row]
+        cell.whoLabel.textColor = .white
+        cell.whatLabel.textColor = .white
         cell.backgroundColor = .black
         
         return cell

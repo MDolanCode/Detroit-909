@@ -296,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qo2-Jy-fy6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-321" y="216"/>
+            <point key="canvasLocation" x="-1122" y="1125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1gM-YO-Waj">
@@ -327,70 +327,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYB-bJ-JQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565" y="-94"/>
+            <point key="canvasLocation" x="-1490" y="2161"/>
         </scene>
-        <!--Contact View Controller-->
-        <scene sceneID="uDE-ya-Wm9">
-            <objects>
-                <viewController storyboardIdentifier="ContactViewController" id="u35-gV-FvB" customClass="ContactViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Yl-IF-m7n">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4W-yS-exG" userLabel="Background View">
-                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkZ-9w-enm" userLabel="Contact Label">
-                                <rect key="frame" x="64" y="0.0" width="772" height="221"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="221" id="VUU-RC-u8v"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-wl-U56">
-                                <rect key="frame" x="348" y="238" width="200" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="LBD-Fl-sQq"/>
-                                    <constraint firstAttribute="height" constant="50" id="fVD-Mb-MVn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="PBIO-Bold" family="PBIO" pointSize="18"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="contactButtonPressed:" destination="u35-gV-FvB" eventType="touchUpInside" id="wLi-HZ-xhY"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="fun-N4-omK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="MZN-wl-U56" firstAttribute="top" secondItem="AkZ-9w-enm" secondAttribute="bottom" constant="17" id="0uo-q0-EUe"/>
-                            <constraint firstItem="AkZ-9w-enm" firstAttribute="leading" secondItem="fun-N4-omK" secondAttribute="leading" constant="20" id="8KT-2A-9uV"/>
-                            <constraint firstItem="D4W-yS-exG" firstAttribute="centerX" secondItem="MZN-wl-U56" secondAttribute="centerX" id="BRp-WD-NHm"/>
-                            <constraint firstItem="AkZ-9w-enm" firstAttribute="trailing" secondItem="8Yl-IF-m7n" secondAttribute="trailingMargin" id="JQJ-ml-Ut1"/>
-                            <constraint firstItem="D4W-yS-exG" firstAttribute="top" secondItem="fun-N4-omK" secondAttribute="top" constant="44" id="Vkx-a1-NBE"/>
-                            <constraint firstAttribute="bottom" secondItem="D4W-yS-exG" secondAttribute="bottom" id="Z8X-Tf-UFR"/>
-                            <constraint firstAttribute="trailing" secondItem="D4W-yS-exG" secondAttribute="trailing" id="bua-L4-V2f"/>
-                            <constraint firstItem="D4W-yS-exG" firstAttribute="leading" secondItem="8Yl-IF-m7n" secondAttribute="leading" id="fA6-Gg-aOx"/>
-                            <constraint firstItem="AkZ-9w-enm" firstAttribute="top" secondItem="fun-N4-omK" secondAttribute="top" id="t3Y-0S-8PR"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="backgroundView" destination="D4W-yS-exG" id="Dve-ll-9WA"/>
-                        <outlet property="contactButton" destination="MZN-wl-U56" id="U1r-i8-3px"/>
-                        <outlet property="contactLabel" destination="AkZ-9w-enm" id="gvo-Nh-zUO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b9z-Pn-lE1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="564.50892857142856" y="769.56521739130437"/>
-        </scene>
-        <!--Acknowledgements View Controller-->
+        <!--Shout Outs View Controller-->
         <scene sceneID="QhE-GS-oKM">
             <objects>
-                <viewController storyboardIdentifier="AcknowledgementsViewController" id="3nQ-3l-4yt" customClass="AcknowledgementsViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShoutOutsViewController" id="3nQ-3l-4yt" customClass="ShoutOutsViewController" customModule="Detroit_909" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kX5-m2-Ewj">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -416,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfr-1M-ltA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565" y="1743"/>
+            <point key="canvasLocation" x="-701" y="2161"/>
         </scene>
     </scenes>
     <resources>
