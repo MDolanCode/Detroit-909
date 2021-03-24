@@ -21,8 +21,9 @@ class SettingsViewController: UIViewController, Storyboarded {
         
         navigationUI()
         
-        let nib = UINib(nibName: "SettingsTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "SettingsTableViewCell")
+        tableView.register(SettingsTableViewCell.nib(), forCellReuseIdentifier: SettingsTableViewCell.identifier)
+        tableView.register(ContactTableViewCell.nib(), forCellReuseIdentifier: ContactTableViewCell.identifier)
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
@@ -104,13 +105,21 @@ extension SettingsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath) as! SettingsTableViewCell
+        if indexPath.row < 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: ContactTableViewCell.identifier, for: indexPath) as! ContactTableViewCell
+            cell.cellLabel.text = settingsBrain.dataArray[indexPath.section][indexPath.row]
+            cell.cellLabel.textColor = .white
+            cell.backgroundColor = .black
+            return cell
+        }
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: SettingsTableViewCell.identifier, for: indexPath) as! SettingsTableViewCell
         // Set Cell UI
         cell.cellLabel.text = settingsBrain.dataArray[indexPath.section][indexPath.row]
         cell.cellLabel.textColor = .white
         cell.cellButton.tintColor = .white
         cell.backgroundColor = .black
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
 }
