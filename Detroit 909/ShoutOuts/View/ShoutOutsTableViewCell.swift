@@ -13,7 +13,6 @@ class ShoutOutsTableViewCell: UITableViewCell {
     @IBOutlet weak var whoLabel: UILabel!
     @IBOutlet weak var whatLabel: UILabel!
     @IBOutlet weak var assetImageView: UIImageView!
-    @IBOutlet weak var linkButton: UIButton!
     
     static let identifier = "ShoutOutsTableViewCell"
     
