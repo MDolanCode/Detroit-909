@@ -47,7 +47,7 @@ extension FAQViewController: UITableViewDelegate {
 extension FAQViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return faqBrain.faq.count
+        return faqBrain.faqArray.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -65,8 +65,8 @@ extension FAQViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FAQTableViewCell.identifier, for: indexPath) as! FAQTableViewCell
         
-        cell.questionLabel.text = faqBrain.faq[indexPath.section].question
-        cell.answerLabel.text = faqBrain.faq[indexPath.section].answer
+        cell.questionLabel.text = faqBrain.faqArray[indexPath.section].question
+        cell.answerLabel.text = faqBrain.faqArray[indexPath.section].answer
         cell.questionLabel.textColor = .white
         cell.answerLabel.textColor = .white
         cell.backgroundColor = .black
