@@ -166,7 +166,7 @@
 				C9FCA0A625F3E19000BC063B /* Detroit 909 */,
 				C9FCA0AA25F3E1D200BC063B /* Settings */,
 				C9FCA0AE25F3E1FF00BC063B /* FAQ */,
-				C9FCA0B925F3E24A00BC063B /* Acknowledgements */,
+				C9FCA0B925F3E24A00BC063B /* ShoutOuts */,
 				C9516F67259E766B0060C4B8 /* Assets.xcassets */,
 				C9516F69259E766B0060C4B8 /* LaunchScreen.storyboard */,
 				C9516F6C259E766B0060C4B8 /* Info.plist */,
@@ -328,14 +328,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C9FCA0B925F3E24A00BC063B /* Acknowledgements */ = {
+		C9FCA0B925F3E24A00BC063B /* ShoutOuts */ = {
 			isa = PBXGroup;
 			children = (
 				C95BBAA725EC1ACC00F2665D /* Model */,
 				C95BBAA025EBF3A900F2665D /* View */,
 				C9FCA0C925F3E37C00BC063B /* Controller */,
 			);
-			path = Acknowledgements;
+			path = ShoutOuts;
 			sourceTree = "<group>";
 		};
 		C9FCA0C325F3E2F100BC063B /* Model */ = {
