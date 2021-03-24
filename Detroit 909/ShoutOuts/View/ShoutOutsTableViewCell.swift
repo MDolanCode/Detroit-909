@@ -15,6 +15,12 @@ class ShoutOutsTableViewCell: UITableViewCell {
     @IBOutlet weak var assetImageView: UIImageView!
     @IBOutlet weak var linkButton: UIButton!
     
+    static let identifier = "ShoutOutsTableViewCell"
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "ShoutOutsTableViewCell", bundle: nil)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
