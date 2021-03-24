@@ -26,18 +26,18 @@ class MainCoordinator: Coordinator {
     func settings() {
         let vc = SettingsViewController.instantiate()
         vc.coordinator = self
-        navigationController.pushViewController(vc, animated: false)
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func faq() {
         let vc = FAQViewController.instantiate()
         vc.coordinator = self
-        navigationController.pushViewController(vc, animated: false)
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func shoutOuts() {
         let vc = ShoutOutsViewController.instantiate()
         vc.coordinator = self
-        navigationController.pushViewController(vc, animated: false)
+        navigationController.pushViewController(vc, animated: true)
     }
 }
