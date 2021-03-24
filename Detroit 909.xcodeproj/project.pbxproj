@@ -18,11 +18,11 @@
 		C9516F81259E766B0060C4B8 /* Detroit_909UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9516F80259E766B0060C4B8 /* Detroit_909UITests.swift */; };
 		C956FF6225DB3D9D001E273A /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956FF6025DB3D9D001E273A /* SettingsTableViewCell.swift */; };
 		C956FF6325DB3D9D001E273A /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C956FF6125DB3D9D001E273A /* SettingsTableViewCell.xib */; };
-		C95BBA9F25EBED3300F2665D /* AcknowledgementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBA9E25EBED3300F2665D /* AcknowledgementsViewController.swift */; };
-		C95BBAA325EBF49000F2665D /* AcknowledgementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA125EBF49000F2665D /* AcknowledgementsTableViewCell.swift */; };
-		C95BBAA425EBF49000F2665D /* AcknowledgementsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95BBAA225EBF49000F2665D /* AcknowledgementsTableViewCell.xib */; };
-		C95BBAA925EC1B1A00F2665D /* AcknowledgementsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA825EC1B1A00F2665D /* AcknowledgementsBrain.swift */; };
-		C95BBAAB25EC1B3600F2665D /* Acknowledgements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAAA25EC1B3600F2665D /* Acknowledgements.swift */; };
+		C95BBA9F25EBED3300F2665D /* ShoutOutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBA9E25EBED3300F2665D /* ShoutOutsViewController.swift */; };
+		C95BBAA325EBF49000F2665D /* ShoutOutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA125EBF49000F2665D /* ShoutOutsTableViewCell.swift */; };
+		C95BBAA425EBF49000F2665D /* ShoutOutsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95BBAA225EBF49000F2665D /* ShoutOutsTableViewCell.xib */; };
+		C95BBAA925EC1B1A00F2665D /* ShoutOutsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA825EC1B1A00F2665D /* ShoutOutsBrain.swift */; };
+		C95BBAAB25EC1B3600F2665D /* ShoutOuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAAA25EC1B3600F2665D /* ShoutOuts.swift */; };
 		C96571BF25D2FB5700C1B0A3 /* DrumPadSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */; };
 		C97C832D25E17081006D1AAF /* LOW TOM.wav in Resources */ = {isa = PBXBuildFile; fileRef = C97C832225E17080006D1AAF /* LOW TOM.wav */; };
 		C97C832E25E17081006D1AAF /* RIM.wav in Resources */ = {isa = PBXBuildFile; fileRef = C97C832325E17080006D1AAF /* RIM.wav */; };
@@ -82,11 +82,11 @@
 		C9516F82259E766C0060C4B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C956FF6025DB3D9D001E273A /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		C956FF6125DB3D9D001E273A /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
-		C95BBA9E25EBED3300F2665D /* AcknowledgementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsViewController.swift; sourceTree = "<group>"; };
-		C95BBAA125EBF49000F2665D /* AcknowledgementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsTableViewCell.swift; sourceTree = "<group>"; };
-		C95BBAA225EBF49000F2665D /* AcknowledgementsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcknowledgementsTableViewCell.xib; sourceTree = "<group>"; };
-		C95BBAA825EC1B1A00F2665D /* AcknowledgementsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsBrain.swift; sourceTree = "<group>"; };
-		C95BBAAA25EC1B3600F2665D /* Acknowledgements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acknowledgements.swift; sourceTree = "<group>"; };
+		C95BBA9E25EBED3300F2665D /* ShoutOutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutsViewController.swift; sourceTree = "<group>"; };
+		C95BBAA125EBF49000F2665D /* ShoutOutsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutsTableViewCell.swift; sourceTree = "<group>"; };
+		C95BBAA225EBF49000F2665D /* ShoutOutsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoutOutsTableViewCell.xib; sourceTree = "<group>"; };
+		C95BBAA825EC1B1A00F2665D /* ShoutOutsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutsBrain.swift; sourceTree = "<group>"; };
+		C95BBAAA25EC1B3600F2665D /* ShoutOuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOuts.swift; sourceTree = "<group>"; };
 		C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumPadSound.swift; sourceTree = "<group>"; };
 		C97C832225E17080006D1AAF /* LOW TOM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "LOW TOM.wav"; sourceTree = "<group>"; };
 		C97C832325E17080006D1AAF /* RIM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = RIM.wav; sourceTree = "<group>"; };
@@ -197,8 +197,8 @@
 		C95BBAA025EBF3A900F2665D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C95BBAA125EBF49000F2665D /* AcknowledgementsTableViewCell.swift */,
-				C95BBAA225EBF49000F2665D /* AcknowledgementsTableViewCell.xib */,
+				C95BBAA125EBF49000F2665D /* ShoutOutsTableViewCell.swift */,
+				C95BBAA225EBF49000F2665D /* ShoutOutsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,8 +215,8 @@
 		C95BBAA725EC1ACC00F2665D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C95BBAAA25EC1B3600F2665D /* Acknowledgements.swift */,
-				C95BBAA825EC1B1A00F2665D /* AcknowledgementsBrain.swift */,
+				C95BBAAA25EC1B3600F2665D /* ShoutOuts.swift */,
+				C95BBAA825EC1B1A00F2665D /* ShoutOutsBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -365,7 +365,7 @@
 		C9FCA0C925F3E37C00BC063B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C95BBA9E25EBED3300F2665D /* AcknowledgementsViewController.swift */,
+				C95BBA9E25EBED3300F2665D /* ShoutOutsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -488,7 +488,7 @@
 				C97C832E25E17081006D1AAF /* RIM.wav in Resources */,
 				C9516F6B259E766B0060C4B8 /* LaunchScreen.storyboard in Resources */,
 				C97C833725E17081006D1AAF /* HI TOM.wav in Resources */,
-				C95BBAA425EBF49000F2665D /* AcknowledgementsTableViewCell.xib in Resources */,
+				C95BBAA425EBF49000F2665D /* ShoutOutsTableViewCell.xib in Resources */,
 				C98243CC25E15E1B009F12F6 /* pbio-bold.ttf in Resources */,
 				C97C833625E17081006D1AAF /* CRASH.wav in Resources */,
 				C97C833125E17081006D1AAF /* OPEN HAT.wav in Resources */,
@@ -524,7 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C95BBAA325EBF49000F2665D /* AcknowledgementsTableViewCell.swift in Sources */,
+				C95BBAA325EBF49000F2665D /* ShoutOutsTableViewCell.swift in Sources */,
 				C93CA1AB25DB658C00EF2B07 /* SettingsBrain.swift in Sources */,
 				C9516F63259E765E0060C4B8 /* Detroit909ViewController.swift in Sources */,
 				C98243C025E02B60009F12F6 /* FAQTableViewCell.swift in Sources */,
@@ -537,11 +537,11 @@
 				C98243C925E05C81009F12F6 /* FAQViewController.swift in Sources */,
 				C9EDD54826018E5900AAD44A /* MainCoordinator.swift in Sources */,
 				C98243C325E051DC009F12F6 /* FAQ.swift in Sources */,
-				C95BBAAB25EC1B3600F2665D /* Acknowledgements.swift in Sources */,
-				C95BBA9F25EBED3300F2665D /* AcknowledgementsViewController.swift in Sources */,
+				C95BBAAB25EC1B3600F2665D /* ShoutOuts.swift in Sources */,
+				C95BBA9F25EBED3300F2665D /* ShoutOutsViewController.swift in Sources */,
 				C987FA6E25D707BF004B70DF /* SettingsViewController.swift in Sources */,
 				C9EDD54026018BD700AAD44A /* Storyboarded.swift in Sources */,
-				C95BBAA925EC1B1A00F2665D /* AcknowledgementsBrain.swift in Sources */,
+				C95BBAA925EC1B1A00F2665D /* ShoutOutsBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
