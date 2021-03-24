@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class SettingsViewController: UIViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
@@ -46,19 +47,42 @@ class SettingsViewController: UIViewController, Storyboarded {
     }
 }
 
+//MARK: - MFMailComposeViewControllerDelegate
+
+extension SettingsViewController: MFMailComposeViewControllerDelegate {
+    
+    func sendEmail() {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients(["matt@mdolancode.com"])
+            mail.setMessageBody("<p>You're soooo awesome!</p>", isHTML: true)
+            
+            present(mail, animated: true)
+        } else {
+            print("Email cannot send")
+        }
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+}
+
 //MARK:- UITableViewDelegate
 
 extension SettingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let tableViewChoice = settingsBrain.dataArray[indexPath.row]
+        let tableViewChoice = settingsBrain.dataArray[indexPath.section][indexPath.row]
         tableView.deselectRow(at: indexPath, animated: true)
         
         if tableViewChoice == "FAQ" {
             coordinator?.faq()
-        } else if tableViewChoice == "Contact Us" {
-            coordinator?.contact()
-        } else {
+        } else if tableViewChoice == "Acknowledgements" {
             coordinator?.acknowledgement()
+        } else if tableViewChoice == "Contact Us" {
+            sendEmail()
         }
     }
 }
@@ -68,11 +92,11 @@ extension SettingsViewController: UITableViewDelegate {
 extension SettingsViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return settingsBrain.dataArray.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return settingsBrain.dataArray.count
+        return settingsBrain.dataArray[section].count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -83,7 +107,7 @@ extension SettingsViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath) as! SettingsTableViewCell
         
         // Set Cell UI
-        cell.cellLabel.text = settingsBrain.dataArray[indexPath.row]
+        cell.cellLabel.text = settingsBrain.dataArray[indexPath.section][indexPath.row]
         cell.cellLabel.textColor = .white
         cell.cellButton.tintColor = .white
         cell.backgroundColor = .black
