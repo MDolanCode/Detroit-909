@@ -75,7 +75,7 @@ extension SettingsViewController: UITableViewDelegate {
         
         if tableViewChoice == "FAQ" {
             coordinator?.faq()
-        } else if tableViewChoice == "Shout-Outs" {
+        } else if tableViewChoice == "ShoutOuts" {
             coordinator?.shoutOuts()
         } else if tableViewChoice == "Contact Us" {
             sendEmail()
