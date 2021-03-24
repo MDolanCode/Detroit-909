@@ -46,7 +46,7 @@ extension ShoutOutsViewController: UITableViewDelegate {
 
 extension ShoutOutsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return shoutOutsBrain.ShoutoutsArray.count
+        return shoutOutsBrain.ShoutOutsArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -60,9 +60,9 @@ extension ShoutOutsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ShoutOutsTableViewCell.identifier, for: indexPath) as! ShoutOutsTableViewCell
         
-        cell.whoLabel.text = shoutOutsBrain.ShoutoutsArray[indexPath.row].who
-        cell.whatLabel.text = shoutOutsBrain.ShoutoutsArray[indexPath.row].what
-        cell.assetImageView.image = shoutOutsBrain.ShoutoutsArray[indexPath.row].image
+        cell.whoLabel.text = shoutOutsBrain.ShoutOutsArray[indexPath.row].who
+        cell.whatLabel.text = shoutOutsBrain.ShoutOutsArray[indexPath.row].what
+        cell.assetImageView.image = shoutOutsBrain.ShoutOutsArray[indexPath.row].image
         //        cell.linkButton.text = shoutOutsBrain.ShoutoutsArray[indexPath.row]
         cell.whoLabel.textColor = .white
         cell.whatLabel.textColor = .white

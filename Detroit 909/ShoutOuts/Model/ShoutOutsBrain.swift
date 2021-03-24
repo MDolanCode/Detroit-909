@@ -10,5 +10,5 @@ import Foundation
 import UIKit
 
 struct ShoutOutsBrain {
-    let ShoutoutsArray = [ShoutOuts(who: "Icon 8", what: "", urlString: "http://mdolancode.com", image: #imageLiteral(resourceName: "icons8-settings-64-2"))]
+    let ShoutOutsArray = [ShoutOuts(who: "Icon 8", what: "", urlString: "http://mdolancode.com", image: #imageLiteral(resourceName: "icons8-settings-64-2"))]
 }
