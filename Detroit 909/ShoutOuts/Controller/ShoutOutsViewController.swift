@@ -64,11 +64,11 @@ extension ShoutOutsViewController: UITableViewDelegate {
 extension ShoutOutsViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return shoutOutsBrain.shoutOutsArray.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return shoutOutsBrain.shoutOutsArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -88,7 +88,6 @@ extension ShoutOutsViewController: UITableViewDataSource {
         cell.whoLabel.textColor = .white
         cell.whatLabel.textColor = .white
         cell.backgroundColor = .black
-        
         return cell
     }
 }
