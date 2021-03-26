@@ -9,5 +9,5 @@
 import Foundation
 
 struct SettingsBrain {
-    let  dataArray = ["FAQ", "Shout-Outs", "Contact Us"]
+    let  dataArray = ["FAQ", "ShoutOuts", "Contact Us"]
 }

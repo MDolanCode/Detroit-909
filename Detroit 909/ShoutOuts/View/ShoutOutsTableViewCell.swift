@@ -13,7 +13,12 @@ class ShoutOutsTableViewCell: UITableViewCell {
     @IBOutlet weak var whoLabel: UILabel!
     @IBOutlet weak var whatLabel: UILabel!
     @IBOutlet weak var assetImageView: UIImageView!
-    @IBOutlet weak var linkButton: UIButton!
+    
+    static let identifier = "ShoutOutsTableViewCell"
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "ShoutOutsTableViewCell", bundle: nil)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,7 +27,6 @@ class ShoutOutsTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
     

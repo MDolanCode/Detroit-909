@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class ShoutOutsViewController: UIViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
@@ -20,8 +21,8 @@ class ShoutOutsViewController: UIViewController, Storyboarded {
         
         navigationUI()
         
-        let nib = UINib(nibName: "ShoutOutsTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "ShoutOutsTableViewCell")
+        tableView.register(ShoutOutsTableViewCell.nib(), forCellReuseIdentifier: ShoutOutsTableViewCell.identifier)
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .black
@@ -39,14 +40,35 @@ extension ShoutOutsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+        
+        let url: URL?
+        
+        switch indexPath.row {
+        case 0:
+            url = URL(string: "https://www.icons8.com")
+        case 1:
+            url = URL(string: "https://www.dafont.com/pbio.font")
+        default:
+            return
+        }
+        
+        if url != nil {
+            
+            UIApplication.shared.open(url!)
+        }
     }
 }
 
 //MARK: - UITableViewDataSource
 
 extension ShoutOutsViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return shoutOutsBrain.ShoutoutsArray.count
+        return shoutOutsBrain.shoutOutsArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -58,16 +80,14 @@ extension ShoutOutsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ShoutOutsTableViewCell", for: indexPath) as! ShoutOutsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ShoutOutsTableViewCell.identifier, for: indexPath) as! ShoutOutsTableViewCell
         
-        cell.whoLabel.text = shoutOutsBrain.ShoutoutsArray[indexPath.row].who
-        cell.whatLabel.text = shoutOutsBrain.ShoutoutsArray[indexPath.row].what
-        cell.assetImageView.image = shoutOutsBrain.ShoutoutsArray[indexPath.row].image
-        //        cell.linkButton.text = shoutOutsBrain.ShoutoutsArray[indexPath.row]
+        cell.whoLabel.text = shoutOutsBrain.shoutOutsArray[indexPath.row].who
+        cell.whatLabel.text = shoutOutsBrain.shoutOutsArray[indexPath.row].what
+        cell.assetImageView.image = shoutOutsBrain.shoutOutsArray[indexPath.row].image
         cell.whoLabel.textColor = .white
         cell.whatLabel.textColor = .white
         cell.backgroundColor = .black
-        
         return cell
     }
 }

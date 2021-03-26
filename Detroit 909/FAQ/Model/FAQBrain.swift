@@ -9,7 +9,7 @@
 import Foundation
 
 struct FAQBrain {
-    let faq = [
+    let faqArray = [
         FAQ(question: "Why Detroit 909?" , answer: "I created Detroit 909 to pay homage to the classic 80's drum machine from Roland the TR909 and Detroit, the birthplace of Techno music. As a child, I grew up in Windsor, Canada, a neighbouring city of Detroit, and was where I would get most of my music I would hear from the radio stations. Here is where I would first hear the Detroit sounds."),
         FAQ(question: "Can I use Detroit 909 with other iOS apps?", answer: "This feature will be available in the future."),
         FAQ(question: "What features are coming up?", answer: "One feature will be a drum sequencer to create patterns."),

@@ -20,7 +20,6 @@
 		C956FF6325DB3D9D001E273A /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C956FF6125DB3D9D001E273A /* SettingsTableViewCell.xib */; };
 		C95BBA9F25EBED3300F2665D /* ShoutOutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBA9E25EBED3300F2665D /* ShoutOutsViewController.swift */; };
 		C95BBAA325EBF49000F2665D /* ShoutOutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA125EBF49000F2665D /* ShoutOutsTableViewCell.swift */; };
-		C95BBAA425EBF49000F2665D /* ShoutOutsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95BBAA225EBF49000F2665D /* ShoutOutsTableViewCell.xib */; };
 		C95BBAA925EC1B1A00F2665D /* ShoutOutsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA825EC1B1A00F2665D /* ShoutOutsBrain.swift */; };
 		C95BBAAB25EC1B3600F2665D /* ShoutOuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAAA25EC1B3600F2665D /* ShoutOuts.swift */; };
 		C96571BF25D2FB5700C1B0A3 /* DrumPadSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */; };
@@ -42,6 +41,7 @@
 		C98243C925E05C81009F12F6 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98243C825E05C81009F12F6 /* FAQViewController.swift */; };
 		C98243CC25E15E1B009F12F6 /* pbio-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C98243CB25E15E1B009F12F6 /* pbio-bold.ttf */; };
 		C987FA6E25D707BF004B70DF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C987FA6D25D707BF004B70DF /* SettingsViewController.swift */; };
+		C9E78620260C0D82009556A5 /* ShoutOutsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E7861E260C0D82009556A5 /* ShoutOutsTableViewCell.xib */; };
 		C9EDD53B26018AF400AAD44A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EDD53A26018AF400AAD44A /* Coordinator.swift */; };
 		C9EDD54026018BD700AAD44A /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EDD53F26018BD700AAD44A /* Storyboarded.swift */; };
 		C9EDD54826018E5900AAD44A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EDD54726018E5900AAD44A /* MainCoordinator.swift */; };
@@ -84,7 +84,6 @@
 		C956FF6125DB3D9D001E273A /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
 		C95BBA9E25EBED3300F2665D /* ShoutOutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutsViewController.swift; sourceTree = "<group>"; };
 		C95BBAA125EBF49000F2665D /* ShoutOutsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutsTableViewCell.swift; sourceTree = "<group>"; };
-		C95BBAA225EBF49000F2665D /* ShoutOutsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoutOutsTableViewCell.xib; sourceTree = "<group>"; };
 		C95BBAA825EC1B1A00F2665D /* ShoutOutsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutsBrain.swift; sourceTree = "<group>"; };
 		C95BBAAA25EC1B3600F2665D /* ShoutOuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOuts.swift; sourceTree = "<group>"; };
 		C96571BE25D2FB5700C1B0A3 /* DrumPadSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumPadSound.swift; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		C98243C825E05C81009F12F6 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		C98243CB25E15E1B009F12F6 /* pbio-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pbio-bold.ttf"; sourceTree = "<group>"; };
 		C987FA6D25D707BF004B70DF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C9E7861E260C0D82009556A5 /* ShoutOutsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoutOutsTableViewCell.xib; sourceTree = "<group>"; };
 		C9EDD53A26018AF400AAD44A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C9EDD53F26018BD700AAD44A /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		C9EDD54726018E5900AAD44A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 				C9FCA0A625F3E19000BC063B /* Detroit 909 */,
 				C9FCA0AA25F3E1D200BC063B /* Settings */,
 				C9FCA0AE25F3E1FF00BC063B /* FAQ */,
-				C9FCA0B925F3E24A00BC063B /* Acknowledgements */,
+				C9FCA0B925F3E24A00BC063B /* ShoutOuts */,
 				C9516F67259E766B0060C4B8 /* Assets.xcassets */,
 				C9516F69259E766B0060C4B8 /* LaunchScreen.storyboard */,
 				C9516F6C259E766B0060C4B8 /* Info.plist */,
@@ -198,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				C95BBAA125EBF49000F2665D /* ShoutOutsTableViewCell.swift */,
-				C95BBAA225EBF49000F2665D /* ShoutOutsTableViewCell.xib */,
+				C9E7861E260C0D82009556A5 /* ShoutOutsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -328,14 +328,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C9FCA0B925F3E24A00BC063B /* Acknowledgements */ = {
+		C9FCA0B925F3E24A00BC063B /* ShoutOuts */ = {
 			isa = PBXGroup;
 			children = (
 				C95BBAA725EC1ACC00F2665D /* Model */,
 				C95BBAA025EBF3A900F2665D /* View */,
 				C9FCA0C925F3E37C00BC063B /* Controller */,
 			);
-			path = Acknowledgements;
+			path = ShoutOuts;
 			sourceTree = "<group>";
 		};
 		C9FCA0C325F3E2F100BC063B /* Model */ = {
@@ -482,13 +482,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E78620260C0D82009556A5 /* ShoutOutsTableViewCell.xib in Resources */,
 				C98243C125E02B60009F12F6 /* FAQTableViewCell.xib in Resources */,
 				C956FF6325DB3D9D001E273A /* SettingsTableViewCell.xib in Resources */,
 				C97C832D25E17081006D1AAF /* LOW TOM.wav in Resources */,
 				C97C832E25E17081006D1AAF /* RIM.wav in Resources */,
 				C9516F6B259E766B0060C4B8 /* LaunchScreen.storyboard in Resources */,
 				C97C833725E17081006D1AAF /* HI TOM.wav in Resources */,
-				C95BBAA425EBF49000F2665D /* ShoutOutsTableViewCell.xib in Resources */,
 				C98243CC25E15E1B009F12F6 /* pbio-bold.ttf in Resources */,
 				C97C833625E17081006D1AAF /* CRASH.wav in Resources */,
 				C97C833125E17081006D1AAF /* OPEN HAT.wav in Resources */,
