@@ -1,0 +1,6 @@
+framework module Pods_Detroit_909_Detroit_909UITests {
+  umbrella header "Pods-Detroit 909-Detroit 909UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
