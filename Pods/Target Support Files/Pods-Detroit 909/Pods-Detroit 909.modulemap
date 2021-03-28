@@ -1,6 +1,0 @@
-framework module Pods_Detroit_909 {
-  umbrella header "Pods-Detroit 909-umbrella.h"
-
-  export *
-  module * { export * }
-}
