@@ -11,7 +11,6 @@ import UIKit
 class Detroit909ViewController: UIViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
     
-    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var detroit909Label: UILabel!
     @IBOutlet weak var bassDrumButton: DrumPadButton!
     @IBOutlet weak var snareDrumButton: DrumPadButton!
@@ -29,7 +28,6 @@ class Detroit909ViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        backgroundView.backgroundColor = .black
         drumPadButtonTitle()
     }
     
