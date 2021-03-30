@@ -18,6 +18,7 @@
 		C9516F81259E766B0060C4B8 /* Detroit_909UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9516F80259E766B0060C4B8 /* Detroit_909UITests.swift */; };
 		C956FF6225DB3D9D001E273A /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956FF6025DB3D9D001E273A /* SettingsTableViewCell.swift */; };
 		C956FF6325DB3D9D001E273A /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C956FF6125DB3D9D001E273A /* SettingsTableViewCell.xib */; };
+		C9584838261399CE00F7A3AF /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9584837261399CE00F7A3AF /* SnapshotHelper.swift */; };
 		C95BBA9F25EBED3300F2665D /* ShoutOutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBA9E25EBED3300F2665D /* ShoutOutsViewController.swift */; };
 		C95BBAA325EBF49000F2665D /* ShoutOutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA125EBF49000F2665D /* ShoutOutsTableViewCell.swift */; };
 		C95BBAA925EC1B1A00F2665D /* ShoutOutsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BBAA825EC1B1A00F2665D /* ShoutOutsBrain.swift */; };
@@ -82,6 +83,7 @@
 		C9516F82259E766C0060C4B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C956FF6025DB3D9D001E273A /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		C956FF6125DB3D9D001E273A /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		C9584837261399CE00F7A3AF /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		C95BBA9E25EBED3300F2665D /* ShoutOutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutsViewController.swift; sourceTree = "<group>"; };
 		C95BBAA125EBF49000F2665D /* ShoutOutsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutsTableViewCell.swift; sourceTree = "<group>"; };
 		C95BBAA825EC1B1A00F2665D /* ShoutOutsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutsBrain.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				C9516F80259E766B0060C4B8 /* Detroit_909UITests.swift */,
+				C9584837261399CE00F7A3AF /* SnapshotHelper.swift */,
 				C9516F82259E766C0060C4B8 /* Info.plist */,
 			);
 			path = "Detroit 909UITests";
@@ -558,6 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9516F81259E766B0060C4B8 /* Detroit_909UITests.swift in Sources */,
+				C9584838261399CE00F7A3AF /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,6 +720,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5CDGW4297F;
 				INFOPLIST_FILE = "Detroit 909/Info.plist";
@@ -726,6 +731,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewdolan.Detroit-909";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -735,6 +741,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5CDGW4297F;
 				INFOPLIST_FILE = "Detroit 909/Info.plist";
@@ -745,6 +752,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewdolan.Detroit-909";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

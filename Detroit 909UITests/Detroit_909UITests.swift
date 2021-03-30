@@ -26,7 +26,9 @@ class Detroit_909UITests: XCTestCase {
     func testExample() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
-//        setupSnapshot(app)
+        setupSnapshot(app)
+        snapshot("LaunchScreen")
+        snapshot("Detroit909")
         app.launch()
 
         // Use recording to get started writing UI tests.
