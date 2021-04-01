@@ -19,12 +19,20 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Detroit-909 Launch Screen Landscape" translatesAutoresizingMaskIntoConstraints="NO" id="mD7-vl-MoH">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version: 1.0 (1)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62i-7D-Edt" userLabel="APP_VERSION">
+                                <rect key="frame" x="400" y="374.5" width="98.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="mD7-vl-MoH" secondAttribute="bottom" id="97a-I8-yCy"/>
                             <constraint firstAttribute="trailing" secondItem="mD7-vl-MoH" secondAttribute="trailing" id="JQO-38-Oc4"/>
+                            <constraint firstItem="62i-7D-Edt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="177" id="ZK5-bZ-eic"/>
                             <constraint firstItem="mD7-vl-MoH" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ZxW-ur-4Dl"/>
+                            <constraint firstItem="62i-7D-Edt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="1" id="eVH-RT-nQ1"/>
                             <constraint firstItem="mD7-vl-MoH" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="rUo-es-4jL"/>
                         </constraints>
                     </view>
