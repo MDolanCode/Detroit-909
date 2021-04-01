@@ -51,8 +51,8 @@ extension SettingsViewController: MFMailComposeViewControllerDelegate {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
-            mail.setToRecipients(["matt@mdolancode.com"])
-            mail.setMessageBody("<p>You're soooo awesome!</p>", isHTML: true)
+            mail.setToRecipients(["mdolancode@gmail.com"])
+            mail.setMessageBody("<p>Hi there, You're soooo awesome!</p>", isHTML: true)
             
             present(mail, animated: true)
         } else {

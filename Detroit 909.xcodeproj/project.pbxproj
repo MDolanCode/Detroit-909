@@ -41,6 +41,7 @@
 		C98243C925E05C81009F12F6 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98243C825E05C81009F12F6 /* FAQViewController.swift */; };
 		C98243CC25E15E1B009F12F6 /* pbio-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C98243CB25E15E1B009F12F6 /* pbio-bold.ttf */; };
 		C987FA6E25D707BF004B70DF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C987FA6D25D707BF004B70DF /* SettingsViewController.swift */; };
+		C98C12D72615521A00401698 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C12D62615521A00401698 /* BundleExtension.swift */; };
 		C9E78620260C0D82009556A5 /* ShoutOutsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E7861E260C0D82009556A5 /* ShoutOutsTableViewCell.xib */; };
 		C9EDD53B26018AF400AAD44A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EDD53A26018AF400AAD44A /* Coordinator.swift */; };
 		C9EDD54026018BD700AAD44A /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EDD53F26018BD700AAD44A /* Storyboarded.swift */; };
@@ -105,6 +106,7 @@
 		C98243C825E05C81009F12F6 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		C98243CB25E15E1B009F12F6 /* pbio-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pbio-bold.ttf"; sourceTree = "<group>"; };
 		C987FA6D25D707BF004B70DF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C98C12D62615521A00401698 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		C9E7861E260C0D82009556A5 /* ShoutOutsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoutOutsTableViewCell.xib; sourceTree = "<group>"; };
 		C9EDD53A26018AF400AAD44A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C9EDD53F26018BD700AAD44A /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
@@ -162,13 +164,13 @@
 				C9EDD53926018AC700AAD44A /* Coordinators */,
 				C9EDD53F26018BD700AAD44A /* Storyboarded.swift */,
 				C9516F5E259E765E0060C4B8 /* AppDelegate.swift */,
-				C9E7930F25CB755C00CA80A2 /* Main View */,
+				C98C12D62615521A00401698 /* BundleExtension.swift */,
+				C9E7930F25CB755C00CA80A2 /* Storyboards */,
 				C9FCA0A625F3E19000BC063B /* Detroit 909 */,
 				C9FCA0AA25F3E1D200BC063B /* Settings */,
 				C9FCA0AE25F3E1FF00BC063B /* FAQ */,
 				C9FCA0B925F3E24A00BC063B /* ShoutOuts */,
 				C9516F67259E766B0060C4B8 /* Assets.xcassets */,
-				C9516F69259E766B0060C4B8 /* LaunchScreen.storyboard */,
 				C9516F6C259E766B0060C4B8 /* Info.plist */,
 				C97C832125E17080006D1AAF /* Detroit 909 Sounds */,
 				C98243CA25E15DAE009F12F6 /* Fonts */,
@@ -273,13 +275,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		C9E7930F25CB755C00CA80A2 /* Main View */ = {
+		C9E7930F25CB755C00CA80A2 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				C9516F64259E765E0060C4B8 /* Main.storyboard */,
+				C9516F69259E766B0060C4B8 /* LaunchScreen.storyboard */,
 				C98243BD25E02B0A009F12F6 /* Buttons */,
 			);
-			path = "Main View";
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		C9EDD53926018AC700AAD44A /* Coordinators */ = {
@@ -387,6 +390,7 @@
 			buildPhases = (
 				C9516F57259E765E0060C4B8 /* Sources */,
 				C9516F58259E765E0060C4B8 /* Frameworks */,
+				C98C12D226154F2600401698 /* Show Version on LaunchScreen */,
 				C9516F59259E765E0060C4B8 /* Resources */,
 			);
 			buildRules = (
@@ -519,6 +523,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C98C12D226154F2600401698 /* Show Version on LaunchScreen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Show Version on LaunchScreen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Output version & build number to the APP_VERSION label on LaunchScreen.storyboard\nversionNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${INFOPLIST_FILE}\")\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${INFOPLIST_FILE}\")\n\nsed -i \"\" -e \"/userLabel=\\\"APP_VERSION\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"Version: $versionNumber ($buildNumber)\\\"/\" \"$PROJECT_DIR/$PROJECT_NAME/Storyboards/Base.lproj/LaunchScreen.storyboard\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9516F57259E765E0060C4B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -528,6 +553,7 @@
 				C93CA1AB25DB658C00EF2B07 /* SettingsBrain.swift in Sources */,
 				C9516F63259E765E0060C4B8 /* Detroit909ViewController.swift in Sources */,
 				C98243C025E02B60009F12F6 /* FAQTableViewCell.swift in Sources */,
+				C98C12D72615521A00401698 /* BundleExtension.swift in Sources */,
 				C9516F5F259E765E0060C4B8 /* AppDelegate.swift in Sources */,
 				C98243C525E052CA009F12F6 /* FAQBrain.swift in Sources */,
 				C9EDD53B26018AF400AAD44A /* Coordinator.swift in Sources */,
