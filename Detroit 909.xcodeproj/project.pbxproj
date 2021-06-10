@@ -165,7 +165,7 @@
 				C9EDD53F26018BD700AAD44A /* Storyboarded.swift */,
 				C9516F5E259E765E0060C4B8 /* AppDelegate.swift */,
 				C98C12D62615521A00401698 /* BundleExtension.swift */,
-				C9E7930F25CB755C00CA80A2 /* Storyboards */,
+				C9E7930F25CB755C00CA80A2 /* View */,
 				C9FCA0A625F3E19000BC063B /* Detroit 909 */,
 				C9FCA0AA25F3E1D200BC063B /* Settings */,
 				C9FCA0AE25F3E1FF00BC063B /* FAQ */,
@@ -275,14 +275,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		C9E7930F25CB755C00CA80A2 /* Storyboards */ = {
+		C9E7930F25CB755C00CA80A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				C9516F64259E765E0060C4B8 /* Main.storyboard */,
 				C9516F69259E766B0060C4B8 /* LaunchScreen.storyboard */,
 				C98243BD25E02B0A009F12F6 /* Buttons */,
 			);
-			path = Storyboards;
+			path = View;
 			sourceTree = "<group>";
 		};
 		C9EDD53926018AC700AAD44A /* Coordinators */ = {
