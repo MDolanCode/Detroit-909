@@ -298,7 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				C9FCA0C325F3E2F100BC063B /* Model */,
-				C9FCA0C725F3E31100BC063B /* View */,
+				C9FCA0C725F3E31100BC063B /* Controller */,
 			);
 			path = "Detroit 909";
 			sourceTree = "<group>";
@@ -349,12 +349,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C9FCA0C725F3E31100BC063B /* View */ = {
+		C9FCA0C725F3E31100BC063B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				C9516F62259E765E0060C4B8 /* Detroit909ViewController.swift */,
 			);
-			path = View;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		C9FCA0C825F3E34800BC063B /* Controller */ = {
