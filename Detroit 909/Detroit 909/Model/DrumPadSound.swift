@@ -21,21 +21,25 @@ class DrumPadSound: NSObject, AVAudioPlayerDelegate {
         guard let bundle = Bundle.main.path(forResource: drumSound, ofType: "wav") else { return }
         let soundFileNameURL = URL(fileURLWithPath: bundle)
         
-        if let player = players[soundFileNameURL] { //player for sound has been found
+        //player for sound has been found
+        if let player = players[soundFileNameURL] {
             
-            if !player.isPlaying { //player is not in use, so use that one
+            //player is not in use, so use that one
+            if !player.isPlaying {
                 player.prepareToPlay()
                 player.play()
-            } else { // player is in use, create a new, duplicate, player and use that instead
+                
+                // player is in use, create a new, duplicate, player and use that instead
+            } else {
                 
                 do {
                     let duplicatePlayer = try AVAudioPlayer(contentsOf: soundFileNameURL)
                     
-                    duplicatePlayer.delegate = self
                     //assign delegate for duplicatePlayer so delegate can remove the duplicate once it's stopped playing
+                    duplicatePlayer.delegate = self
                     
-                    duplicatePlayers.append(duplicatePlayer)
                     //add duplicate to array so it doesn't get removed from memory before finishing
+                    duplicatePlayers.append(duplicatePlayer)
                     
                     duplicatePlayer.prepareToPlay()
                     duplicatePlayer.play()
@@ -44,7 +48,8 @@ class DrumPadSound: NSObject, AVAudioPlayerDelegate {
                 }
                 
             }
-        } else { //player has not been found, create a new player with the URL if possible
+            //player has not been found, create a new player with the URL if possible
+        } else {
             do {
                 let player = try AVAudioPlayer(contentsOf: soundFileNameURL)
                 players[soundFileNameURL] = player
@@ -68,7 +73,8 @@ class DrumPadSound: NSObject, AVAudioPlayerDelegate {
         }
     }
     
-    func playSounds(soundFileNames: [String], withDelay: Double) { //withDelay is in seconds
+    // withDelay is in seconds
+    func playSounds(soundFileNames: [String], withDelay: Double) {
         for (index, soundFileName) in soundFileNames.enumerated() {
             let delay = withDelay * Double(index)
             let _ = Timer.scheduledTimer(timeInterval: delay, target: self, selector: #selector(playSoundNotification(_:)), userInfo: ["fileName": soundFileName], repeats: false)
