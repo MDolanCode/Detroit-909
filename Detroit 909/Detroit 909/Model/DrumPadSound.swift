@@ -21,24 +21,24 @@ class DrumPadSound: NSObject, AVAudioPlayerDelegate {
         guard let bundle = Bundle.main.path(forResource: drumSound, ofType: "wav") else { return }
         let soundFileNameURL = URL(fileURLWithPath: bundle)
         
-        //player for sound has been found
+        // Player for sound has been found.
         if let player = players[soundFileNameURL] {
             
-            //player is not in use, so use that one
+            // Player is not in use.
             if !player.isPlaying {
                 player.prepareToPlay()
                 player.play()
                 
-                // player is in use, create a new, duplicate, player and use that instead
+                // Player is in use, create a new, and duplicate player.
             } else {
                 
                 do {
                     let duplicatePlayer = try AVAudioPlayer(contentsOf: soundFileNameURL)
                     
-                    //assign delegate for duplicatePlayer so delegate can remove the duplicate once it's stopped playing
+                    // Assign delegate for duplicatePlayer so delegate can remove the duplicate once it's stopped playing.
                     duplicatePlayer.delegate = self
                     
-                    //add duplicate to array so it doesn't get removed from memory before finishing
+                    // Add duplicate to array so it doesn't get removed from memory before finishing.
                     duplicatePlayers.append(duplicatePlayer)
                     
                     duplicatePlayer.prepareToPlay()
@@ -48,7 +48,7 @@ class DrumPadSound: NSObject, AVAudioPlayerDelegate {
                 }
                 
             }
-            //player has not been found, create a new player with the URL if possible
+            // Player has not been found, create a new player with the URL.
         } else {
             do {
                 let player = try AVAudioPlayer(contentsOf: soundFileNameURL)
