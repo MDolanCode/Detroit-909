@@ -169,8 +169,8 @@
 				C9FCA0AA25F3E1D200BC063B /* Settings */,
 				C9FCA0AE25F3E1FF00BC063B /* FAQ */,
 				C9FCA0B925F3E24A00BC063B /* ShoutOuts */,
+				C9E74F4B2672E17700B5D81D /* LaunchScreen */,
 				C9516F67259E766B0060C4B8 /* Assets.xcassets */,
-				C9516F69259E766B0060C4B8 /* LaunchScreen.storyboard */,
 				C9516F6C259E766B0060C4B8 /* Info.plist */,
 				C97C832125E17080006D1AAF /* Detroit 909 Sounds */,
 				C98243CA25E15DAE009F12F6 /* Fonts */,
@@ -273,6 +273,14 @@
 				C98243CB25E15E1B009F12F6 /* pbio-bold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C9E74F4B2672E17700B5D81D /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C9516F69259E766B0060C4B8 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		C9E7930F25CB755C00CA80A2 /* View */ = {
@@ -540,7 +548,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Output version & build number to the APP_VERSION label on LaunchScreen.storyboard\nversionNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${INFOPLIST_FILE}\")\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${INFOPLIST_FILE}\")\n\nsed -i \"\" -e \"/userLabel=\\\"APP_VERSION\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"Version: $versionNumber ($buildNumber)\\\"/\" \"$PROJECT_DIR/$PROJECT_NAME/Storyboards/Base.lproj/LaunchScreen.storyboard\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Output version & build number to the APP_VERSION label on LaunchScreen.storyboard\nversionNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${INFOPLIST_FILE}\")\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${INFOPLIST_FILE}\")\n\nsed -i \"\" -e \"/userLabel=\\\"APP_VERSION\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"Version: $versionNumber ($buildNumber)\\\"/\" \"$PROJECT_DIR/$PROJECT_NAME/LaunchScreen/Base.lproj/LaunchScreen.storyboard\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
